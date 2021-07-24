@@ -29,86 +29,75 @@
       </profileDesc>
    </teiHeader>
    <text>
+      <pb xml:id="f01-s1"/>
       <front>
-         <pb xml:id="f01-s1"/>
          <docTitle>
             <titlePart type="main">
-               <lb n="1"/>
-               <hi rend="extra-large bold">E<add rend="superscript" instant="false" status="unremarkable">S</add>COLÍOS ALAS HÍS</hi>
-               <lb n="2"/>TORÍAS DEEL ORÍGEN DE LOS ÍNDÍOS
-                    <lb n="3"/>ESCOLÍADAS POR
-                    <lb n="4"/>EL
-                    <lb n="5"/>
-               <hi rend="extra-large bold">R.P.F.FRANZÍSCO XI <pc> –</pc></hi>
-               <lb n="6"/>
-               <hi rend="extra-large bold">MENEZ</hi>
-               <lb n="7"/>CVRA DOCTRÍNERO POR EL REALPATRO<pc> –</pc>
-                    <lb n="8"/>NATO DEL PVEBLO DE <abbr>S<hi rend="superscript">TO.</hi>
-               </abbr> THOMAS CHÍ<pc> –</pc>
-                    <lb n="9"/>CHÍCASTENANGO DEL SAGRADO OR<pc> –</pc>
-                    <lb n="10"/>DEN DE PRÆDÍCADORES PARA MA<pc> –</pc>
-                    <lb n="11"/>YOR NOTÍCÍA ALOS MÍNÍSTROS
-                    <lb n="12"/>DE LAS COS. DE LOS ÍNDÍOS
-                    <lb n="13"/>
+               <lb n="1"/><hi rend="extra-large bold">E<add rend="superscript" instant="false" status="unremarkable">S</add>COLÍOS ALAS HÍS</hi>
+               <lb n="2"/><hi rend="large">TORÍAS DEEL ORÍGEN DE LOS ÍNDÍOS</hi>
+               <lb n="3"/><hi rend="large">ESCOLÍADAS POR</hi>
+               <lb n="4"/><hi rend="large">EL</hi>
+               <lb n="5"/><hi rend="extra-large bold">R.P.F.FRANZÍSCO XI <pc> =</pc></hi>
+               <lb n="6"/><hi rend="extra-large bold">MENEZ</hi>
+               <lb n="7"/><hi rend="large">CVRA DOCTRÍNERO POR EL REALPATRO<pc> =</pc></hi>
+               <lb n="8"/><hi rend="large">NATO DEL PVEBLO DE <abbr>S<hi rend="superscript">TO.</hi></abbr> THOMAS CHÍ<pc> =</pc></hi>
+               <lb n="9"/><hi rend="large">CHÍCASTENANGO DEL SAGRADO OR<pc> =</pc></hi>
+               <lb n="10"/><hi rend="large">DEN DE PRÆDÍCADORES PARA MA<pc> =</pc></hi>
+               <lb n="11"/><hi rend="large">YOR NOTÍCÍA ALOS MÍNÍSTROS</hi>
+               <lb n="12"/><hi rend="large">DE LAS COS. DE LOS ÍNDÍOS</hi>
             </titlePart>
          </docTitle>
-         <head rend="center">
-            <lb n="14"/>
-            <hi rend="large">PROLOGO.</hi>
-         </head>
+         <lb n="13"/>
       </front>
       <body>
-         <pb xml:id="f01-s1"/>
+         <head rend="center">
+            <lb n="14"/><hi rend="large">PROLOGO.</hi>
+         </head>
          <p>
-            <lb n="15"/>
-            <hi rend="strong">C</hi>osa es cíerta, y auerígua da entre to dos los <abbr>q'</abbr>conocen ín díos, <abbr>q'es</abbr> la<pc> –</pc>
-            	<lb n="16"/>gente más írre gular ensus cosas, <abbr>q'</abbr>se ha descubíerto en toda la redondez 
-            	<lb n="17"/>de la tíerra, y así muchos hombres de buen talento, ça da día <unclear instant="false">seuen de salínados</unclear>
+            <lb n="15"/><hi rend="strong">C</hi>osa es cíerta, y auerígua da entre to dos los <abbr>q'</abbr>conocen ín díos, <abbr>q'es</abbr> la<pc> –</pc>
+            <lb n="16"/>gente más írre gular ensus cosas, <abbr>q'</abbr>se ha descubíerto en toda la redondez 
+            <lb n="17"/>de la tíerra, y así muchos hombres de buen talento, ça da día <unclear instant="false">seuen de salínados</unclear>
             <lb n="18"/>con sus cosas, pues quando les pareze <abbr>q'</abbr>ya estan al cabo de el conoçímíento de quí<pc> –</pc>
-            	<lb n="19"/>enes son los índíos, sehallan tan en los príncípíos de su conoçímíento, y compre<pc> –</pc>
-            	<lb n="20"/>hensíon, <abbr>q'</abbr>todo lo <abbr>q'</abbr>han adquíro con su estudío, y cuída do para mejor po derlos
-            	<lb n="21"/>gouernar noles sírue, ya enlos casos, <abbr>q'</abbr>de nuevo se offreçen. muchos ha auído
-            	<lb n="22"/>
-            <abbr>q'</abbr>han querído dar aentender el conoçímíento de elíndío en sus escrítos, de
-            	<lb n="23"/>hístorías, y sumas, y otros escrítos; pero píenso <abbr>q'</abbr>les ha sucedído lo<abbr>q'</abbr>a mí, me
-            	<lb n="24"/>sucedera entodos mís escrítos, <abbr>q'</abbr>
-            <abbr>aunq'</abbr> he procurado dar a entender lo <abbr>qu'</abbr>ellos
-            	<lb n="25"/>son, alca bo píenso <abbr>q'</abbr>no aure dícho nada. el Doctor <abbr>P<hi rend="superscript">o</hi>.</abbr> Apíano cosmografo 
-            	<lb n="26"/>de el emperador carlos quínto de marcando la ísla española, los quiere
-            	<lb n="27"/>dar acononocer al mundo dícíendo: <abbr>q'</abbr>son gente: índando líberalíssímí, ín
-            	<lb n="28"/>accípíendo cupídíssímí en el dar muy líberales, en el recíbír muy codícíosos, y <abbr>q'</abbr>
+            <lb n="19"/>enes son los índíos, sehallan tan en los príncípíos de su conoçímíento, y compre<pc> –</pc>
+            <lb n="20"/>hensíon, <abbr>q'</abbr>todo lo <abbr>q'</abbr>han adquíro con su estudío, y cuída do para mejor po derlos
+            <lb n="21"/>gouernar noles sírue, ya enlos casos, <abbr>q'</abbr>de nuevo se offreçen. muchos ha auído
+            <lb n="22"/><abbr>q'</abbr>han querído dar aentender el conoçímíento de elíndío en sus escrítos, de
+            <lb n="23"/>hístorías, y sumas, y otros escrítos; pero píenso <abbr>q'</abbr>les ha sucedído lo<abbr>q'</abbr>a mí, me
+            <lb n="24"/>sucedera entodos mís escrítos, <abbr>q'</abbr><abbr>aunq'</abbr> he procurado dar a entender lo <abbr>qu'</abbr>ellos
+            <lb n="25"/>son, alca bo píenso <abbr>q'</abbr>no aure dícho nada. el Doctor <abbr>P<hi rend="superscript">o</hi>.</abbr> Apíano cosmografo 
+            <lb n="26"/>de el emperador carlos quínto de marcando la ísla española, los quiere
+            <lb n="27"/>dar acononocer al mundo dícíendo: <abbr>q'</abbr>son gente: índando líberalíssímí, ín
+            <lb n="28"/>accípíendo cupídíssímí en el dar muy líberales, en el recíbír muy codícíosos, y <abbr>q'</abbr>
             <lb n="29"/>consumen todo Un día dando bueltas a un palo. algo díxo en esto, declaro en
-            	<lb n="30"/>parte la natural ínclínaçíon de el índío, <abbr>q'</abbr> endar dudo <abbr>q'</abbr>a ya quíen sea mas lí<pc> –</pc>
-            	<lb n="31"/>beral en dar, pues quíen abra <abbr>q'</abbr>no este todo poseído de Díos <abbr>q'</abbr>teníendo solo, Un me<pc> –</pc>
-         <pb xml:id="f01-s2"/>
+            <lb n="30"/>parte la natural ínclínaçíon de el índío, <abbr>q'</abbr> endar dudo <abbr>q'</abbr>a ya quíen sea mas lí<pc> –</pc>
+            <lb n="31"/>beral en dar, pues quíen abra <abbr>q'</abbr>no este todo poseído de Díos <abbr>q'</abbr>teníendo solo, Un me<pc> –</pc>
+            
+            <pb xml:id="f01-s2"/>
             <lb n="1"/>dío real, sín esperanza deotro <abbr>q'</abbr>este en extrema neçesídad aun de el sustento ne<pc> –</pc>
-            	<lb n="2"/>çesarío <abbr>q'</abbr>lo de con mas líberalídad <abbr>q'</abbr>elíndío lo da. y en sus festejos y funçíones
-            	<lb n="3"/>se ue <abbr>q'</abbr>níteníendo apenas <abbr>p<hi rend="superscript">a</hi>
-            </abbr>. elsustento los çelebra con bastantes gastos, y
-            	<lb n="4"/>con tantos como otro <abbr>q<hi rend="superscript">e</hi>
-            </abbr>se halle descansado, y con bastante posíble los çelebra, em<pc> –</pc>
-            	<lb n="5"/>peñandose, y entrampandose, para poder haçer estas sus çelebraçíones de
-            	<lb n="6"/>bautísmos, y casamíentos. níay gente mas codíçíosa, y desdíchada, pues combí<pc> –</pc>
-            	<lb n="7"/>dandose ellos Unos a otros ensus fíestas, y des de Un pueblo, a otro en sus festíuída<pc> –</pc>
-            	<lb n="8"/>des, selehade corresponder con lo mesmo numero, y espeçíe <abbr>q'</abbr>el dío al otro <abbr>q<hi rend="superscript">do</hi>
-            </abbr>
+            <lb n="2"/>çesarío <abbr>q'</abbr>lo de con mas líberalídad <abbr>q'</abbr>elíndío lo da. y en sus festejos y funçíones
+            <lb n="3"/>se ue <abbr>q'</abbr>níteníendo apenas <abbr>p<hi rend="superscript">a</hi></abbr>. elsustento los çelebra con bastantes gastos, y
+            <lb n="4"/>con tantos como otro <abbr>q<hi rend="superscript">e</hi></abbr>se halle descansado, y con bastante posíble los çelebra, em<pc> –</pc>
+            <lb n="5"/>peñandose, y entrampandose, para poder haçer estas sus çelebraçíones de
+            <lb n="6"/>bautísmos, y casamíentos. níay gente mas codíçíosa, y desdíchada, pues combí<pc> –</pc>
+            <lb n="7"/>dandose ellos Unos a otros ensus fíestas, y des de Un pueblo, a otro en sus festíuída<pc> –</pc>
+            <lb n="8"/>des, selehade corresponder con lo mesmo numero, y espeçíe <abbr>q'</abbr>el dío al otro <abbr>q<hi rend="superscript">do</hi></abbr>
             <lb n="9"/>fue su combídado. y solo Un plantano menos, <abbr>q'</abbr> sele corresponda, es matería de
-            	<lb n="10"/>tanto sentímíento, <abbr>q'</abbr>por aquello solo se acaba la amístad, y correspond<corr instant="false">en</corr>çía de
-            	<lb n="11"/>muchos años. para esto <abbr>q'</abbr>díxo Apíano fue Un rasgo solo, del conoçímí<pc> –</pc>
-            	<lb n="12"/>ento de los índios. así me pareçe <abbr>q'</abbr>el mas açer rado moda para dar a
-            	<lb n="13"/>conocer quíenes son los índíos, y su mayor comprehensíon, lo <abbr>q'</abbr> muchos hombres
-            	<lb n="14"/>de buen talento han dícho, <abbr>q'</abbr> para dífínír los índíos con dífíníçíon adequada
-            	<lb n="15"/>es defíníendolos por contradíctorías. <abbr>porq'</abbr> es gente <abbr>q'</abbr>todo es extremos, y todos
-            	<lb n="16"/>contraríos, y opuestos. al mesmo motodo de lo <abbr>q'</abbr>díxo Apíano. y prosíguíendo a
-            	<lb n="17"/>quello dígo. <abbr>q'</abbr>es gente: en eltrabaxo fortíssímos, en notrabaxar, perezosísí<pc> –</pc>
-            	<lb n="18"/>mos, en comer Voraçíssímos, en no comer parcíssímos. en sus bíen es ríquíssímos,
-            	<lb n="19"/>y suma mente pobríssímos. y así de to das las demas cosas suyas, y todo esto tan
-            	<lb n="20"/>general, <abbr>q'</abbr>lo mesmo es Uno <abbr>q'</abbr>otro, el ríco, y el pobre, el <abbr>q'</abbr>es cazíque, ó prínçípal
-            	<lb n="21"/>como el mazegual. todos son íguales, y tan aníñados Unos como otros. y así
-            	<lb n="22"/>díxo bíen el<abbr>q'</abbr>los llamo: níños, con barbas. y ala Verdad ellos son como mucha<pc> –</pc>
-            	<lb n="23"/>chos en todo. como <abbr>S.</abbr> Pablo deçía de sí de su hedad pueríl, así estos todo escosa de
-            	<lb n="24"/>muchachos por lo qual no son sus malíçías de tanto peso como lo son las de otros hom<pc> –</pc>
-            	<lb n="25"/>bres de otras naçíones, y aun <abbr>q'</abbr>algunos dígan como díze <abbr>N.</abbr>
+            <lb n="10"/>tanto sentímíento, <abbr>q'</abbr>por aquello solo se acaba la amístad, y correspond<corr instant="false">en</corr>çía de
+            <lb n="11"/>muchos años. para esto <abbr>q'</abbr>díxo Apíano fue Un rasgo solo, del conoçímí<pc> –</pc>
+            <lb n="12"/>ento de los índios. así me pareçe <abbr>q'</abbr>el mas açer rado moda para dar a
+            <lb n="13"/>conocer quíenes son los índíos, y su mayor comprehensíon, lo <abbr>q'</abbr> muchos hombres
+            <lb n="14"/>de buen talento han dícho, <abbr>q'</abbr> para dífínír los índíos con dífíníçíon adequada
+            <lb n="15"/>es defíníendolos por contradíctorías. <abbr>porq'</abbr> es gente <abbr>q'</abbr>todo es extremos, y todos
+            <lb n="16"/>contraríos, y opuestos. al mesmo motodo de lo <abbr>q'</abbr>díxo Apíano. y prosíguíendo a
+            <lb n="17"/>quello dígo. <abbr>q'</abbr>es gente: en eltrabaxo fortíssímos, en notrabaxar, perezosísí<pc> –</pc>
+            <lb n="18"/>mos, en comer Voraçíssímos, en no comer parcíssímos. en sus bíen es ríquíssímos,
+            <lb n="19"/>y suma mente pobríssímos. y así de to das las demas cosas suyas, y todo esto tan
+            <lb n="20"/>general, <abbr>q'</abbr>lo mesmo es Uno <abbr>q'</abbr>otro, el ríco, y el pobre, el <abbr>q'</abbr>es cazíque, ó prínçípal
+            <lb n="21"/>como el mazegual. todos son íguales, y tan aníñados Unos como otros. y así
+            <lb n="22"/>díxo bíen el<abbr>q'</abbr>los llamo: níños, con barbas. y ala Verdad ellos son como mucha<pc> –</pc>
+            <lb n="23"/>chos en todo. como <abbr>S.</abbr> Pablo deçía de sí de su hedad pueríl, así estos todo escosa de
+            <lb n="24"/>muchachos por lo qual no son sus malíçías de tanto peso como lo son las de otros hom<pc> –</pc>
+            <lb n="25"/>bres de otras naçíones, y aun <abbr>q'</abbr>algunos dígan como díze <abbr>N.</abbr>
             <abbr>P<hi rend="superscript">e.</hi>
             </abbr> Noreña en su
             	<lb n="26"/>carta <abbr>q'</abbr>alcançan grandes malícías, de <corr instant="false">
@@ -123,7 +112,7 @@
             	<lb n="33"/>se todos con estos míssarables sabíos, los ígnorantes, Valientes, los floxos, poderosos
             	<lb n="34"/>los <abbr>q'</abbr> nada pueden, <abbr>h'</abbr>randole alcodíllo como agente desvalída. pues no y negro
             	<lb n="35"/>esclauo <abbr>q'</abbr>no se les atreua, y <abbr>q'</abbr>no los maltrate.
-            </p>
+         </p>
          <p>
             <lb n="36" rend="indent"/>Yo bíen entíendo, <abbr>q'</abbr> todas estas hístorías son quentos de muchachos, <abbr>q'</abbr>nítíenen
             	<lb n="37"/>píes ní cabeza; pero <abbr>aunq'</abbr>este es el juíçío <abbr>q'</abbr>nosotros hemos de haçer de ellas
