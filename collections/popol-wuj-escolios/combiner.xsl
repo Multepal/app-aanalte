@@ -37,7 +37,7 @@
         <pb xml:id="f01-s2" />
         <xsl:copy-of select="$f01s2//text/body/*" copy-namespaces="no"/>
         <pb xml:id="f02-s1" />
-        <xsl:copy-of select="$f02s1//ext/body/*" copy-namespaces="no"/>
+        <xsl:copy-of select="$f02s1//text/body/*" copy-namespaces="no"/>
         <pb xml:id="f02-s2" />
         <xsl:copy-of select="$f02s2//text/body/*" copy-namespaces="no"/>
         <pb xml:id="f03-s1" />
