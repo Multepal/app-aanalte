@@ -10,18 +10,18 @@
     omit-xml-declaration="no" />
   <xsl:strip-space elements="*"/>
   
-  <xsl:variable name="f01s1" select="document('xom-escolios-folio-01-side-1.xml')"/>
-  <xsl:variable name="f01s2" select="document('xom-escolios-folio-01-side-2.xml')"/>
-  <xsl:variable name="f02s1" select="document('xom-escolios-folio-02-side-1.xml')"/>
-  <xsl:variable name="f02s2" select="document('xom-escolios-folio-02-side-2.xml')"/>
-  <xsl:variable name="f03s1" select="document('xom-escolios-folio-03-side-1.xml')"/>
-  <xsl:variable name="f03s2" select="document('xom-escolios-folio-03-side-2.xml')"/>
-  <xsl:variable name="f04s1" select="document('xom-escolios-folio-04-side-1.xml')"/>
-  <xsl:variable name="f04s2" select="document('xom-escolios-folio-04-side-2.xml')"/>
-  <xsl:variable name="f05s1" select="document('xom-escolios-folio-05-side-1.xml')"/>
-  <xsl:variable name="f05s2" select="document('xom-escolios-folio-05-side-2.xml')"/>
-  <xsl:variable name="f06s1" select="document('xom-escolios-folio-06-side-1.xml')"/>
-  <xsl:variable name="f06s2" select="document('xom-escolios-folio-06-side-2.xml')"/>
+  <xsl:variable name="f01s1" select="document('source/xom-escolios-folio-01-side-1.xml')"/>
+  <xsl:variable name="f01s2" select="document('source/xom-escolios-folio-01-side-2.xml')"/>
+  <xsl:variable name="f02s1" select="document('source/xom-escolios-folio-02-side-1.xml')"/>
+  <xsl:variable name="f02s2" select="document('source/xom-escolios-folio-02-side-2.xml')"/>
+  <xsl:variable name="f03s1" select="document('source/xom-escolios-folio-03-side-1.xml')"/>
+  <xsl:variable name="f03s2" select="document('source/xom-escolios-folio-03-side-2.xml')"/>
+  <xsl:variable name="f04s1" select="document('source/xom-escolios-folio-04-side-1.xml')"/>
+  <xsl:variable name="f04s2" select="document('source/xom-escolios-folio-04-side-2.xml')"/>
+  <xsl:variable name="f05s1" select="document('source/xom-escolios-folio-05-side-1.xml')"/>
+  <xsl:variable name="f05s2" select="document('source/xom-escolios-folio-05-side-2.xml')"/>
+  <xsl:variable name="f06s1" select="document('source/xom-escolios-folio-06-side-1.xml')"/>
+  <xsl:variable name="f06s2" select="document('source/xom-escolios-folio-06-side-2.xml')"/>
   
   <xsl:template match="//teiHeader">
   <TEI>     
