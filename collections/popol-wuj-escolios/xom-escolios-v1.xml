@@ -2,32 +2,141 @@
 <!DOCTYPE TEI SYSTEM "https://multepal.github.io/aanalte/tei/tei_lite.dtd">
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
+
+      <!-- DESCRIBES THE SOURCE MS (AND THE TRANSCRIPTION IF USED) -->
       <fileDesc>
+         <!--
+         A file description, tagged fileDesc, containing a full bibliographical description of the *computer file* 
+         itself, from which a user of the text could derive a proper bibliographic citation, or which a librarian 
+         or archivist could use in creating a catalogue entry recording its presence within a library or archive. 
+         The term computer file here is to be understood as referring to the whole entity or document described 
+         by the header, even when this is stored in several distinct operating system files. The file description 
+         also includes information about the source or sources from which the electronic document was derived. 
+         -->
          <titleStmt>
+
             <title>Arte de las tres lenguas kakchiquel, quiché y tzutuhil, 
                 v.2 Popol vuh; and Escolios a la historia de el origen de los Indios.</title>
             <author>Ximénez, Francisco</author>
+
+            <respStmt>
+               <resp ref="http://id.loc.gov/vocabulary/relators/com.html">transcriber</resp>
+               <resp>encoder</resp>
+               <name full="yes" instant="false">Catherine L. Addington</name>
+               <note>
+                  <p>Describe nature of contribution in specific terms.</p>
+               </note>
+            </respStmt>
+
+            <respStmt>
+               <resp ref="http://id.loc.gov/vocabulary/relators/com.html">encoder</resp>
+               <resp>encoder</resp>
+               <name full="yes">Rafael C. Alvarado</name>
+               <note>
+                  <p>Describe nature of contribution in specific terms.</p>
+               </note>
+            </respStmt>
+
          </titleStmt>
+
          <publicationStmt>
+            <!-- NOT CLEAR IF THIS IS CORRECT -->
             <publisher>The Newberry Library</publisher>
             <pubPlace>Chicago, Illinois, USA</pubPlace>
          </publicationStmt>
+
          <sourceDesc default="false">
             <p part="N">An encoded transcription of the Newberry Library's VAULT Ayer MS 1515, volume 2, Escolios Folio 01, Side 1. 
                 Based on the facsimiles provided by online edition of the Popol Wuj hosted by The Ohio State University Libraries at 
                 https://library.osu.edu/projects/popolwujs.</p>
          </sourceDesc>
+
       </fileDesc>
+
+      <!-- THIS DESCRIBES THE ORIGINAL DOCUMENT OR SOURCE (XIMENEZ, K'ICHE', etc.) -->
       <profileDesc>
+         <!--
+         The text profile, tagged profileDesc, containing classificatory and contextual information about the text, 
+         such as its subject matter, the situation in which it was produced, the individuals described by or 
+         participating in producing it, and so forth. Such a text profile is of particular use in highly structured 
+         composite texts such as corpora or language collections, where it is often highly desirable to enforce a 
+         controlled descriptive vocabulary or to perform retrievals from a body of text in terms of text type or 
+         origin. The text profile may however be of use in any form of automatic text processing. 
+         -->
          <langUsage default="false">
             <language ident="quc">K'iche'</language>
             <language ident="spa">Spanish</language>
          </langUsage>
-         <creation>
-            <date instant="false">Spring 2017</date>
-            <name full="yes" instant="false">Catherine L. Addington</name>
-         </creation>
       </profileDesc>
+
+      <endocingDesc>
+         <!--
+         An encoding description describes the relationship between an electronic text 
+         and its source or sources. It allows for detailed description of whether (or how) the text was 
+         normalized during transcription, how the encoder resolved ambiguities in the source, what levels of encoding or 
+         analysis were applied, and similar matters.
+
+         NOTE: Many of these items should be created in separate TEI documents that are included using XINCLUE elements
+         with an XPOINTER attribute to the BODY element of the target text.
+         -->
+         <p>Discuss "paragraphs edition," i.e. discursive structure vs material structure, method and rationale.</p>
+         <projectDesc>
+            <!-- 
+            Describes in detail the aim or purpose for which an electronic file was encoded, 
+            together with any other relevant information concerning the process by which it was assembled or collected. 
+            -->
+            <p>Describe the Multepal project here.</p>
+         </projectDesc>
+         <editorialDecl>
+            <!--
+            Provides details of editorial principles and practices applied during the encoding of a text.
+            -->
+         </editorialDecl>
+         <tagsDecl> 
+            <!--
+            Provides detailed information about the tagging applied to a document.
+            -->
+         </tagsDecl>
+         <styleDefDecl>
+            <p>Describe REND attribute values here.</p>
+         </styleDefDecl>
+         <refsDecl>
+            <!-- Specifies how canonical references are constructed for this text. -->
+            <p>Describe use of CTS conventions here.</p>
+            <p>Descirbe how folios, sides, chapters, paragraphs, and lines are handled.</p>
+         </refsDecl>
+
+         <classDecl>
+            <!--
+            Classification declarations. Contains one or more taxonomies defining any classificatory codes used 
+            elsewhere in the text.
+            -->
+            <p>Describe here the use of Mutlepal Topic IDs in ANA attributes of RS elements.</p>
+         </classDecl>
+      </endocingDesc>
+
+      <!-- DESCRIBE USE OF TK, ETC. -->
+      <xenoData>
+         <!--
+         A container element, tagged xenoData, which allows easy inclusion of metadata from non-TEI schemes 
+         (i.e., other than elements in the TEI namespace). For example, the MARC record for the encoded document 
+         might be included using MARCXML or MODS. A simple set of metadata for harvesting might be included encoded 
+         in Dublin Core.
+         -->
+         <p>Describe use of TK here.</p>
+      </xenoData>
+
+      <revisionDesc>
+         <!--
+         A revision history to provide a history of changes made during the development of the electronic text. 
+         The revision history is important for version control and for resolving questions about the history of 
+         a file. The TEI elements used to encode the revision description are described in section
+         -->
+         <p date="Spring 2017">Describe Addington's contribution here, i.e. original transcription (?) and markup.</p>
+         <p>Describe Alvarado's contribution here, i.e. combbined, paragraphs form; 
+            alteration of element structure, etc.</p> 
+      </revisionDesc>
+
    </teiHeader>
    <text>
 
@@ -313,9 +422,11 @@
             <lb n="18"/>descuíde en manífestarlo, y sola por congeturas, se suele rastrear
             <lb n="19"/>algo.
          </p>
-         <figure>
-            <graphic url="images/pwKbFFg.png" rend="center"/>
-            <figDesc>Watermark. See Carlos M. López, The <hi rend="italic">Popol Wuj</hi> in <hi rend="italic">Ayer MS 1515</hi> Is a Holograph by Father Ximénez," <hi rend="italic">Latin American Indian Literatures Journal</hi>.</figDesc>
+         <figure rend="center">
+            <graphic url="images/pwKbFFg.png"/>
+            <figDesc>Watermark. See Carlos M. López, The <hi rend="italic">Popol Wuj</hi> in <hi rend="italic">Ayer MS 1515</hi> Is a Holograph by Father Ximénez," 
+               <hi rend="italic">Latin American Indian Literatures Journal</hi>.
+            </figDesc>
          </figure>
 
          <pb xml:id="f04-s1"/>
