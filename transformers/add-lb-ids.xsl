@@ -20,10 +20,12 @@
     <!-- e.g. xom-f01-s1-quc-37 -->
     <xsl:template match="lb[@n]">
         
-        <!-- <div xml:lang="quc" type="column"> -->
         <xsl:variable name="col">
+            <!-- Get the column -->
+            <!-- Consider a more general model here, in cases where columns
+            are not used for languages -->
             <xsl:choose>
-                <xsl:when test="ancestor::div[@type='column'][1]">
+                <xsl:when test="ancestor::div[@type='column' and @xml:lang][1]">
                     <xsl:value-of select="ancestor::div[@type='column'][1]/@xml:lang"/>
                 </xsl:when>                
             </xsl:choose>
@@ -40,12 +42,11 @@
                 </xsl:otherwise>
             </xsl:choose>         
         </xsl:variable>
-        
         <lb>
             <xsl:attribute name="n">
                 <xsl:value-of select="$n" />
             </xsl:attribute>
-            <xsl:attribute name="id">
+            <xsl:attribute name="xml:id">
                 <xsl:value-of select="$pbid" />                
                 <xsl:if test="$col">
                     <xsl:text>–</xsl:text>
