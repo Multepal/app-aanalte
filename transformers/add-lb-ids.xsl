@@ -28,7 +28,7 @@
                     <xsl:value-of select="ancestor::div[@type='column'][1]/@xml:lang"/>
                 </xsl:when>          
                 <xsl:otherwise>
-                    <xsl:value-of select="false()"/>
+                    <xsl:value-of select="''"/>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
