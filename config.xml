@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE config SYSTEM ".site/config.dtd">
+<config>
+    
+    <group id="DEFAULT">
+        <item id="site_title">
+            <value type="str">Aanalte</value>
+        </item>
+        <item id="base_path">
+            <value type="path">/Users/rca2t1/Repos/aanalte</value>
+        </item>
+    </group>
+    
+    <group id="MULTEPAL">
+        <item id="multepal_db_url">
+            <value type="url">http://multepal.spanitalport.virginia.edu/</value>
+        </item>
+    </group>
+</config>
+
+<!--
+
+[DEFAULT]
+site_title = Aanalte
+base_path = /Users/rca2t1/Repos/aanalte
+templates_dir = templates
+xom_src = xom-all-flat-mod-pnums-lbids.xml
+
+[multepal]
+multepal_url = http://multepal.spanitalport.virginia.edu/
+topics_src = multepal/topics.xml
+annotations_src = multepal/annotations.xml
+snippets_src = multepal/snippets.xml
+topics_url = export/topics/all
+annotations_url = export/annotations/all
+snippets_url = export/snippets/all
+
+-->

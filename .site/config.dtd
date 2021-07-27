@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT config (group+)>
+<!ELEMENT group (item+)>
+<!ELEMENT item (value+)>
+<!ELEMENT value (#PCDATA)>
+
+<!ATTLIST group id ID #REQUIRED>
+<!ATTLIST item id ID #REQUIRED>
+<!ATTLIST value type (str|int|float|date|money|url|path) "str">
+

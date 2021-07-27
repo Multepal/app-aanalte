@@ -489,7 +489,7 @@
             <lb n="2"/>tulo, de corazon de la laguna, y del mar díçíendo <rs ana="CORAZÓN_DEL_LAGO">Vqux cho</rs>, <rs ana="CORAZÓN_DEL_MAR">vqux palo</rs>. en
             <lb n="3"/><abbr>q'</abbr> pareze <abbr>q'</abbr> el demonío tíro a confundír el texto Sagrado, <abbr>q'</abbr> díçe: <hi rend="underline">et spírítus</hi>
                <note place="margin-left" anchored="true">
-                  <bibl default="false" status="draft">Gen. <num>1</num>.n. 
+                     <bibl default="false" status="draft">Gen. <num>1</num>.n. 
                   <lb/><num>2</num>.</bibl>
                </note>
             <lb n="4"/><foreign xml:lang="la"><hi rend="underline">Deí ferebatur super aquas</hi></foreign>. y mírando juntamente a confundír la terçe<pc> –</pc>

@@ -25,9 +25,12 @@
             <!-- Consider a more general model here, in cases where columns
             are not used for languages -->
             <xsl:choose>
-                <xsl:when test="ancestor::div[@type='column' and @xml:lang][1]">
+                <xsl:when test="ancestor::div[@type='column'][@xml:lang][1]">
                     <xsl:value-of select="ancestor::div[@type='column'][1]/@xml:lang"/>
-                </xsl:when>                
+                </xsl:when>          
+                <xsl:otherwise>
+                    <xsl:value-of select="false()"/>
+                </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
         <xsl:variable name="pb" select="preceding::pb[1]"/>
@@ -42,20 +45,17 @@
                 </xsl:otherwise>
             </xsl:choose>         
         </xsl:variable>
-        <lb>
-            <xsl:attribute name="n">
-                <xsl:value-of select="$n" />
-            </xsl:attribute>
+        <lb n="{$n}">
             <xsl:attribute name="xml:id">
                 <xsl:value-of select="$pbid" />                
-                <xsl:if test="$col">
+                <xsl:if test="$col != ''">
                     <xsl:text>–</xsl:text>
                     <xsl:value-of select="$col"/>                    
                 </xsl:if>
                 <xsl:text>–</xsl:text>
                 <xsl:value-of select="$n"/>
             </xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:value-of select="*|node()"/>
         </lb>
         
     </xsl:template>
