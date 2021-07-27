@@ -20,8 +20,7 @@
     <!-- e.g. xom-f01-s1-quc-37 -->
     <xsl:template match="lb[@n]">
         
-        <xsl:variable name="col">
-            <!-- Get the column -->
+        <xsl:variable name="col">           
             <!-- Consider a more general model here, in cases where columns
             are not used for languages -->
             <xsl:choose>
@@ -45,6 +44,7 @@
                 </xsl:otherwise>
             </xsl:choose>         
         </xsl:variable>
+        
         <lb n="{$n}">
             <xsl:attribute name="xml:id">
                 <xsl:value-of select="$pbid" />                
