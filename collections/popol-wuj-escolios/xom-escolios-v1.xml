@@ -69,7 +69,7 @@
          </langUsage>
       </profileDesc>
 
-      <endocingDesc>
+      <encodingDesc>
          <!--
          An encoding description describes the relationship between an electronic text 
          and its source or sources. It allows for detailed description of whether (or how) the text was 
@@ -91,15 +91,22 @@
             <!--
             Provides details of editorial principles and practices applied during the encoding of a text.
             -->
+            <p>PUT DETAILS HERE.</p>
          </editorialDecl>
-         <tagsDecl> 
-            <!--
+         
+         <!--
+            NOT IN TEI LITE!
             Provides detailed information about the tagging applied to a document.
-            -->
+          -->
+         <!--
+         <tagsDecl> 
          </tagsDecl>
+         -->
+         <!-- NOT IN TEI LITE!
          <styleDefDecl>
             <p>Describe REND attribute values here.</p>
          </styleDefDecl>
+         -->
          <refsDecl>
             <!-- Specifies how canonical references are constructed for this text. -->
             <p>Describe use of CTS conventions here.</p>
@@ -108,33 +115,40 @@
 
          <classDecl>
             <!--
-            Classification declarations. Contains one or more taxonomies defining any classificatory codes used 
+            Classification declarations. 
+            Contains one or more taxonomies defining any classificatory codes used 
             elsewhere in the text.
-            -->
-            <p>Describe here the use of Mutlepal Topic IDs in ANA attributes of RS elements.</p>
+  
+            SHOULD BE INCLUDESD FROM AN XML VERSION OF TOPICS?
+            --> 
+            <taxonomy>
+               <category></category>
+            </taxonomy>
          </classDecl>
-      </endocingDesc>
+      </encodingDesc>
 
-      <!-- DESCRIBE USE OF TK, ETC. -->
-      <xenoData>
-         <!--
+      <!-- DESCRIBE USE OF TK, ETC. // NOT IN TEI LITE! -->
+      <!--
          A container element, tagged xenoData, which allows easy inclusion of metadata from non-TEI schemes 
          (i.e., other than elements in the TEI namespace). For example, the MARC record for the encoded document 
          might be included using MARCXML or MODS. A simple set of metadata for harvesting might be included encoded 
          in Dublin Core.
-         -->
+      -->
+      <!-- 
+         <xenoData> 
          <p>Describe use of TK here.</p>
       </xenoData>
-
+      -->
+      
       <revisionDesc>
          <!--
          A revision history to provide a history of changes made during the development of the electronic text. 
          The revision history is important for version control and for resolving questions about the history of 
          a file. The TEI elements used to encode the revision description are described in section
          -->
-         <p date="Spring 2017">Describe Addington's contribution here, i.e. original transcription (?) and markup.</p>
-         <p>Describe Alvarado's contribution here, i.e. combbined, paragraphs form; 
-            alteration of element structure, etc.</p> 
+         <change>Spring 2017: Describe Addington's contribution here, i.e. original transcription (?) and markup.</change>
+         <change>Summer 2021: Describe Alvarado's contribution here, i.e. combbined, paragraphs form; 
+            alteration of element structure, etc.</change> 
       </revisionDesc>
 
    </teiHeader>
@@ -431,12 +445,10 @@
 
          <pb xml:id="f04-s1"/>
 
-         <head rend="center" type="chapter">
-            <lb n="1"/><seg xml:space="preserve">CAP.                    <num>1</num></seg>
+         <!-- Wrap into Chapter Divs -->
+         <p>          
+            <lb n="1"/><seg xml:space="preserve" rend="large">CAP.                    <num>1</num></seg>
             <lb n="2"/>De el ser de Díos:
-         </head>
-
-         <p>
             <lb n="3"/>Como quíera, <abbr>q'</abbr> ayasído lanotíçía <abbr>q'</abbr> estos índíos tuuíeron en tíempo de su gentí<pc> –</pc>
             <lb n="4"/>lídad detodos los místeríos, y cosas <abbr>q'</abbr> tocan en sus hístorías, de <abbr>N<hi rend="superscript">a</hi>.</abbr> <abbr>S<hi rend="superscript">ta</hi>.</abbr> fee cato<pc> –</pc>
             <lb n="5"/>líca, oya deçendíendo de el Pueblo hebreo, o ya mínístrandoselas eldemo<pc> –</pc>
@@ -687,14 +699,15 @@
             <lb n="19"/>Xucanah pa uDíos íl, ta xtíchalibíc, chupan<abbr>S<hi rend="superscript">ta</hi></abbr> <abbr>M<hi rend="superscript">a</hi>.</abbr>
             <lb n="20"/>Ma quíꜩih, capoh <abbr>S<hi rend="superscript">ta</hi></abbr> María ta xala<corr instant="false">nic</corr> cahaval xpto
             <lb n="21"/>Pazu rumal, xcan cahoval xpho chuach cruz
-            <div rend="indent-all">
-               <lb n="22"/>xcampa u Díos íl, ta xcam ƈahaval xpw
-               <lb n="23"/>pa xbevi cahaval xpto, ta xcam chuach cruz
-               <lb n="24"/>Camínaꜫ pa cahaval xpto vacamiƈ?
-               <lb n="25"/>apa covi cohaval xpto vacamíc?
-               <lb n="26"/>Copa chía ulo cahaval xpto?
-               <lb n="27"/>eri Camínaꜫ, chiquicam chipá qui tiohil?
-            </div>
+            
+            <!-- Figure out better content model for this -->
+            <lb n="22" rend="indent"/><seg>xcampa u Díos íl, ta xcam ƈahaval xpw</seg>
+            <lb n="23" rend="indent"/><seg>pa xbevi cahaval xpto, ta xcam chuach cruz</seg>
+            <lb n="24" rend="indent"/><seg>Camínaꜫ pa cahaval xpto vacamiƈ?</seg>
+            <lb n="25" rend="indent"/><seg>apa covi cohaval xpto vacamíc?</seg>
+            <lb n="26" rend="indent"/><seg>Copa chía ulo cahaval xpto?</seg>
+            <lb n="27" rend="indent"/><seg>eri Camínaꜫ, chiquicam chipá qui tiohil?</seg>
+            
             <lb n="28"/>Pazu rimal que castah chic?
             <lb n="29"/><seg rend="indent">pazu ri uquexal xichuía Díos chiqueh uꜩilah Vínac?</seg>
             <lb n="30"/>ecuriahmaꜫ, pazu vquixal, qunbanóh chiya chiqueh rumal Dios?
