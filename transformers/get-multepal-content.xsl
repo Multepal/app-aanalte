@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-    This produces an HTML template file using Jinja processing instructions.   
+    This grabs and combines topic and annotation data.   
  -->
 <xsl:stylesheet version="1.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
