@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <teiHeader>
+
+      <!-- DESCRIBES THE SOURCE MS (AND THE TRANSCRIPTION IF USED) -->
+      <fileDesc>
+         <!--
+         A file description, tagged fileDesc, containing a full bibliographical description of the *computer file* 
+         itself, from which a user of the text could derive a proper bibliographic citation, or which a librarian 
+         or archivist could use in creating a catalogue entry recording its presence within a library or archive. 
+         The term computer file here is to be understood as referring to the whole entity or document described 
+         by the header, even when this is stored in several distinct operating system files. The file description 
+         also includes information about the source or sources from which the electronic document was derived. 
+         -->
+         <titleStmt>
+            <title>Arte de las tres lenguas kakchiquel, quiché y tzutuhil, 
+                v.2 Popol vuh; and Escolios a la historia de el origen de los Indios.</title>
+            <author>Ximénez, Francisco</author>
+            <respStmt>
+               <resp ref="http://id.loc.gov/vocabulary/relators/com.html">transcriber</resp>
+               <resp>encoder</resp>
+               <name full="yes" instant="false">Catherine L. Addington</name>
+               <note anchored="true">
+                  <p part="N">Describe nature of contribution in specific terms.</p>
+               </note>
+            </respStmt>
+            <respStmt>
+               <resp ref="http://id.loc.gov/vocabulary/relators/com.html">encoder</resp>
+               <resp>encoder</resp>
+               <name full="yes" instant="false">Rafael C. Alvarado</name>
+               <note anchored="true">
+                  <p part="N">Describe nature of contribution in specific terms.</p>
+               </note>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <!-- NOT CLEAR IF THIS IS CORRECT -->
+            <publisher>The Newberry Library</publisher>
+            <pubPlace>Chicago, Illinois, USA</pubPlace>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <p part="N">An encoded transcription of the Newberry Library's VAULT Ayer MS 1515, volume 2, Escolios Folio 01, Side 1. 
+                Based on the facsimiles provided by online edition of the Popol Wuj hosted by The Ohio State University Libraries at 
+                https://library.osu.edu/projects/popolwujs.</p>
+         </sourceDesc>
+      </fileDesc>
+      <!-- THIS DESCRIBES THE ORIGINAL DOCUMENT OR SOURCE (XIMENEZ, K'ICHE', etc.) -->
+      <profileDesc>
+         <!--
+         The text profile, tagged profileDesc, containing classificatory and contextual information about the text, 
+         such as its subject matter, the situation in which it was produced, the individuals described by or 
+         participating in producing it, and so forth. Such a text profile is of particular use in highly structured 
+         composite texts such as corpora or language collections, where it is often highly desirable to enforce a 
+         controlled descriptive vocabulary or to perform retrievals from a body of text in terms of text type or 
+         origin. The text profile may however be of use in any form of automatic text processing. 
+         -->
+         <langUsage default="false">
+            <language ident="quc">K'iche'</language>
+            <language ident="spa">Spanish</language>
+         </langUsage>
+      </profileDesc>
+      <encodingDesc>
+         <!--
+         An encoding description describes the relationship between an electronic text 
+         and its source or sources. It allows for detailed description of whether (or how) the text was 
+         normalized during transcription, how the encoder resolved ambiguities in the source, what levels of encoding or 
+         analysis were applied, and similar matters.
+
+         NOTE: Many of these items should be created in separate TEI documents that are included using XINCLUE elements
+         with an XPOINTER attribute to the BODY element of the target text.
+         -->
+         <p part="N">Discuss "paragraphs edition," i.e. discursive structure vs material structure, method and rationale.</p>
+         <projectDesc default="false">
+            <!-- 
+            Describes in detail the aim or purpose for which an electronic file was encoded, 
+            together with any other relevant information concerning the process by which it was assembled or collected. 
+            -->
+            <p part="N">Describe the Multepal project here.</p>
+         </projectDesc>
+         <editorialDecl default="false">
+            <!--
+            Provides details of editorial principles and practices applied during the encoding of a text.
+            -->
+            <p part="N">PUT DETAILS HERE.</p>
+         </editorialDecl>
+         <!--
+            NOT IN TEI LITE!
+            Provides detailed information about the tagging applied to a document.
+          -->
+         <!--
+         <tagsDecl> 
+         </tagsDecl>
+         -->
+         <!-- NOT IN TEI LITE!
+         <styleDefDecl>
+            <p>Describe REND attribute values here.</p>
+         </styleDefDecl>
+         -->
+         <refsDecl default="false">
+            <!-- Specifies how canonical references are constructed for this text. -->
+            <p part="N">Describe use of CTS conventions here.</p>
+            <p part="N">Descirbe how folios, sides, chapters, paragraphs, and lines are handled.</p>
+         </refsDecl>
+         <classDecl>
+            <!--
+            Classification declarations. 
+            Contains one or more taxonomies defining any classificatory codes used 
+            elsewhere in the text.
+  
+            SHOULD BE INCLUDESD FROM AN XML VERSION OF TOPICS?
+            -->
+            <taxonomy>
+               <category/>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <!-- DESCRIBE USE OF TK, ETC. // NOT IN TEI LITE! -->
+      <!--
+         A container element, tagged xenoData, which allows easy inclusion of metadata from non-TEI schemes 
+         (i.e., other than elements in the TEI namespace). For example, the MARC record for the encoded document 
+         might be included using MARCXML or MODS. A simple set of metadata for harvesting might be included encoded 
+         in Dublin Core.
+      -->
+      <!-- 
+         <xenoData> 
+         <p>Describe use of TK here.</p>
+      </xenoData>
+      -->
+      <revisionDesc status="draft">
+         <!--
+         A revision history to provide a history of changes made during the development of the electronic text. 
+         The revision history is important for version control and for resolving questions about the history of 
+         a file. The TEI elements used to encode the revision description are described in section
+         -->
+         <change status="draft">Spring 2017: Describe Addington's contribution here, i.e. original transcription (?) and markup.</change>
+         <change status="draft">Summer 2021: Describe Alvarado's contribution here, i.e. combbined, paragraphs form; 
+            alteration of element structure, etc.</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <pb xml:id="f01-s1"/>
+      <front>
+         <docTitle>
+            <titlePart type="main">
+               <lb n="1" xml:id="f01-s1-1"/>
+               <hi rend="extra-large bold">E<add rend="superscript" instant="false" status="unremarkable">S</add>COLÍOS ALAS HÍS</hi>
+               <lb n="2" xml:id="f01-s1-2"/>
+               <hi rend="large">TORÍAS DEEL ORÍGEN DE LOS ÍNDÍOS</hi>
+               <lb n="3" xml:id="f01-s1-3"/>
+               <hi rend="large">ESCOLÍADAS POR</hi>
+               <lb n="4" xml:id="f01-s1-4"/>
+               <hi rend="large">EL</hi>
+               <lb n="5" xml:id="f01-s1-5"/>
+               <hi rend="extra-large bold">R.P.F.FRANZÍSCO XI <pc part="N"> =</pc>
+               </hi>
+               <lb n="6" xml:id="f01-s1-6"/>
+               <hi rend="extra-large bold">MENEZ</hi>
+               <lb n="7" xml:id="f01-s1-7"/>
+               <hi rend="large">CVRA DOCTRÍNERO POR EL REALPATRO<pc part="N"> =</pc>
+               </hi>
+               <lb n="8" xml:id="f01-s1-8"/>
+               <hi rend="large">NATO DEL PVEBLO DE <abbr>S<hi rend="superscript">TO.</hi>
+                  </abbr> THOMAS CHÍ<pc part="N"> =</pc>
+               </hi>
+               <lb n="9" xml:id="f01-s1-9"/>
+               <hi rend="large">CHÍCASTENANGO DEL SAGRADO OR<pc part="N"> =</pc>
+               </hi>
+               <lb n="10" xml:id="f01-s1-10"/>
+               <hi rend="large">DEN DE PRÆDÍCADORES PARA MA<pc part="N"> =</pc>
+               </hi>
+               <lb n="11" xml:id="f01-s1-11"/>
+               <hi rend="large">YOR NOTÍCÍA ALOS MÍNÍSTROS</hi>
+               <lb n="12" xml:id="f01-s1-12"/>
+               <hi rend="large">DE LAS COS. DE LOS ÍNDÍOS</hi>
+            </titlePart>
+         </docTitle>
+         <lb n="13" xml:id="f01-s1-13"/>
+      </front>
+      <body>
+         <head rend="center">
+            <lb n="14" xml:id="f01-s1-14"/>
+            <hi rend="large">PROLOGO.</hi>
+         </head>
+         <p part="N">
+            <lb n="15" xml:id="f01-s1-15"/>
+            <hi rend="strong">C</hi>osa es cíerta, y auerígua da entre to dos los <abbr>q'</abbr> conocen ín díos, <abbr>q'es</abbr> la<pc part="N"> –</pc>
+            <lb n="16" xml:id="f01-s1-16"/>gente más írre gular ensus cosas, <abbr>q'</abbr> se ha descubíerto en toda la redondez 
+            <lb n="17" xml:id="f01-s1-17"/>de la tíerra, y así muchos hombres de buen talento, ça da día <unclear instant="false">seuen de salínados</unclear>
+            <lb n="18" xml:id="f01-s1-18"/>con sus cosas, pues quando les pareze <abbr>q'</abbr> ya estan al cabo de el conoçímíento de quí<pc part="N"> –</pc>
+            <lb n="19" xml:id="f01-s1-19"/>enes son los índíos, sehallan tan en los príncípíos de su conoçímíento, y compre<pc part="N"> –</pc>
+            <lb n="20" xml:id="f01-s1-20"/>hensíon, <abbr>q'</abbr> todo lo <abbr>q'</abbr> han adquíro con su estudío, y cuída do para mejor po derlos
+            <lb n="21" xml:id="f01-s1-21"/>gouernar noles sírue, ya enlos casos, <abbr>q'</abbr> de nuevo se offreçen. muchos ha auído
+            <lb n="22" xml:id="f01-s1-22"/>
+            <abbr>q'</abbr> han querído dar aentender el conoçímíento de elíndío en sus escrítos, de
+            <lb n="23" xml:id="f01-s1-23"/>hístorías, y sumas, y otros escrítos; pero píenso <abbr>q'</abbr> les ha sucedído lo<abbr>q'</abbr> a mí, me
+            <lb n="24" xml:id="f01-s1-24"/>sucedera entodos mís escrítos, <abbr>q'</abbr>
+            <abbr>aunq'</abbr> he procurado dar a entender lo <abbr>qu'</abbr>ellos
+            <lb n="25" xml:id="f01-s1-25"/>son, alca bo píenso <abbr>q'</abbr> no aure dícho nada. el Doctor <abbr>P<hi rend="superscript">o</hi>.</abbr> Apíano cosmografo 
+            <lb n="26" xml:id="f01-s1-26"/>de el emperador carlos quínto de marcando la ísla española, los quiere
+            <lb n="27" xml:id="f01-s1-27"/>dar acononocer al mundo dícíendo: <abbr>q'</abbr> son gente: índando líberalíssímí, ín
+            <lb n="28" xml:id="f01-s1-28"/>accípíendo cupídíssímí en el dar muy líberales, en el recíbír muy codícíosos, y <abbr>q'</abbr>
+            <lb n="29" xml:id="f01-s1-29"/>consumen todo Un día dando bueltas a un palo. algo díxo en esto, declaro en
+            <lb n="30" xml:id="f01-s1-30"/>parte la natural ínclínaçíon de el índío, <abbr>q'</abbr> endar dudo <abbr>q'</abbr> a ya quíen sea mas lí<pc part="N"> –</pc>
+            <lb n="31" xml:id="f01-s1-31"/>beral en dar, pues quíen abra <abbr>q'</abbr> no este todo poseído de Díos <abbr>q'</abbr> teníendo solo, Un me<pc part="N"> –</pc>
+            <pb xml:id="f01-s2"/>
+            <lb n="1" xml:id="f01-s2-1"/>dío real, sín esperanza deotro <abbr>q'</abbr> este en extrema neçesídad aun de el sustento ne<pc part="N"> –</pc>
+            <lb n="2" xml:id="f01-s2-2"/>çesarío <abbr>q'</abbr> lo de con mas líberalídad <abbr>q'</abbr> elíndío lo da. y en sus festejos y funçíones
+            <lb n="3" xml:id="f01-s2-3"/>se ue <abbr>q'</abbr> níteníendo apenas <abbr>p<hi rend="superscript">a</hi>
+            </abbr>. elsustento los çelebra con bastantes gastos, y
+            <lb n="4" xml:id="f01-s2-4"/>con tantos como otro <abbr>q<hi rend="superscript">e</hi>
+            </abbr>se halle descansado, y con bastante posíble los çelebra, em<pc part="N"> –</pc>
+            <lb n="5" xml:id="f01-s2-5"/>peñandose, y entrampandose, para poder haçer estas sus çelebraçíones de
+            <lb n="6" xml:id="f01-s2-6"/>bautísmos, y casamíentos. níay gente mas codíçíosa, y desdíchada, pues combí<pc part="N"> –</pc>
+            <lb n="7" xml:id="f01-s2-7"/>dandose ellos Unos a otros ensus fíestas, y des de Un pueblo, a otro en sus festíuída<pc part="N"> –</pc>
+            <lb n="8" xml:id="f01-s2-8"/>des, selehade corresponder con lo mesmo numero, y espeçíe <abbr>q'</abbr> el dío al otro <abbr>q<hi rend="superscript">do</hi>
+            </abbr>
+            <lb n="9" xml:id="f01-s2-9"/>fue su combídado. y solo Un plantano menos, <abbr>q'</abbr> sele corresponda, es matería de
+            <lb n="10" xml:id="f01-s2-10"/>tanto sentímíento, <abbr>q'</abbr> por aquello solo se acaba la amístad, y correspond<corr instant="false">en</corr>çía de
+            <lb n="11" xml:id="f01-s2-11"/>muchos años. para esto <abbr>q'</abbr> díxo Apíano fue Un rasgo solo, del conoçímí<pc part="N"> –</pc>
+            <lb n="12" xml:id="f01-s2-12"/>ento de los índios. así me pareçe <abbr>q'</abbr> el mas açer rado moda para dar a
+            <lb n="13" xml:id="f01-s2-13"/>conocer quíenes son los índíos, y su mayor comprehensíon, lo <abbr>q'</abbr> muchos hombres
+            <lb n="14" xml:id="f01-s2-14"/>de buen talento han dícho, <abbr>q'</abbr> para dífínír los índíos con dífíníçíon adequada
+            <lb n="15" xml:id="f01-s2-15"/>es defíníendolos por contradíctorías. <abbr>porq'</abbr> es gente <abbr>q'</abbr> todo es extremos, y todos
+            <lb n="16" xml:id="f01-s2-16"/>contraríos, y opuestos. al mesmo motodo de lo <abbr>q'</abbr> díxo Apíano. y prosíguíendo a
+            <lb n="17" xml:id="f01-s2-17"/>quello dígo. <abbr>q'</abbr> es gente: en eltrabaxo fortíssímos, en notrabaxar, perezosísí<pc part="N"> –</pc>
+            <lb n="18" xml:id="f01-s2-18"/>mos, en comer Voraçíssímos, en no comer parcíssímos. en sus bíen es ríquíssímos,
+            <lb n="19" xml:id="f01-s2-19"/>y suma mente pobríssímos. y así de to das las demas cosas suyas, y todo esto tan
+            <lb n="20" xml:id="f01-s2-20"/>general, <abbr>q'</abbr> lo mesmo es Uno <abbr>q'</abbr> otro, el ríco, y el pobre, el <abbr>q'</abbr> es cazíque, ó prínçípal
+            <lb n="21" xml:id="f01-s2-21"/>como el mazegual. todos son íguales, y tan aníñados Unos como otros. y así
+            <lb n="22" xml:id="f01-s2-22"/>díxo bíen el<abbr>q'</abbr> los llamo: níños, con barbas. y ala Verdad ellos son como mucha<pc part="N"> –</pc>
+            <lb n="23" xml:id="f01-s2-23"/>chos en todo. como <abbr>S.</abbr> Pablo deçía de sí de su hedad pueríl, así estos todo escosa de
+            <lb n="24" xml:id="f01-s2-24"/>muchachos por lo qual no son sus malíçías de tanto peso como lo son las de otros hom<pc part="N"> –</pc>
+            <lb n="25" xml:id="f01-s2-25"/>bres de otras naçíones, y aun <abbr>q'</abbr> algunos dígan como díze <abbr>N.</abbr>
+            <abbr>P<hi rend="superscript">e.</hi>
+            </abbr> Noreña en su
+            <lb n="26" xml:id="f01-s2-26"/>carta <abbr>q'</abbr> alcançan grandes malícías, de <corr instant="false">
+               <abbr>q'</abbr>
+            </corr> no ay duda, dígo <abbr>q'</abbr> como Díos <abbr>N. S<hi rend="superscript">or</hi>.</abbr>
+            <lb n="27" xml:id="f01-s2-27"/>suplío en los brutos con elínstínto natural lo <abbr>q'</abbr> les faltaba de talento para su
+            <lb n="28" xml:id="f01-s2-28"/>conseruaçíon, así en estos, les suplío de ínstínto <abbr>q'</abbr> mas se puede llamar así su sa<pc part="N"> –</pc>
+            <lb n="29" xml:id="f01-s2-29"/>ber <abbr>q'</abbr> entendímíento, <abbr>loq'</abbr> de este les faltaba para su conseruaçíon, <abbr>porq'</abbr> de no ya
+            <lb n="30" xml:id="f01-s2-30"/>me parece <abbr>q'</abbr> Ubíeran acabado con ellos todos los <abbr>q'</abbr> tíran a su destrucçíon, y aca<pc part="N"> –</pc>
+            <lb n="31" xml:id="f01-s2-31"/>ba míento Valíendose de su míssería para fener atreuímíento alo<abbr>q'</abbr> no se atre<pc part="N"> –</pc>
+            <lb n="32" xml:id="f01-s2-32"/>uíeran no dígo yo a otros superíores suyos pero ní a otros su íguales. haçíendo<pc part="N"> –</pc>
+            <lb n="33" xml:id="f01-s2-33"/>se todos con estos míssarables sabíos, los ígnorantes, Valientes, los floxos, poderosos
+            <lb n="34" xml:id="f01-s2-34"/>los <abbr>q'</abbr> nada pueden, <abbr>h'</abbr>randole alcodíllo como agente desvalída. pues no y negro
+            <lb n="35" xml:id="f01-s2-35"/>esclauo <abbr>q'</abbr> no se les atreua, y <abbr>q'</abbr> no los maltrate.
+         </p>
+         <p rend="indent-first-line" part="N">
+            <lb n="36" xml:id="f01-s2-36"/>Yo bíen entíendo, <abbr>q'</abbr> todas estas hístorías son quentos de muchachos, <abbr>q'</abbr> nítíenen
+            <lb n="37" xml:id="f01-s2-37"/>píes ní cabeza; pero <abbr>aunq'</abbr> este es el juíçío <abbr>q'</abbr> nosotros hemos de haçer de ellas
+            <lb n="38" xml:id="f01-s2-38"/>por lo <abbr>q'</abbr> a nosotros toca, no se deuen así juzgar respecto de ellos <abbr>q'</abbr> como proporçí<pc part="N"> –</pc>
+            <lb n="39" xml:id="f01-s2-39"/>onados asus talentos, son tan verdades estas para ellos, como <abbr>p<hi rend="superscript">a</hi>.</abbr> nosotros los cha<pc part="N"> –</pc>
+            <lb n="40" xml:id="f01-s2-40"/>tolícos las Verdades euangelícas. ní Vale Verlas contradícçíones <abbr>q'</abbr> en sí embu<pc part="N"> –</pc>
+            <lb n="41" xml:id="f01-s2-41"/>elben, <abbr>q'</abbr> con la cortedad de su talento no reparan en esto. y aquí se conoçe la malí<pc part="N"> –</pc>
+            <lb n="42" xml:id="f01-s2-42"/>çía de la bestía ínfernal, como les sugírío mentíras tan adequadas asus talentos <abbr>p<hi rend="superscript">a</hi>
+            </abbr>
+            <lb n="43" xml:id="f01-s2-43"/>mas tenerlos embaucados, y como quíera <abbr>q'</abbr> no solamente en estas hístorías se
+            <lb n="44" xml:id="f01-s2-44"/>hallen solo estas mentíras, o químeras, síno tambíen nuestras Verdades chatolí<pc part="N"> –</pc>
+            <lb n="45" xml:id="f01-s2-45"/>cas, y <abbr>q'</abbr> tíene, y cree nuestra <abbr>S<hi rend="superscript">ta</hi>.</abbr> fee chatolíca, reveladas por el espírítu <abbr>S<hi rend="superscript">to</hi>.</abbr> en la
+            <lb n="46" xml:id="f01-s2-46"/>sagrada escrítura, deay es, <abbr>q'</abbr> no se deue haçer tampoco caso de estas hístorías
+            <lb n="47" xml:id="f01-s2-47"/>respecto de la mucha tierra <abbr>q'</abbr> el demonío gana entre esta gente; con estos herrores
+         
+            <pb xml:id="f02-s1"/>
+            <lb n="1" xml:id="f02-s1-1"/>
+            <abbr>q'</abbr> entre ellos tíene sembrados, desde el tíempo dela gentílídad. yo consídero esta
+            <lb n="2" xml:id="f02-s1-2"/>mala semílla, y zizaña <abbr>q'</abbr> el demonío ha sembrado entre ellos a la grama, en las
+            <lb n="3" xml:id="f02-s1-3"/>viñas, esta yerua como todos saben esta destrucçíon de las Vídes, y no obitan
+            <lb n="4" xml:id="f02-s1-4"/>fe sabíendo esto les Víñadores, contentanse con arrancar la <abbr>q'</abbr> Ven, y no aduíer -
+            <lb n="5" xml:id="f02-s1-5"/>ten <abbr>q'</abbr> Va cundíendo, en lo oculto, y quando menos se píensan hallan perdída
+            <lb n="6" xml:id="f02-s1-6"/>su Viña, y sín remedío, <abbr>porq'</abbr>
+            <abbr>aunq'</abbr> han Vísto algunos retoños, <abbr>q'</abbr> asoman les 
+            <lb n="7" xml:id="f02-s1-7"/>pareçe cosa tenua, y <abbr>q'</abbr> no hara daño, no occurríendo con tíempo al daño, despues
+            <lb n="8" xml:id="f02-s1-8"/>se haze írremedíable. así mesmo entíendo suçede con estos índíos, y sus herrores
+            <lb n="9" xml:id="f02-s1-9"/>con esta mala semílla, y zizaña <abbr>q'</abbr> eldemonío dexo sembrados entre ellos de estas
+            <lb n="10" xml:id="f02-s1-10"/>hístorías de su orígen. <abbr>q'</abbr> oyendo cada día, y Víendo por sus ojos todos los retoños
+            <lb n="11" xml:id="f02-s1-11"/>assomar delas superítíçíones <abbr>q'</abbr> tíenen, los mas lotoman a casa de quentos, y rísa.
+            <lb n="12" xml:id="f02-s1-12"/>sin reparar en el orígen y raíz de <abbr>ado</abbr> proceden, para procurar al remedío
+            <lb n="13" xml:id="f02-s1-13"/>con tíempo. es nuestro Díos, muy zelador de su honrra, y culto, y no permíte
+            <lb n="14" xml:id="f02-s1-14"/>compañía en sus adoraçíones, y así <abbr>aunq'</abbr> nos parezca cosa de poca monta
+            <lb n="15" xml:id="f02-s1-15"/>es cosa de mucho pero en el díuíno acatamíento.
+         </p>
+         <p rend="indent-first-line" part="N">
+            <lb n="16" xml:id="f02-s1-16"/>Yo me he llegado a persuadír víendo nuestras verdades catolícas embueltas en
+            <lb n="17" xml:id="f02-s1-17"/>estos desatínos, lo Uno alo<abbr>q'</abbr>
+            <del rend="strikethrough" instant="false" status="unremarkable">n</del>díçe el <abbr>N<hi rend="superscript">e.</hi>
+            </abbr>
+            <abbr>P<hi rend="superscript">e</hi>.</abbr>
+            <abbr>fr.</abbr> Domíngo de Víco en el cap. <num>101</num>. 
+            <lb n="18" xml:id="f02-s1-18"/>de la segunda parte de su <foreign xml:lang="la">theología índorum</foreign> a<abbr>q'</abbr> estos índíos desçíenden
+            <lb n="19" xml:id="f02-s1-19"/>de las díez tríbus <abbr>q'</abbr> se perdíeron de los judíos, y <abbr>q'</abbr> no bolbíeron a su patría, y así
+            <lb n="20" xml:id="f02-s1-20"/>conseruaron por tradíçíones todos los suçesos <abbr>q'</abbr> nos refíere el sagrado texto
+            <lb n="21" xml:id="f02-s1-21"/>y el demonío selos fue embolbíendo en muchíssímos herrores. y lo otro, a<abbr>q'</abbr> deno
+            <lb n="22" xml:id="f02-s1-22"/>ser así <abbr>q'</abbr> desçíenden de aquellas díez tríbus. el demonío como tan sabío, al
+            <lb n="23" xml:id="f02-s1-23"/>cançando por algunas congeturas la venída de el <abbr>S<hi rend="superscript">to</hi>.</abbr> Evangelío a estas por -
+            <lb n="24" xml:id="f02-s1-24"/>fes, les sugíría estas mentíras embueltas en muchas Verdades catolícas de las
+            <lb n="25" xml:id="f02-s1-25"/>
+            <abbr>q'</abbr> nos enseño el espírítu <abbr>S<hi rend="superscript">to</hi>.</abbr> en la sagrada escríptura, confín de <abbr>q'</abbr> oyendo los
+            <lb n="26" xml:id="f02-s1-26"/>índíos lo <abbr>q'</abbr> auían de enseñar los mínístros del <abbr>S<hi rend="superscript">to</hi>.</abbr> Evangelío de Díos, y sus
+            <lb n="27" xml:id="f02-s1-27"/>obras, de la encarnaçíon de el Verbo, de <abbr>M<hi rend="superscript">a</hi>.</abbr>
+            <abbr>SS<hi rend="superscript">ma</hi>.</abbr> y los demas sanctos mas
+            <lb n="28" xml:id="f02-s1-28"/>se arraígasen en sus herrores pensando: <abbr>q'</abbr> aquello <abbr>q'</abbr> seles enseñaba era lo mes -
+            <lb n="29" xml:id="f02-s1-29"/>mo en todo <abbr>q'</abbr> lo <abbr>q'</abbr> ya ellos sabían de el demonío por voca de sus saçerdotes. y así
+            <lb n="30" xml:id="f02-s1-30"/>se ulo por el effecto luego, en eherror <abbr>q'</abbr> se levanto en este Reyno de <abbr>Gualt<hi rend="superscript">a</hi>
+            </abbr> reçí -
+            <lb n="31" xml:id="f02-s1-31"/>en conquístado esto, <abbr>q'</abbr> todos abrazaron luego, <abbr>q'</abbr>
+            <rs ana="JUNAJPU">hun ahpu</rs> era Díos, el <abbr>q'</abbr> les pre 
+            <lb n="32" xml:id="f02-s1-32"/>dícaban. y <rs ana="JUN_JUNAJPU">hun hunahpu</rs>
+            <foreign xml:lang="la">erat fílíus Deí</foreign>. y xuchínqueꜩalí, <abbr>q'</abbr> es la <abbr>q'</abbr> en esta len
+            <lb n="33" xml:id="f02-s1-33"/>gua llaman <rs ana="IXKIK">Xquíc</rs> era <abbr>M<hi rend="superscript">a</hi>.</abbr>
+            <abbr>SS<hi rend="superscript">ma</hi>.</abbr> y <abbr>q'</abbr>
+            <rs ana="WAJXAQIB_KAM">Vahxaquícat</rs> era <abbr>S.</abbr>
+            <abbr>Ju<hi rend="superscript">o</hi>.</abbr> Baptísta. y <abbr>q'</abbr>: hun -
+            <lb n="34" xml:id="f02-s1-34"/>tíhax era <abbr>S.</abbr>Pablo Apostol se pareçía a los dísparatos, <abbr>q'</abbr> ellos ya tenían 
+            <lb n="35" xml:id="f02-s1-35"/>sabídos de Voca de el demonío, era façíl a el persuadír los a ellos. y como quíera
+            <lb n="36" xml:id="f02-s1-36"/>
+            <abbr>q'</abbr> ellos sean tan íncredulos, y desconfíados delo <abbr>q'</abbr> los Padres le<add place="above" instant="false" status="unremarkable">s</add> díçen, de ay es: <abbr>q'</abbr> no -
+            <lb n="37" xml:id="f02-s1-37"/>se <abbr>q'</abbr> asíentan totalmente a nuestras Verdades catolícas. <abbr>porq'</abbr> son de esa calídad 
+            <lb n="38" xml:id="f02-s1-38"/>los índíos, <abbr>q'</abbr> como selo díga otro índío como ellos, no ay cosa mas çíerta <abbr>p<hi rend="superscript">a</hi>.</abbr> ellos, pero 
+            <lb n="39" xml:id="f02-s1-39"/>sí se lo díçe el <abbr>P<hi rend="superscript">e</hi>.</abbr> o el español a quíenes tíenen total auersíon no ay remedío de
+            <lb n="40" xml:id="f02-s1-40"/>asentír a lo<abbr>q'</abbr> seles díce, y sí haçen en la aparíençía <abbr>q'</abbr> asíenten, mas es por temor,
+            <lb n="41" xml:id="f02-s1-41"/>
+            <abbr>q'</abbr> por otro motívo alguno. en esta matería, son defectuossímos, nuestros híjos los ín
+            <lb n="42" xml:id="f02-s1-42"/>díos, y siempre estan con dos corazones tocante alo<abbr>q'</abbr> seles díçe; Veraslos con mucho 
+            <lb n="43" xml:id="f02-s1-43"/>cuídado acudír a la yglesía mas en días <abbr>q'</abbr> ellos celebran, <abbr>q'</abbr> en los días de pre -
+            <lb n="44" xml:id="f02-s1-44"/>çepto, y es el caso <abbr>q'</abbr> les llena mucho mas <abbr>q'</abbr> la devoçíon la concurrençía <abbr>q'</abbr> en
+            <lb n="45" xml:id="f02-s1-45"/>tonçes ay de atambores, y trompetas, y ruído de campanas, <abbr>porq'</abbr> son ínclína
+            <lb n="46" xml:id="f02-s1-46"/>díssímos a la bulla, y sî ay tun, ó bayle en <abbr>q'</abbr> se representa alguna bobería
+            <!-- add annotation to "tun": tun means drum. In Christenson's dictionary, certain dances are associated with drums (ctrl+F "tun").-->
+            
+            <pb xml:id="f02-s2"/>
+            <lb n="1" xml:id="f02-s2-1"/>o alguna antíguaíla delas suyas, y de su gentílídad lo<abbr>q'</abbr> yo dígo, y me lo
+            <lb n="2" xml:id="f02-s2-2"/>aconsejo así un Relígíoso docto, y de exemplar vída, <abbr>q'</abbr> auía gastado mu
+            <lb n="3" xml:id="f02-s2-3"/>chos <abbr>aS.</abbr> admínístrando índíos <abbr>q'</abbr> murío ya decrepíto llamado el <abbr>R.</abbr>
+            <abbr>P<hi rend="superscript">e</hi>
+            </abbr>
+            <lb n="4" xml:id="f02-s2-4"/>
+            <abbr>fr</abbr>-<abbr>Ju<hi rend="superscript">o</hi>
+            </abbr>-de <abbr>S.</abbr> Joseph demí sagrado hauíto, es <abbr>q'</abbr> estos ínstrumentos de <abbr>q'</abbr> vian 
+            <lb n="5" xml:id="f02-s2-5"/>como es eltun, y la caxa grande <abbr>q'</abbr> llaman cohom. ó, nímacohom. tíenen
+            <lb n="6" xml:id="f02-s2-6"/>pacto con el demonío, en díchos ínstrumentos, y segun son ellos de fune<pc part="N"> –</pc>
+            <lb n="7" xml:id="f02-s2-7"/>bres solo el demonío puede ser el autor de tales ínstrumentos; y<abbr>aunq'</abbr>
+            <lb n="8" xml:id="f02-s2-8"/>los <abbr>P<hi rend="superscript">es</hi>
+            </abbr>. antíguos les díeron çíertas hístorías de <abbr>S<hi rend="superscript">tos</hi>.</abbr> en su lengua <abbr>q'</abbr> cantasen
+            <lb n="9" xml:id="f02-s2-9"/>altun, en lugar delas <abbr>q'</abbr> ellos cantaban de su gentílídad, no obstante, yo en<pc part="N"> –</pc>
+            <lb n="10" xml:id="f02-s2-10"/>tíendo <abbr>q'</abbr> eso cantan en lo publíco y donde el <abbr>P<hi rend="superscript">e</hi>.</abbr> los oye; y <abbr>q'</abbr> alla en secreto ha<pc part="N"> –</pc>
+            <lb n="11" xml:id="f02-s2-11"/>çen muy líndas memorías desu gentílídad. de estas cosas, y otras muchíssí<pc part="N"> –</pc>
+            <lb n="12" xml:id="f02-s2-12"/>mas <abbr>q'</abbr> han llegado amí notíçía, íntento el formar estos escolíos, a esta su hís<pc part="N"> –</pc>
+            <lb n="13" xml:id="f02-s2-13"/>toría de ellos anotando lo <abbr>q'</abbr> es hístoría antígua, y çítando ala hístoría, <abbr>q'</abbr> que<pc part="N"> –</pc>
+            <lb n="14" xml:id="f02-s2-14"/>da antes puesta. y anotando lo <abbr>q</abbr>
+            <hi rend="superscript">y</hi> toca en punto de nuestra <abbr>S<hi rend="superscript">ta</hi>.</abbr> fee catholíca <abbr>p<hi rend="superscript">a</hi>
+            </abbr>
+            <lb n="15" xml:id="f02-s2-15"/>
+            <abbr>q'</abbr> mas comodídad tenga el <abbr>q'</abbr> se quísíere approuechar de este mítrabaxo. ad<pc part="N"> –</pc>
+            <lb n="16" xml:id="f02-s2-16"/>uírtíendo, aquí, y teníendo por cosa çíerta, <abbr>q'</abbr> el díadeo y estan en los mes<pc part="N"> –</pc>
+            <lb n="17" xml:id="f02-s2-17"/>mos herrores, y dísparates, y <abbr>aunq'</abbr> parece <abbr>q'</abbr> no es mas <abbr>q'</abbr> tal, ó, qual çentella
+            <lb n="18" xml:id="f02-s2-18"/>de aquel fuego, es mucho elínçendío <abbr>q'</abbr> ay entre ellos. y <abbr>aunq'</abbr> ala verdad pa<pc part="N"> –</pc>
+            <lb n="19" xml:id="f02-s2-19"/>reçera a muchos matería ímposíble arrancar esta zízaña, del todo, no hara
+            <lb n="20" xml:id="f02-s2-20"/>poco seruíçío a Díos en procurar arrancar la concontínuo desuelo, y predíca<pc part="N"> –</pc>
+            <lb n="21" xml:id="f02-s2-21"/>çíon, y enseñanza contínua, <abbr>q'</abbr> por nuestra quenta corre solo el desmontar, y plan<pc part="N"> –</pc>
+            <lb n="22" xml:id="f02-s2-22"/>' tar, y regar esta sementora dela yglesía, con el ríego de la enseñanza, y
+            <lb n="23" xml:id="f02-s2-23"/>por quenta de Díos el íncremento de estas plantas. <abbr>q'</abbr>
+            <abbr>aunq'</abbr> no coja fruto al
+            <lb n="24" xml:id="f02-s2-24"/>guno desu trabaxo, le asseguro muchas coronas de gloría, como no le faltaran
+            <lb n="25" xml:id="f02-s2-25"/>al Apostol Santíago, en cuya vígílía esto escríuo, muchas coronas de gloría
+            <lb n="26" xml:id="f02-s2-26"/>aun no auíendo podído conuertír ala fee Verdadera mas <abbr>q'</abbr> así ete españoles
+            <lb n="27" xml:id="f02-s2-27"/>por su sumo trauajo y desuelo, en su <abbr>off<hi rend="superscript">o</hi>.</abbr> de Apostol. <abbr>porq'</abbr> esde tan superíor ca<pc part="N"> –</pc>
+            <lb n="28" xml:id="f02-s2-28"/>lídad el grano de el <abbr>S<hi rend="superscript">to</hi>.</abbr>Evangelío, <abbr>q'</abbr> dado caso, <abbr>q'</abbr> todo el cayga sobre pí<pc part="N"> –</pc>
+            <lb n="29" xml:id="f02-s2-29"/>edras duras, nunca al sembrador le faltan colmadíssímos frutos desu semen<pc part="N"> –</pc>
+            <lb n="30" xml:id="f02-s2-30"/>tera, lo <abbr>q'</abbr> no tíene otra sementera alguna; <abbr>q'</abbr> sí se píerde todo se píerde, y mas
+            <lb n="31" xml:id="f02-s2-31"/>píerde el<abbr>q'</abbr> síendo sembrador de la palabra dívína, se mete asembrador, de
+            <lb n="32" xml:id="f02-s2-32"/>el grano terreno. yra anotando mí cortedad todo lo<abbr>q'</abbr> alcançare, tocante
+            <lb n="33" xml:id="f02-s2-33"/>a aquesta hístoría, y dando notíçía de muchas cosas de los índíos, no con anímo
+            <lb n="34" xml:id="f02-s2-34"/>de <abbr>q'</abbr> vean su barbarídad, y bestíalídad, síno de mo beracompasión de <abbr>q'</abbr> se píer<pc part="N"> –</pc>
+            <lb n="35" xml:id="f02-s2-35"/>dan estos <abbr>q'</abbr> son redímídos con la preçíosa sangre de <abbr>Xpt<hi rend="superscript">o</hi>.</abbr>
+            <abbr>V<hi rend="superscript">a</hi>.</abbr>
+            <abbr>N<hi rend="superscript">a</hi>.</abbr> lleuando an
+            <lb n="36" xml:id="f02-s2-36"/>te todas cosas sabído <abbr>q'</abbr> las causas prínçípales de no oluídar en el todo estos
+            <lb n="37" xml:id="f02-s2-37"/>dísparates, y auer sentadoles tan mal la fee, fue por auerse plantado en
+            <lb n="38" xml:id="f02-s2-38"/>estas partes de la ley de Díos con tantos escandalos, muertes, robos, estruendos
+            <lb n="39" xml:id="f02-s2-39"/>y alborotos, y auíendo la reçíuído de míedo de la muerte <abbr>q'</abbr> te mían como lo
+            <lb n="40" xml:id="f02-s2-40"/>nota muy bíen el <abbr>íll<hi rend="superscript">mo</hi>.</abbr> y <abbr>N<hi rend="superscript">mo</hi>.</abbr>
+            <abbr>S<hi rend="superscript">or</hi>.</abbr>
+            <abbr>D.</abbr>
+            <abbr>fr.</abbr> Bartolome de las casas, en sus escrítos
+            <lb n="41" xml:id="f02-s2-41"/>y dísputas contra el Doctor Sepulueda, y el <abbr>M.R.P.</abbr> Remesal en su hístoría,
+            <lb n="42" xml:id="f02-s2-42"/>por mas <abbr>q'</abbr>çíertos hístoríadores modernos lo quíeran sepultar. y despues de
+            <lb n="43" xml:id="f02-s2-43"/>tan mal plantada la fee hasído peor regada, pues <abbr>aunq'</abbr> algunos mínístros ze<pc part="N"> –</pc>
+            <lb n="44" xml:id="f02-s2-44"/>losos han procurado arrímar el hombro, luego descaeze con la muerte, o ausen<pc part="N"> –</pc>
+            <lb n="45" xml:id="f02-s2-45"/>çía detales mínístros, <abbr>q'</abbr> cuídaban de dar buen ríego a estas plantas; y tambíen
+            <lb n="46" xml:id="f02-s2-46"/>
+            <abbr>porq'</abbr> notíenen endonde aprender saltín aquellos <abbr>q'</abbr> saben leer para <abbr>q'</abbr> deellos 
+            <lb n="47" xml:id="f02-s2-47"/>se dífundíera alos demas por falta de líbros en su ydíoma <abbr>q'</abbr> tratan de la fee catho<pc part="N"> –</pc>
+            <pb xml:id="f03-s1"/>
+            <lb n="1" xml:id="f03-s1-1"/>líca mas<abbr>q'</abbr> las dos partes de su <abbr>th<hi rend="superscript">a</hi>.</abbr> deel <abbr>N<hi rend="superscript">e</hi>.</abbr>
+            <abbr>P<hi rend="superscript">e</hi>.</abbr>
+            <abbr>fr.</abbr> Domíngo de Víco, y el catezísmo
+            <lb n="2" xml:id="f03-s1-2"/>
+            <abbr>q'</abbr> como no han pasado de manuscríptos, es muy raro el<abbr>q'</abbr> se halla, y tengo por expe
+            <lb n="3" xml:id="f03-s1-3"/>ríençía <abbr>q'</abbr> los índíos <abbr>q'</abbr> han tenído dícha de leerlos han reçíuído mucho bíen en sus al<pc part="N"> –</pc>
+            <lb n="4" xml:id="f03-s1-4"/>mas, <abbr>q'</abbr> sí se vbíeran ímpreso díchos líbros muchos, o todos ubíuran gozado de este
+            <lb n="5" xml:id="f03-s1-5"/>bíen; y hasído tal la desgraçía de estos pobres, <abbr>q'</abbr> auíendo consultado tantos díspa<pc part="N"> –</pc>
+            <lb n="6" xml:id="f03-s1-6"/>rates a su Magestad, sus mínístros, y otros <abbr>q'</abbr> no lo son, no ha auído quíen esto lo tome
+            <lb n="7" xml:id="f03-s1-7"/>en voca, <abbr>q'</abbr> no dudo de supíedad, y deseo, deel bíen de su Vasallos, y mas de
+            <lb n="8" xml:id="f03-s1-8"/>estos, <abbr>q'</abbr> tíene asu cargo como menores, <abbr>q'</abbr> no dudara gastar lo neçesarío en esta
+            <lb n="9" xml:id="f03-s1-9"/>obra, para <abbr>q'</abbr> todos gozasen de este bíen. esto era lo <abbr>q'</abbr> auían de consultar, y no <abbr>q'</abbr> apren
+            <lb n="10" xml:id="f03-s1-10"/>díesen la doctrína chrístíana en lengua castellana, como lo han consultado, <abbr>q'</abbr>
+            <lb n="11" xml:id="f03-s1-11"/>no dudo afírmar, <abbr>q'</abbr> el <abbr>q'</abbr> tal consulto fue algun mínístro <abbr>q'</abbr> el demonío tomo <abbr>p<hi rend="superscript">a</hi>
+            </abbr>
+            <lb n="12" xml:id="f03-s1-12"/>acabar de borrar de estos pobres la poca notíçía, <abbr>q'</abbr> tíenen de nuestra <abbr>S<hi rend="superscript">ta</hi>.</abbr> fee  
+            <lb n="13" xml:id="f03-s1-13"/>
+            <abbr>porq'</abbr> que otra cosa se síguíera. desto mas: <abbr>q'</abbr> despues de íngentíssímo trabaxo, esto<pc part="N"> –</pc>
+            <lb n="14" xml:id="f03-s1-14"/>es dado <abbr>q'</abbr> se llegase a conseguír, saber la doctrína chrístíana como papagayos
+            <lb n="15" xml:id="f03-s1-15"/>sín íntelígençía alguna de lo<abbr>q'</abbr> auían aprendído. yo quísíera, <abbr>q'</abbr> me díxera el
+            <lb n="16" xml:id="f03-s1-16"/>
+            <abbr>q<hi rend="superscript">e</hi>
+            </abbr>tal íntento, <abbr>q'</abbr> ubíera sacado, de <abbr>q'</abbr> a el sela ubíeran enseñado en lengua he
+            <lb n="17" xml:id="f03-s1-17"/>brea, o gríega, mas <abbr>q'</abbr> desesperarse <abbr>p<hi rend="superscript">a</hi>.</abbr> cogerla de memoría, y despues de to<pc part="N"> –</pc>
+            <lb n="18" xml:id="f03-s1-18"/>do eso, se quedara <foreign xml:lang="la">tan quam tabula rasa</foreign>. sín saber lo <abbr>q'</abbr> se auía aprendído. procu<pc part="N"> –</pc>
+            <lb n="19" xml:id="f03-s1-19"/>ren los <abbr>q'</abbr> tratan de admínístraçíones saber la lengua de su partído <abbr>q'</abbr> seramas
+            <lb n="20" xml:id="f03-s1-20"/>façíl <abbr>q'</abbr> un hombre capaz, y docto, y <abbr>q'</abbr> sabe su oblígaçíon la aprenda, pues no
+            <lb n="21" xml:id="f03-s1-21"/>tíene otra cosa <abbr>q'</abbr> hazer fuera de su admínístraçíon, <abbr>q'</abbr> no querer reduçír a todos
+            <lb n="22" xml:id="f03-s1-22"/>los índíos, <abbr>q'</abbr> apenas tíenen tíempo para buscar su Vída, y sobretodo su rustí<pc part="N"> –</pc>
+            <lb n="23" xml:id="f03-s1-23"/>çídad, y <abbr>q'</abbr> tampoco pueden dedícar del todo asus híjos ala enseñanza, <abbr>porq'</abbr>
+            <lb n="24" xml:id="f03-s1-24"/>son sus píes, y manos, <abbr>p<hi rend="superscript">a</hi>.</abbr> ayudarlos desde <abbr>q'</abbr> empíezan á andar parabuscar
+            <lb n="25" xml:id="f03-s1-25"/>lo <abbr>q'</abbr> han menester. yno andar entretenídos enfundar haçíendas deganado
+            <lb n="26" xml:id="f03-s1-26"/>y cacaguatales, con grande molestía de los índíos, y menos cabo de su pobre<pc part="N"> –</pc>
+            <lb n="27" xml:id="f03-s1-27"/>za, cosa tan Vedada, y justamente por su <abbr>Mag.</abbr> en sus leyes de índías. <abbr>q'</abbr> con
+            <lb n="28" xml:id="f03-s1-28"/>eso tendran tíempo para todo. y les sobrara, y cumplíendo como deuen, y de
+            <lb n="29" xml:id="f03-s1-29"/>fíende de el <abbr>íll<hi rend="superscript">mo</hi>.</abbr>
+            <abbr>S<hi rend="superscript">or</hi>.</abbr> Montenegro en su Parrocho de índíos, no dudo, <abbr>q'</abbr> ten
+            <lb n="30" xml:id="f03-s1-30"/>dran gran premío, desu Díuína <abbr>Mag.</abbr>
+         </p>
+         <p rend="indent-first-line" part="N">
+            <lb n="31" xml:id="f03-s1-31"/>
+            <hi rend="large">N</hi>ímenos anadíe, haga fuerza eluertantos desatínos como en su gentílídad su<pc part="N"> –</pc>
+            <lb n="32" xml:id="f03-s1-32"/>bíeron, y <abbr>q'</abbr> todauía conseruen algunos, o los mas de ellos, <abbr>porq'</abbr> síbíen ello bíen se
+            <lb n="33" xml:id="f03-s1-33"/>míra mucho mayores los tuvíeron nuestros antepasados, y oy en día no faltan
+            <lb n="34" xml:id="f03-s1-34"/>síendo gente mas capaz, y doctrínada, y cada día estamos víendo míl lastímas de
+            <lb n="35" xml:id="f03-s1-35"/>los <abbr>q'</abbr> apostatan de la fee, pasandose al Judaísmo, a la secta de Mahoma, de lutero,
+            <lb n="36" xml:id="f03-s1-36"/>y de caluíno. y mas comunmente las hechíçeras, <abbr>q'</abbr> tan contínuada mente castí<pc part="N"> –</pc>
+            <lb n="37" xml:id="f03-s1-37"/>ga la <abbr>S<hi rend="superscript">ta</hi>.</abbr> ínquísíçíon, y tambíen vemos cada día los muchos abusos, y superstíçío<pc part="N"> –</pc>
+            <lb n="38" xml:id="f03-s1-38"/>nes, <abbr>q'</abbr> se vian no solo entre gente rustíca; pero aun entre gente mas capaz
+            <lb n="39" xml:id="f03-s1-39"/>y docta. y esto en donde la fee catholíca se halla mas floreçíente. pues <abbr>q'</abbr> mucho
+            <lb n="40" xml:id="f03-s1-40"/>
+            <abbr>q'</abbr> mucho de todo esto se halle en la gente tan rústica, tan poco doctrínada, y tã tíer<pc part="N"> –</pc>
+            <lb n="41" xml:id="f03-s1-41"/>na en la fee, <abbr>q'</abbr> aun no ha doçíentos años, <abbr>q'</abbr> la conoçen. pues aun todauía suele a<pc part="N"> –</pc>
+            <lb n="42" xml:id="f03-s1-42"/>uer quíenes oyeron desus antepasados, los herrores <abbr>q'</abbr> tuuíeron en su gentílídad
+            <lb n="43" xml:id="f03-s1-43"/>y <abbr>q'</abbr> les oyeron contar la felíçídad humana, hasu modo tenían, antes <abbr>q'</abbr> entrase
+            <lb n="44" xml:id="f03-s1-44"/>el domínío delos españoles, pues como gente tan rustíca, no reparan en el
+            <lb n="45" xml:id="f03-s1-45"/>bíen <abbr>q'</abbr> se les ha seguído, de entrar en el gremío de <abbr>N.</abbr>
+            <abbr>S<hi rend="superscript">ta</hi>.</abbr>
+            <abbr>M<hi rend="superscript">e</hi>.</abbr> yglesía, síno <abbr>q'</abbr>
+            <lb n="46" xml:id="f03-s1-46"/>tan solamente haçen memoría delos maltratos, <abbr>q'</abbr> suelen tener con gente de
+            <lb n="47" xml:id="f03-s1-47"/>mal alma, causando en sus malostratos, míl desesperaçíones en estos mísserables,
+            
+            <pb xml:id="f03-s2"/>
+            <lb n="1" xml:id="f03-s2-1"/>y <abbr>q'</abbr> blasfemen el<abbr>S<hi rend="superscript">to</hi>.</abbr> nombre de Díos, y su <abbr>S<hi rend="superscript">ta</hi>.</abbr> fee catolíca ensus aduersídades
+            <lb n="2" xml:id="f03-s2-2"/>y trabaxas ܅ y síello bíen se míra elconçíerto <abbr>q'</abbr> su elentener en sus republícas du<pc part="N"> –</pc>
+            <lb n="3" xml:id="f03-s2-3"/>do <abbr>q'</abbr> aya naçíon alguna mas conçertada. pues entre ellos jamas se pueda
+            <lb n="4" xml:id="f03-s2-4"/>deuda sín pagar, ní culpa sín castígar, <abbr>q'</abbr> merío yo de el conçíerto <abbr>q'</abbr> se pondera
+            <lb n="5" xml:id="f03-s2-5"/>de las auejas ensus republícas, teníendo repartídos entre sí todos los cargos, y
+            <lb n="6" xml:id="f03-s2-6"/>te quíos de todo el comun, ayudandose unos a otros, con tal su gezíon a los <abbr>q'</abbr> tí<pc part="N"> –</pc>
+            <lb n="7" xml:id="f03-s2-7"/>enen nombrados por cabezas de sus calpules, y parçíalidades, <abbr>q'</abbr> apenas
+            <lb n="8" xml:id="f03-s2-8"/>se hallara índío <abbr>q'</abbr> entre ellos no obedezca a su cabeza de calpul, en lo <abbr>q'</abbr> sele
+            <lb n="9" xml:id="f03-s2-9"/>en carga, y sí tal caso seda todos se conjuran contra el a <abbr>q'</abbr> sea castígado.
+            <lb n="10" xml:id="f03-s2-10"/>no dudo <abbr>q'</abbr> tíenen muchas cosas vítuperables, mas tambíen tíenen otras
+            <lb n="11" xml:id="f03-s2-11"/>muy lo ables, y <abbr>q'</abbr> ojala se hallaran entre otras naçíones. todo quanto yo
+            <lb n="12" xml:id="f03-s2-12"/>alcanzare escríuíre en estos escolíos, para dar la mayor notíçía <abbr>q'</abbr>
+            <lb n="13" xml:id="f03-s2-13"/>pudíere desta gente, a los veníderos, y <abbr>q'</abbr> no ígnoren sus cosas. suponíen
+            <lb n="14" xml:id="f03-s2-14"/>do como su põgo <abbr>q'</abbr> muchas nose saben, por el secreto tan grande <abbr>q'</abbr> entre
+            <lb n="15" xml:id="f03-s2-15"/>sí guardan, de míedo el <abbr>P<hi rend="superscript">e</hi>.</abbr> o de el español. y espeçíalmente, de
+            <lb n="16" xml:id="f03-s2-16"/>sus juntas, <abbr>q'</abbr> ellos suelen tener entresí. y mas sí son cosa de ydolatría esas
+            <lb n="17" xml:id="f03-s2-17"/>es tal el secreto <abbr>q'</abbr> guardan <abbr>q'</abbr> ní el muchacho mas tonto, ay remedío, <abbr>q'</abbr> se
+            <lb n="18" xml:id="f03-s2-18"/>descuíde en manífestarlo, y sola por congeturas, se suele rastrear
+            <lb n="19" xml:id="f03-s2-19"/>algo.
+         </p>
+         <figure rend="center">
+            <graphic url="images/pwKbFFg.png"/>
+            <figDesc>Watermark. See Carlos M. López, The <hi rend="italic">Popol Wuj</hi> in <hi rend="italic">Ayer MS 1515</hi> Is a Holograph by Father Ximénez," 
+               <hi rend="italic">Latin American Indian Literatures Journal</hi>.
+            </figDesc>
+         </figure>
+         <pb xml:id="f04-s1"/>
+         <!-- Wrap into Chapter Divs -->
+         <p part="N">
+            <lb n="1" xml:id="f04-s1-1"/>
+            <seg xml:space="preserve" rend="large" part="N">CAP.                    <num>1</num></seg>
+            <lb n="2" xml:id="f04-s1-2"/>De el ser de Díos:
+            <lb n="3" xml:id="f04-s1-3"/>Como quíera, <abbr>q'</abbr> ayasído lanotíçía <abbr>q'</abbr> estos índíos tuuíeron en tíempo de su gentí<pc part="N"> –</pc>
+            <lb n="4" xml:id="f04-s1-4"/>lídad detodos los místeríos, y cosas <abbr>q'</abbr> tocan en sus hístorías, de <abbr>N<hi rend="superscript">a</hi>.</abbr>
+            <abbr>S<hi rend="superscript">ta</hi>.</abbr> fee cato<pc part="N"> –</pc>
+            <lb n="5" xml:id="f04-s1-5"/>líca, oya deçendíendo de el Pueblo hebreo, o ya mínístrandoselas eldemo<pc part="N"> –</pc>
+            <lb n="6" xml:id="f04-s1-6"/>nío, claramente lo <abbr>q'</abbr> consta es <abbr>q'</abbr> toda esta hystoría, y notíçías paso por el ar<pc part="N"> –</pc>
+            <lb n="7" xml:id="f04-s1-7"/>caduz enbenenado de Satanas, quíen ímbídíoso de nuestra dícha, deser
+            <lb n="8" xml:id="f04-s1-8"/>los hombres capazes de el gran bíen que perdío, por su soberbía, no dexa con
+            <lb n="9" xml:id="f04-s1-9"/>tínuamente de armar lazos para <abbr>q'</abbr> los hombres se píerdan. ycomo el prí<pc part="N"> –</pc>
+            <lb n="10" xml:id="f04-s1-10"/>mero, y <abbr>q'</abbr> se ha como fundamento de nuestra saluaçíon la creençía de Díos
+            <lb n="11" xml:id="f04-s1-11"/>y de el místerío ínacçesíble de la <abbr>S<hi rend="superscript">ma</hi>.</abbr> Trínídad, hízo el prímer tíro, aes<pc part="N"> –</pc>
+            <lb n="12" xml:id="f04-s1-12"/>te admírable místerío confundíendolo, en <abbr>q'</abbr> tíro a dañar a estos pobres, y
+            <lb n="13" xml:id="f04-s1-13"/>auengarse deelmesmo .Díos. haçíendolo ya poderoso, y dependíente de  
+            <lb n="14" xml:id="f04-s1-14"/>
+            <rs ana="IXMUKANE">Una Víeja llamada .xmucane.</rs>
+            <abbr>q'</abbr> quíere deçír entíerro, ó fosa. y <abbr>aunq'</abbr> no 
+            <lb n="15" xml:id="f04-s1-15"/>se deue reparar, en <abbr>q'</abbr> le llamen, <rs ana="TZAQOL">ꜩacol</rs>, <rs ana="BITOL">bítol</rs>. que quíere deçír el <abbr>q'</abbr> haze, o fabríca
+            <lb n="16" xml:id="f04-s1-16"/>algo <unclear reason="orthography" instant="false">exprꜫ</unclear> su <foreign xml:lang="la">posíta matería</foreign>. pues ese es el nombre, <abbr>q'</abbr> se le hallo mas ade<pc part="N"> –</pc>
+            <lb n="17" xml:id="f04-s1-17"/>quado <abbr>p<hi rend="superscript">a</hi>.</abbr> explícar á Díos. todauía <abbr>porq'</abbr> se puede díscurrír ser dado por<pc part="N"> –</pc>
+            <lb n="18" xml:id="f04-s1-18"/>el demonío, como <abbr>p<hi rend="superscript">a</hi>.</abbr> dar a entender, <abbr>q'</abbr> no es críador, se deue explícar
+            <lb n="19" xml:id="f04-s1-19"/>a los índíos estos nombres de <rs ana="TZAQOL">ꜩacol</rs>, <rs ana="BITOL">bítol</rs>. y detestar la íntelígençía, <abbr>q'</abbr> el
+            <lb n="20" xml:id="f04-s1-20"/>demonío pudo darle. llamanle <rs ana="ALOM">alom</rs>, <rs ana="KAJOLOM">qaholom</rs>. el<abbr>q'</abbr> tíene híjos. y por quan
+            <lb n="21" xml:id="f04-s1-21"/>to esto se díze propríamente de el hombre, y los anímales <abbr>q'</abbr>
+            <foreign xml:lang="la">per generatí<pc part="N"> –</pc>
+               <lb n="22" xml:id="f04-s1-22"/>onem</foreign>, se multíplícan, tambíen seles deue explícar. no ser nosotros híjos de
+            <lb n="23" xml:id="f04-s1-23"/>Díos en mesma forma, <abbr>q'</abbr> losomos de nuestros <abbr>P<hi rend="superscript">es</hi>.</abbr> ellos es çíerto <abbr>q'</abbr> son modos
+            <lb n="24" xml:id="f04-s1-24"/>de explícar el ser, y el poder de Díos. pero por quanto, pudo el demo<pc part="N"> –</pc>
+            <lb n="25" xml:id="f04-s1-25"/>nío darles a entender, como <foreign xml:lang="la">de facto</foreign> consta <bibl default="false" status="draft">num.	fol.	</bibl>
+            <abbr>q'</abbr>
+            <rs ana="JUN_JUNAJPU">hunhunahpu</rs>
+            <lb n="26" xml:id="f04-s1-26"/>a quíen tuuíeron por Díos, con la salíua conçíuío, en <rs ana="IXKIK">la donçella xquíc</rs>. san
+            <lb n="27" xml:id="f04-s1-27"/>gre. híja de <rs ana="KUCHUMA_KIK">cuchumaquíc</rs>. sangre junta. á <rs ana="JUNAJPU">hunahpu</rs>. Un tírador. <abbr>q'</abbr> Díos
+            <lb n="28" xml:id="f04-s1-28"/>
+            <foreign xml:lang="la">per generatíonem</foreign> tenía híjos se deue detestar, y explícar. Este díos <abbr>q'</abbr>
+            <lb n="29" xml:id="f04-s1-29"/>el demonío les dío a entender, lo haçe en el <bibl default="false" status="draft">num. <num>1</num>. fol <num>1</num>.</bibl> duodernídad.
+            <lb n="30" xml:id="f04-s1-30"/>
+            <abbr>porq'</abbr> no nombra mas <abbr>q'</abbr> dos sugetos. Uno llamado <rs ana="JUNAJPU_WUCH">hunahpu Vuch</rs>. Un tíra<pc part="N"> –</pc>
+            <lb n="31" xml:id="f04-s1-31"/>dor tacuaçín. ya <rs ana="JUNAJPU_UTIW">hun ahpu Vtíu</rs>. Un tírador lobo. como Satanas es tan a
+            <lb n="32" xml:id="f04-s1-32"/>mígo de remedar las cosas de Díos, y como a Su <abbr>Mag.</abbr> se le dan varíos renom<pc part="N"> –</pc>
+            <lb n="33" xml:id="f04-s1-33"/>bres, ya de anímales, ya de otras cosas para <abbr>q'</abbr> nuestra cortedad pueda al
+            <lb n="34" xml:id="f04-s1-34"/>canzar algun rayo desu grandeza, como llamandose leon por la fortaleza
+            <lb n="35" xml:id="f04-s1-35"/>de este anímal, y cordero <abbr>q'</abbr> se llamo <abbr>xpt<hi rend="superscript">o</hi>.</abbr>
+            <abbr>V<hi rend="superscript">a</hi>.</abbr>
+            <abbr>N<hi rend="superscript">a</hi>.</abbr> por la mansedumbre. así mes
+            <lb n="36" xml:id="f04-s1-36"/>mo Satanas tomando las metaphoras de Varíos anímales les llamo a estos dos
+            <lb n="37" xml:id="f04-s1-37"/>díoses, <rs ana="JUNAJPU_WUCH">Vuch</rs> y <rs ana="JUNAJPU_UTIW">Vtíu</rs>. tacuazín, y lobo. por su astuçía. y tambíen lellama. zíz. dí<pc part="N"> –</pc>
+            <lb n="38" xml:id="f04-s1-38"/>çíendo: <rs ana="SAQI_NIM_AQ_SIS">zaquí nímazíz</rs>. grandemente agudo pízote. y tambíen como a díos se<pc part="N"> –</pc>
+            <lb n="39" xml:id="f04-s1-39"/>le dan muchos epítectos de grande, de sabío, y otras cosas le dan el nombre
+            <lb n="40" xml:id="f04-s1-40"/>de <rs ana="TEPEW">tepeu</rs>. este sígnífíca las babas. y en su gentílídad era grandeza de los <abbr>SS<hi rend="superscript">es</hi>.</abbr>
+            <lb n="41" xml:id="f04-s1-41"/>eltenerlas, <abbr>porq'</abbr> era señal de mas poder para cohabítar con muchas mage<pc part="N"> –</pc>
+            <lb n="42" xml:id="f04-s1-42"/>res de adonde se suelen contraer, cosa <abbr>q'</abbr> la gente ordínaría no podía. yde
+            <lb n="43" xml:id="f04-s1-43"/>ay se tomo por grandeza, y magestad el nombre de <rs ana="TEPEW">tepeu</rs>. tambíen lella<pc part="N"> –</pc>
+            <lb n="44" xml:id="f04-s1-44"/>man: <rs ana="TEPEW_QUKUMATZ">cucumaꜩ</rs>. este nombre puede ser sígnífícar culebra fuerte. y tambíen
+            <lb n="45" xml:id="f04-s1-45"/>
+            <rs ana="SERPIENTE_EMPLUMADA">el emplumado</rs>. con plumas verdes. cosa de mucha grandeza, en su gentílí<pc part="N"> –</pc>
+            <lb n="46" xml:id="f04-s1-46"/>dad, y <abbr>q'</abbr> oy vian en sus valles. tambíen le llaman. <rs ana="KAQ">ꜫaꜫ</rs>. fuego. por el respecto <abbr>q'</abbr> se
+            <lb n="47" xml:id="f04-s1-47"/>haçe tener este elemento. y tambíen por cosa de grandísíma estíma<abbr>p<hi rend="superscript">a</hi>.</abbr> ellos, y
+
+            <pb xml:id="f04-s2"/>
+            <lb n="1" xml:id="f04-s2-1"/>
+            <abbr>q'</abbr> fue dado por mano de el ídolo <rs ana="TOJIL">tohíl</rs>. como se díçe <bibl default="false" status="draft">num. fol.</bibl> dan le tambíen tí<pc part="N"> –</pc>
+            <lb n="2" xml:id="f04-s2-2"/>tulo, de corazon de la laguna, y del mar díçíendo <rs ana="CORAZÓN_DEL_LAGO">Vqux cho</rs>, <rs ana="CORAZÓN_DEL_MAR">vqux palo</rs>. en
+            <lb n="3" xml:id="f04-s2-3"/>
+            <abbr>q'</abbr> pareze <abbr>q'</abbr> el demonío tíro a confundír el texto Sagrado, <abbr>q'</abbr> díçe: <hi rend="underline">et spírítus</hi>
+            <note place="margin-left" anchored="true">
+               <bibl default="false" status="draft">Gen. <num>1</num>.n. 
+                  <lb/>
+                  <num>2</num>.</bibl>
+            </note>
+            <lb n="4" xml:id="f04-s2-4"/>
+            <foreign xml:lang="la">
+               <hi rend="underline">Deí ferebatur super aquas</hi>
+            </foreign>. y mírando juntamente a confundír la terçe<pc part="N"> –</pc>
+            <lb n="5" xml:id="f04-s2-5"/>ra persona de la <abbr>SS<hi rend="superscript">ma</hi>.</abbr> Trínídad. queríendo <abbr>q'</abbr> sea Uno mesmo el espírítu
+            <lb n="6" xml:id="f04-s2-6"/>de Díos, y las demas personas. y así el no dío mas <abbr>q'</abbr> dos personas. llamanle
+            <lb n="7" xml:id="f04-s2-7"/>tambíen <rs ana="LOS_DE_LA_SUPERFICIE_PLANA">ahraxulac</rs>. <rs ana="LOS_DE_LA_BÓVEDA_AZUL">ahraxazel</rs>. el de la Verde hícara, y el de el Verde ca<pc part="N"> –</pc>
+            <lb n="8" xml:id="f04-s2-8"/>gete, o plato. esto es propríamente de grandeza <abbr>porq'</abbr> estos modos de hablar
+            <lb n="9" xml:id="f04-s2-9"/>con el <foreign xml:lang="quc">rax</foreign>. sígnífícan cosa hermosa. y era peculíar de los <abbr>SS<hi rend="superscript">es</hi>.</abbr> y Reyes el
+            <lb n="10" xml:id="f04-s2-10"/>Víar de estos su menesteres sobresalíentes en belleza a todos los demas
+            <lb n="11" xml:id="f04-s2-11"/>como se Vee en todas las naçíones. pero fue herror íntolerable <abbr>q'</abbr> quíso ín
+            <lb n="12" xml:id="f04-s2-12"/>troduçír Satanas de <abbr>q'</abbr> Díos comía como los demas hombres, y así le conçede
+            <lb n="13" xml:id="f04-s2-13"/>platos, y demas menesteres de casa.
+         </p>
+         <p rend="indent-first-line" part="N">
+            <lb n="14" xml:id="f04-s2-14"/>
+            <hi rend="large">T</hi>ambíen íntroducen en estos quentos a<rs ana="XPIYAKOK">un Víejo llamado xpíyacoc</rs>. ya
+            <lb n="15" xml:id="f04-s2-15"/>
+            <rs ana="IXMUKANE">Una Víeja llamada: xmucane</rs>. de <abbr>q'</abbr> trae orígen <abbr>elq'</abbr> el día deo y en todas sus
+            <lb n="16" xml:id="f04-s2-16"/>cosas sean los víejos consultados, y mas en cosas por venír. los tíenen como
+            <lb n="17" xml:id="f04-s2-17"/>oraculos. y mas en los naçímíentos delos níños, ellas son las <abbr>q'</abbr> asísten, y les
+            <lb n="18" xml:id="f04-s2-18"/>díçen lo <abbr>q'</abbr> han de hazer. <abbr>q'</abbr> no permítan sacar fuego de la casa donde ay crí<pc part="N"> –</pc>
+            <lb n="19" xml:id="f04-s2-19"/>atura reçíen naçída hasta tíempo determínado. por <abbr>q'</abbr> díçen <abbr>q'</abbr> quemaran
+            <lb n="20" xml:id="f04-s2-20"/>las casas ensíendo grandes. y en muchos pueblos no sacan las críaturas de
+            <lb n="21" xml:id="f04-s2-21"/>las casas: <abbr>porq'</abbr> díçen no se buelban andaríegas, y se hulgan de el pueblo. y
+            <lb n="22" xml:id="f04-s2-22"/>en otros pueblos, queman copal, y ençíenden candela, por superstíçíones
+            <lb n="23" xml:id="f04-s2-23"/>partículares <abbr>q'</abbr> tíenen. y obseruan en muchos pueblos luego <abbr>q'</abbr> naçe la crí<pc part="N"> –</pc>
+            <lb n="24" xml:id="f04-s2-24"/>atura elleuarla ante Uno <abbr>q'</abbr> llaman el Vachínel, ó adeuíno, quíen obser<pc part="N"> –</pc>
+            <lb n="25" xml:id="f04-s2-25"/>uando el día desu naçímíento díze lo<abbr>q'</abbr> hadeser en adelante, y la ínclí<pc part="N"> –</pc>
+            <lb n="26" xml:id="f04-s2-26"/>naçíon <abbr>q'</abbr> tendra, y para corregír algunas malas propríedades <abbr>q'</abbr> díçen
+            <lb n="27" xml:id="f04-s2-27"/>tendran, les hazen sacar sangre de alguna parte de el cuerpo. con<abbr>q'</abbr> dí<pc part="N"> –</pc>
+            <lb n="28" xml:id="f04-s2-28"/>çen se corrígen aquellas malas ínclínaçíones. y esto lo Ven en vn líbro
+            <lb n="29" xml:id="f04-s2-29"/>
+            <abbr>q'</abbr> tíenen como pronostíco. desde eltíempo desu gentílídad, donde tí<pc part="N"> –</pc>
+            <lb n="30" xml:id="f04-s2-30"/>enen todos los meses, y sígnos correspondíentes a cada día. <abbr>q'</abbr> uno de ellos
+            <lb n="31" xml:id="f04-s2-31"/>tengo en mí poder. y cada sígno, o <abbr>S<hi rend="superscript">or</hi>.</abbr> de aquel día es uno de los demoní<pc part="N"> –</pc>
+            <lb n="32" xml:id="f04-s2-32"/>os <abbr>q'</abbr> fíngen en sus hístorías. y todas estas cosas las consultan a uíejos emba<pc part="N"> –</pc>
+            <lb n="33" xml:id="f04-s2-33"/>ídores, y mentírosos. y gechíçeros <abbr>q'</abbr> ay entre ellos aun hasta oy.
+         </p>
+         <p rend="indent-first-line" part="N">
+            <lb n="34" xml:id="f04-s2-34"/>
+            <hi rend="large">D</hi>íçe <bibl default="false" status="draft">num. <num>2</num>.</bibl>
+            <abbr>q'</abbr> lo escríue en tíempo de la crístíandad, <abbr>porq'</abbr>
+            <abbr>aunq'</abbr> auía
+            <lb n="35" xml:id="f04-s2-35"/>líbro en <abbr>q'</abbr> todas estas cosas estaban escrítas, y <abbr>q'</abbr> víno dela otra parte de el
+            <lb n="36" xml:id="f04-s2-36"/>mar, y <abbr>q'</abbr> oy no se puede leer. lo çíerto es <abbr>q'</abbr> tal líbro no pareçío nunca, ní
+            <lb n="37" xml:id="f04-s2-37"/>se ha uisto. y así nose sabe síeste modo de escríuír, era por pínturas, como los
+            <lb n="38" xml:id="f04-s2-38"/>mexícanos, ó, por hílos, como los peruleros. puedese creer <abbr>q'</abbr> era por píntu<pc part="N"> –</pc>
+            <lb n="39" xml:id="f04-s2-39"/>ras en mantas blancas, texídas fíguras <abbr>q'</abbr> de notaban las cosas, como, oy
+            <lb n="40" xml:id="f04-s2-40"/>tíenen los de el Pueblo de <rs ana="SAN_ANTON_ILOCAB">
+               <abbr>S</abbr> Anton ílocab</rs> en el quíche como un mapa
+            <lb n="41" xml:id="f04-s2-41"/>píntadas todas sus tíerras, montes, y ríos en unas mantas texídas. yasí
+            <lb n="42" xml:id="f04-s2-42"/>es factíble conservasen sus memorías, y antíguallas. y tambíen se puede
+            <lb n="43" xml:id="f04-s2-43"/>díscurrír <abbr>q'</abbr> conseruaron algo de el líbro de el <bibl default="false" status="draft">genesís</bibl>, dado <abbr>q'</abbr> desçendí<pc part="N"> –</pc>
+            <lb n="44" xml:id="f04-s2-44"/>esen de las díez tríbus <abbr>q'</abbr> en tíempo de <rs ana="SALMANASAR">Salmanasar</rs>, se perdíeron, y del lí<pc part="N"> –</pc>
+            <lb n="45" xml:id="f04-s2-45"/>bro del <bibl default="false" status="draft">exodo</bibl>. <abbr>porq'</abbr> lo mas <abbr>q'</abbr> tratan estas hístorías como seíra víendo, alude
+            <lb n="46" xml:id="f04-s2-46"/>todo alo<abbr>q'</abbr> la sagrada escrítura quenta en díchos líbros. y algo, <abbr>aunq'</abbr> poco
+            <lb n="47" xml:id="f04-s2-47"/>de lo <abbr>q'</abbr> otros líbros contíenen. de las cosas de los hebreos. y de la Redempçíon del
+            
+            <pb xml:id="f05-s1"/>
+            <lb n="1" xml:id="f05-s1-1"/>genero humano. como se íra víendo por toda esta obra.
+            <lb/>
+            <lb n="2" xml:id="f05-s1-2"/>
+            <label rend="center">
+               <hi rend="large">Sermon de <abbr>S<hi rend="superscript">ta</hi>.</abbr> Barbara</hi>
+            </label>
+            <lb/>
+         </p>
+         <p part="N">
+            <lb n="3" xml:id="f05-s1-3"/>
+            <label rend="center">
+               <hi rend="large">
+                  <hi rend="bold">Confecíonarío en Lengua Quíche</hi>
+               </hi>
+            </label>
+            <lb/>
+         </p>
+         <p rend="indent-all" part="N">
+            <lb n="4" xml:id="f05-s1-4"/>Catxucloc. <note place="margin-left" anchored="true">hincate.</note>
+            <lb n="5" xml:id="f05-s1-5"/>chacruzih. auach <note place="margin-left" anchored="true">Persínate</note>
+            <lb n="6" xml:id="f05-s1-6"/>Chatunuba: acab. <note place="margin-left" anchored="true">Junta las manos:</note>
+            <lb n="7" xml:id="f05-s1-7"/>chazucuba avib.
+            <lb n="8" xml:id="f05-s1-8"/>Ma. acozoba. avib
+            <lb n="9" xml:id="f05-s1-9"/>xharuhil. ga. abanon. con
+            <lb n="10" xml:id="f05-s1-10"/>pesar. <hi rend="underline">Vel</hi>. abanon<unclear instant="false">o</unclear>a com
+            <lb n="11" xml:id="f05-s1-11"/>períon.
+         </p>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <lb/>
+         <pb xml:id="f05-s2"/>
+         <p part="N">
+            <lb n="1" xml:id="f05-s2-1"/>
+            <hi rend="large">C</hi>ontígo hablo Oltt<hi rend="superscript">e</hi> Religíon de Domíngo 
+            <lb n="2" xml:id="f05-s2-2"/>Eres un cíelo tachonado demas Sanctos <abbr>q<hi rend="superscript">e</hi>
+            </abbr> estrellas el fírmamenta
+            <lb n="3" xml:id="f05-s2-3"/>un Monte Coronado de Mítnas, Capelos y Fíeras, el toxacon de
+            <lb n="4" xml:id="f05-s2-4"/>la Yglesia Contra sus enemígos, <abbr>q<hi rend="superscript">e</hi>
+            </abbr> hidna, <abbr>q<hi rend="superscript">e</hi>
+            </abbr> monstruo mortuõ
+            <lb n="5" xml:id="f05-s2-5"/>Damas Cabeza, <abbr>q<hi rend="superscript">e</hi>
+            </abbr> no hallase hercules fuego y cuchillo enqualqui
+            <lb n="6" xml:id="f05-s2-6"/>era de tus hijos? el Baluarte dela <hi rend="strikethrough">Yglesia</hi> dela fee opuesto a las
+            <lb n="7" xml:id="f05-s2-7"/>hescópas, <abbr>q</abbr> pretenden ofuscar la Razon? la cara dela Sabiduría
+            <lb n="8" xml:id="f05-s2-8"/>fundada sobre los siete montes, el atlante <abbr>q<hi rend="superscript">e</hi>
+            </abbr> mantíene en susom
+            <lb n="9" xml:id="f05-s2-9"/>bros ínfleccible todo el Babe Catholico. tu eres el paraízo don
+            <lb n="10" xml:id="f05-s2-10"/>de Se Sembro el arbor de la Sabiduria. la fuente <abbr>q<hi rend="superscript">e</hi>
+            </abbr> repartida
+            <lb n="11" xml:id="f05-s2-11"/>en trazos fecunda las Cicuelas mas sabia oaquella que
+            <lb n="12" xml:id="f05-s2-12"/>pasandose a luz ha llegado a ser Sol. todas las gracías te asístíe
+            <lb n="13" xml:id="f05-s2-13"/>ron al nacer. todas las vintades te adornan al vívía, <abbr>q<hi rend="superscript">e</hi>
+            </abbr> honrra
+            <lb n="14" xml:id="f05-s2-14"/>note rueda. eres Madre de los Sabíos, en tus Campos no crezen
+            <lb n="15" xml:id="f05-s2-15"/>sino Cedros íncoruptibles de <abbr>q<hi rend="superscript">e</hi>
+            </abbr> se forman las Cathedras y pol
+            <lb n="16" xml:id="f05-s2-16"/>pitos, palmas <abbr>q<hi rend="superscript">e</hi>
+            </abbr> coronan el líbano, y rosas <abbr>q<hi rend="superscript">e</hi>
+            </abbr> adornan los al
+            <lb n="17" xml:id="f05-s2-17"/>taner. Connanse alla las fabulas, <abbr>q<hi rend="superscript">e</hi>
+            </abbr> en tus nidos no es ave<corr instant="false"/>ana.
+            <lb n="18" xml:id="f05-s2-18"/>el phenix. de aquellas Cenizas Bethanas se animas - por
+            <lb n="19" xml:id="f05-s2-19"/>instantes los portentos, en tu Sacro Caystro son vulgares
+            <lb n="20" xml:id="f05-s2-20"/>los Cunes <abbr>q<hi rend="superscript">e</hi>
+            </abbr> aprendieron otre Domgo AeThomas ode terre
+            <lb n="21" xml:id="f05-s2-21"/>el punto, eres noxte de los <abbr>q<hi rend="superscript">e</hi>
+            </abbr> han errados y quieren aleutar
+            <lb n="22" xml:id="f05-s2-22"/>azíaca los <abbr>q<hi rend="superscript">e</hi>
+            </abbr> nurregarí al cielo <abbr>q<hi rend="superscript">e</hi>
+            </abbr> aqui viva la estrella <abbr>q<hi rend="superscript">e</hi>
+            </abbr> guía
+            <lb n="23" xml:id="f05-s2-23"/>encamína a tan serena playa. finalmente a ti se acífe el
+            <lb n="24" xml:id="f05-s2-24"/>pobre <abbr>p<hi rend="superscript">r</hi>
+            </abbr> remedio el errado <abbr>p<hi rend="superscript">r</hi>
+            </abbr> guía <abbr>p<hi rend="superscript">r</hi>
+            </abbr> amparo el desvalido ley
+            <lb n="25" xml:id="f05-s2-25"/>cabezas de la Yglesía <abbr>p<hi rend="superscript">r</hi>
+            </abbr> hom Dios. la fe <abbr>p<hi rend="superscript">r</hi>
+            </abbr> brazos, <abbr>p<hi rend="superscript">r</hi>
+            </abbr> ojos la igno
+            <lb n="26" xml:id="f05-s2-26"/>rancía, los Sabíos <abbr>p<hi rend="superscript">r</hi>
+            </abbr> luz las Universidades <abbr>p<hi rend="superscript">r</hi>
+            </abbr> mños las Ygle
+            <lb n="27" xml:id="f05-s2-27"/>cias <abbr>p<hi rend="superscript">r</hi>
+            </abbr> prínzipes los altares <abbr>p<hi rend="superscript">r</hi>
+            </abbr> Sanctos, los Sanctos <abbr>p<hi rend="superscript">r</hi>
+            </abbr> mira las mi
+            <lb n="28" xml:id="f05-s2-28"/>tras, <abbr>p<hi rend="superscript">r</hi>
+            </abbr> cabezas <abbr>p<hi rend="superscript">r</hi>
+            </abbr> confesores los reyes y lo<abbr>q<hi rend="superscript">e</hi>
+            </abbr> mas es el Spiritu <abbr>S<hi rend="superscript">to</hi>
+            </abbr>
+            <lb n="29" xml:id="f05-s2-29"/>en los Concilios <abbr>p<hi rend="superscript">r</hi>
+            </abbr> organos de los luzes en los palpatos p lenguas
+            <lb n="30" xml:id="f05-s2-30"/>de su enseñanza en las sillas <abbr>p<hi rend="superscript">r</hi>
+            </abbr> vozes de sus dictamesus, y enso
+            <lb n="31" xml:id="f05-s2-31"/>jo <unclear instant="false"/> instrumentos ínmediatos dispensadores de la gracía
+            <lb n="32" xml:id="f05-s2-32"/>
+            <seg rend="align-right" part="N">Rabinal es <abbr>Ag<hi rend="superscript">to</hi>
+               </abbr>. <num>24</num> de <num>34</num> años. Chavez</seg>
+            <add place="below"
+                 hand="pencil"
+                 rend="underline"
+                 instant="false"
+                 status="unremarkable">1734</add>
+            <lb n="33" xml:id="f05-s2-33"/>
+            <lb n="34" xml:id="f05-s2-34"/>
+            <lb n="35" xml:id="f05-s2-35"/>
+            <lb n="36" xml:id="f05-s2-36"/>
+            <lb n="37" xml:id="f05-s2-37"/>
+            <lb n="38" xml:id="f05-s2-38"/>
+            <lb n="39" xml:id="f05-s2-39"/>
+            <lb n="40" xml:id="f05-s2-40"/>
+            <lb n="41" xml:id="f05-s2-41"/>
+            <lb n="42" xml:id="f05-s2-42"/>
+            <lb n="43" xml:id="f05-s2-43"/>
+            <lb n="44" xml:id="f05-s2-44"/>
+            <lb n="45" xml:id="f05-s2-45"/>
+            <lb n="46" xml:id="f05-s2-46"/>
+            <lb n="47" xml:id="f05-s2-47"/>
+            <pb xml:id="f06-s1"/>
+            <lb n="1" xml:id="f06-s1-1"/>
+            <pc rend="center" part="N"> +</pc>
+            <lb n="2" xml:id="f06-s1-2"/>Auetam pa Díos <note place="margin-left" anchored="true">
+               <abbr>P.</abbr>=</note>
+            <lb n="3" xml:id="f06-s1-3"/>harupa Dios cha cux
+            <lb n="4" xml:id="f06-s1-4"/>pachín xbanou cah vleu íƈ chumíl, rohonel ílom, mavi ílom?
+            <lb n="5" xml:id="f06-s1-5"/>pacha Vcoheic Díos ñ ã. maquehe ucoheu vinaƈ?
+            <lb n="6" xml:id="f06-s1-6"/>Copa uxenabal, vepu Utíqueríbal D. ma chiquís machicam <unclear reason="rip" instant="false">?s</unclear>
+            <note place="below-right" anchored="true">
+               <unclear instant="false">ox</unclear> Dios</note>
+            <lb n="7" xml:id="f06-s1-7"/>Copa utíohíl Díos Copa Uquiquel ve pu ubaquíl Díos ma ƈahabou
+            <lb n="8" xml:id="f06-s1-8"/>
+            <seg rend="indent" part="N">vió Díos, ma carabiniƈ, ma ƈa chaquíh uchi, maƈanum om</seg>
+            <lb n="9" xml:id="f06-s1-9"/>Harupa rohonel Vab vuxlab D harupa puih. ronohel ruꜩíl u rahbol
+            <lb n="10" xml:id="f06-s1-10"/>
+            <seg rend="indent" part="N">pachín xbanou nabe cachuch cacahau adan eva. quibi</seg>
+            <lb n="11" xml:id="f06-s1-11"/>Pacha vioher<hi rend="superscript">e</hi>i adan. eba. ta xe vína quirixax vumal Díos?
+            <lb n="12" xml:id="f06-s1-12"/>Apa xpeui rohonel caxcol, vaíl, chícacuí oh ronohel xe cabul vínaꜫ
+            <lb n="13" xml:id="f06-s1-13"/>harupa Vpersona íl Díos
+            <lb n="14" xml:id="f06-s1-14"/>pa naquípa ubi nave persona?
+            <lb n="15" xml:id="f06-s1-15"/>Naquipa Vnbi Vcam persona:
+            <lb n="16" xml:id="f06-s1-16"/>Naquípa Vbi Vox persona?
+            <lb n="17" xml:id="f06-s1-17"/>Apachínaí chíque persona xtíohilabiƈ. Chupan <abbr>S<hi rend="superscript">ta</hi>
+            </abbr> María
+            <lb n="18" xml:id="f06-s1-18"/>Pazurumal xul Vtíohilah, ƈa tiohil, Vcahol Díos chupan <abbr>S<hi rend="superscript">ta</hi>
+            </abbr>
+            <abbr>M<hi rend="superscript">a</hi>.</abbr>?
+            <lb n="19" xml:id="f06-s1-19"/>Xucanah pa uDíos íl, ta xtíchalibíc, chupan<abbr>S<hi rend="superscript">ta</hi>
+            </abbr>
+            <abbr>M<hi rend="superscript">a</hi>.</abbr>
+            <lb n="20" xml:id="f06-s1-20"/>Ma quíꜩih, capoh <abbr>S<hi rend="superscript">ta</hi>
+            </abbr> María ta xala<corr instant="false">nic</corr> cahaval xpto
+            <lb n="21" xml:id="f06-s1-21"/>Pazu rumal, xcan cahoval xpho chuach cruz
+            
+            <!-- Figure out better content model for this -->
+            <lb n="22" xml:id="f06-s1-22"/>
+            <seg part="N">xcampa u Díos íl, ta xcam ƈahaval xpw</seg>
+            <lb n="23" xml:id="f06-s1-23"/>
+            <seg part="N">pa xbevi cahaval xpto, ta xcam chuach cruz</seg>
+            <lb n="24" xml:id="f06-s1-24"/>
+            <seg part="N">Camínaꜫ pa cahaval xpto vacamiƈ?</seg>
+            <lb n="25" xml:id="f06-s1-25"/>
+            <seg part="N">apa covi cohaval xpto vacamíc?</seg>
+            <lb n="26" xml:id="f06-s1-26"/>
+            <seg part="N">Copa chía ulo cahaval xpto?</seg>
+            <lb n="27" xml:id="f06-s1-27"/>
+            <seg part="N">eri Camínaꜫ, chiquicam chipá qui tiohil?</seg>
+            <lb n="28" xml:id="f06-s1-28"/>Pazu rimal que castah chic?
+            <lb n="29" xml:id="f06-s1-29"/>
+            <seg rend="indent" part="N">pazu ri uquexal xichuía Díos chiqueh uꜩilah Vínac?</seg>
+            <lb n="30" xml:id="f06-s1-30"/>ecuriahmaꜫ, pazu vquixal, qunbanóh chiya chiqueh rumal Dios?
+            <lb n="31" xml:id="f06-s1-31"/>Maquipa chabano macucatbe chi <rs ana="XIBALBA">xibalba</rs> xatacatacam chídh
+            <lb n="32" xml:id="f06-s1-32"/>Ve Cut xat macuniƈ, xachínac chíoe uho Díos pa vi pazu xchatan chizach
+               <add place="below-right" instant="false" status="unremarkable">vi amac</add>
+            <lb n="33" xml:id="f06-s1-33"/>
+            <hi rend="strikethrough">pazu xchatanpa</hi>
+            <lb n="34" xml:id="f06-s1-34"/>Pazu xchatan ta ca zucuba alux tacabanpuh comfecion
+            <lb n="35" xml:id="f06-s1-35"/>Ve at xatelequíƈ vepu xat oyovariƈ xat cacaríc, chirih a Vaꜩ. achaꜫ. vepi
+            <lb n="36" xml:id="f06-s1-36"/>xa cut uvach. ue navi puch xaqui xhizoh, pazu xchatan, chizach Ui<unclear reason="tape" instant="false">amor</unclear>
+            <lb n="37" xml:id="f06-s1-37"/>
+            <unclear reason="tape" instant="false">al:</unclear>
+         </p>
+         <lb n="38" xml:id="f06-s1-38"/>
+         <lb n="39" xml:id="f06-s1-39"/>
+         <lb n="40" xml:id="f06-s1-40"/>
+         <lb n="41" xml:id="f06-s1-41"/>
+         <lb n="42" xml:id="f06-s1-42"/>
+         <lb n="43" xml:id="f06-s1-43"/>
+         <lb n="44" xml:id="f06-s1-44"/>
+         <lb n="45" xml:id="f06-s1-45"/>
+         <lb n="46" xml:id="f06-s1-46"/>
+         <lb n="47" xml:id="f06-s1-47"/>
+         <pb xml:id="f06-s2"/>
+         <lb n="1" xml:id="f06-s2-1"/>
+         <lb n="2" xml:id="f06-s2-2"/>
+         <lb n="3" xml:id="f06-s2-3"/>
+         <lb n="4" xml:id="f06-s2-4"/>
+         <lb n="5" xml:id="f06-s2-5"/>
+         <lb n="6" xml:id="f06-s2-6"/>
+         <lb n="7" xml:id="f06-s2-7"/>
+         <lb n="8" xml:id="f06-s2-8"/>
+         <lb n="9" xml:id="f06-s2-9"/>
+         <lb n="10" xml:id="f06-s2-10"/>
+         <lb n="11" xml:id="f06-s2-11"/>
+         <lb n="12" xml:id="f06-s2-12"/>
+         <lb n="13" xml:id="f06-s2-13"/>
+         <lb n="14" xml:id="f06-s2-14"/>
+         <lb n="15" xml:id="f06-s2-15"/>
+         <lb n="16" xml:id="f06-s2-16"/>
+         <lb n="17" xml:id="f06-s2-17"/>
+         <lb n="18" xml:id="f06-s2-18"/>
+         <lb n="19" xml:id="f06-s2-19"/>
+         <lb n="20" xml:id="f06-s2-20"/>
+         <lb n="21" xml:id="f06-s2-21"/>
+         <lb n="22" xml:id="f06-s2-22"/>
+         <lb n="23" xml:id="f06-s2-23"/>
+         <lb n="24" xml:id="f06-s2-24"/>
+         <lb n="25" xml:id="f06-s2-25"/>
+         <lb n="26" xml:id="f06-s2-26"/>
+         <lb n="27" xml:id="f06-s2-27"/>
+         <lb n="28" xml:id="f06-s2-28"/>
+         <lb n="29" xml:id="f06-s2-29"/>
+         <lb n="30" xml:id="f06-s2-30"/>
+         <lb n="31" xml:id="f06-s2-31"/>
+         <lb n="32" xml:id="f06-s2-32"/>
+         <lb n="33" xml:id="f06-s2-33"/>
+         <lb n="34" xml:id="f06-s2-34"/>
+         <lb n="35" xml:id="f06-s2-35"/>
+         <lb n="36" xml:id="f06-s2-36"/>
+         <lb n="37" xml:id="f06-s2-37"/>
+         <lb n="38" xml:id="f06-s2-38"/>
+         <lb n="39" xml:id="f06-s2-39"/>
+         <lb n="40" xml:id="f06-s2-40"/>
+         <lb n="41" xml:id="f06-s2-41"/>
+         <lb n="42" xml:id="f06-s2-42"/>
+         <lb n="43" xml:id="f06-s2-43"/>
+         <lb n="44" xml:id="f06-s2-44"/>
+         <lb n="45" xml:id="f06-s2-45"/>
+         <lb n="46" xml:id="f06-s2-46"/>
+         <lb n="47" xml:id="f06-s2-47"/>
+      </body>
+   </text>
+</TEI>
