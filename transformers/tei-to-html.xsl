@@ -7,24 +7,43 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
     xmlns:tei="http://www.tei-c.org/ns/1.0" 
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
     exclude-result-prefixes="tei">
     
     <xsl:output method="html" omit-xml-declaration="yes" encoding="UTF-8" indent="no" />
     
+    <!-- Parameters -->
+    <xsl:param name="configFile" select="../config.xml"/> <!-- Set by passed argument -->
+    <xsl:variable name="config" select="document($configFile)"/>
     
-    <xsl:variable name="themes_ajax_root">http://multepal.spanitalport.virginia.edu/node/</xsl:variable>
+    <xsl:variable name="web_api_root" select="$config//item[@id='multepal_db_url']/value/text()"/>
+    <xsl:variable name="topics_path" select="$config//item[@id='topic_set_path']/value/text()" />
+    <xsl:variable name="annotations_path" select="$config//item[@id='annotation_set_path']/value/text()" />
+    <xsl:variable name="snippets_path" select="$config//item[@id='snippet_set_path']/value/text()" />
     
-    <xsl:param name="topicsFile" select="'multepal/topics.xml'" />
-    <xsl:param name="topics" select="document($topicsFile)" />
+    <xsl:variable name="site_root" select="$config//item[@id='base_path']/value/text()"/>
+               
+    <!-- Get Topics -->
+    <xsl:variable name="topics" select="document(concat($web_api_root, $topics_path))" />
+    <xsl:variable name="annotations" select="document(concat($web_api_root, $annotations_path))" />
+    <xsl:variable name="snippets" select="document(concat($web_api_root, $snippets_path))" />
     
+    <!--
+    <xsl:param name="topicsFile" select="'{$site_root}/collections/topics/topics.xml'" />
+    <xsl:variable name="topics" select="document($topicsFile)" />
+    -->
+    <!--
     <xsl:param name="annotationsFile" select="'multepal/annotations.xml'" />
     <xsl:param name="annotations" select="document($annotationsFile)" />
-    <xsl:variable name="langname" as="map(xs:string, xs:string)"> 
+    -->
+    <!--
+    <xsl:variable name="langname"> 
         <xsl:map>
             <xsl:map-entry key="'quc'" select="'K&quot;iche&quot;'" />
             <xsl:map-entry key="'spa'" select="'Castellano'" /> 
         </xsl:map>
     </xsl:variable>
+    -->
     
     <!-- Not sure if this is doing anything -->
     <!--
@@ -103,6 +122,8 @@
         </div>
         
         <div class="container" id="topic-list">
+            <xsl:text>TOPICS</xsl:text>
+            <xsl:value-of select="concat($web_api_root, $topics_path)" />
             <xsl:apply-templates select="$topics/topics/topic"/>
         </div>
         
@@ -140,7 +161,10 @@
         <xsl:variable name="side" select="substring(@id, 10, 1)" />
         <xsl:variable name="sidex" select="translate($side, '12', 'rv')" />
         <xsl:variable name="lang" select="substring(@id, 12, 3)" />
+        <xsl:variable name="lang_name" select="$lang" />
+        <!--
         <xsl:variable name="lang_name" select="$langname($lang)" />
+        -->
         <!--
         <xsl:variable name="lang_name">
             <xsl:choose>
@@ -241,7 +265,7 @@
     <xsl:template match="topic">
         <div class="topic-entry" id="topic-{key}">
             <h2 class="topic-title"><xsl:value-of select="title" /></h2>
-            <a href="{$themes_ajax_root}{nid}" class="topic-link btn btn-primary btn-sm" target="_blank">See full record</a>
+            <a href="{$web_api_root}{nid}" class="topic-link btn btn-primary btn-sm" target="_blank">See full record</a>
             <div class="topic-type">
                 <xsl:value-of select="type"/>
             </div>
@@ -254,7 +278,7 @@
     <xsl:template match="annotation">
         <div class="annotation-entry" id="annotation-{@nid}">
             <h2 class="annotation-title"><xsl:value-of select="title" /></h2>
-            <a href="{$themes_ajax_root}{@nid}" class="annotation-link btn btn-primary btn-sm" target="_blank">See full record</a>
+            <a href="{$web_api_root}{@nid}" class="annotation-link btn btn-primary btn-sm" target="_blank">See full record</a>
             <div class="annotation-content">
                 <xsl:apply-templates select="content" />
                 <div class="annotation-author"><xsl:value-of select="author"/></div>

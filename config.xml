@@ -13,9 +13,19 @@
     
     <group id="MULTEPAL">
         <item id="multepal_db_url">
-            <value type="url">http://multepal.spanitalport.virginia.edu/</value>
+            <value type="url">https://multepal.spanitalport.virginia.edu/</value>
+        </item>
+        <item id="topic_set_path">
+            <value type="path">export/topics/all</value>
+        </item>
+        <item id="annotation_set_path">
+            <value type="path">export/annotations/all</value>
+        </item>
+        <item id="snippent_set_path">
+            <value type="path">export/snippets/all</value>
         </item>
     </group>
+    
 </config>
 
 <!--
