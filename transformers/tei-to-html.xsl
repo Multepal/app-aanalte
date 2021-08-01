@@ -1,138 +1,168 @@
 <?xml version="1.0"?>
 <!--
     This produces an HTML template file using Jinja processing instructions.   
- -->
-<xsl:stylesheet version="1.0" 
-    
+-->
+
+<xsl:stylesheet version="2.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
     xmlns:tei="http://www.tei-c.org/ns/1.0" 
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:xml="http://www.w3.org/XML/1998/namespace"
     exclude-result-prefixes="tei">
     
-    <xsl:output method="html" omit-xml-declaration="yes" encoding="UTF-8" indent="no" />
-    
-    <!-- Parameters -->
-    <xsl:param name="configFile" select="../config.xml"/> <!-- Set by passed argument -->
-    <xsl:variable name="config" select="document($configFile)"/>
-    
-    <xsl:variable name="web_api_root" select="$config//item[@id='multepal_db_url']/value/text()"/>
-    <xsl:variable name="topics_path" select="$config//item[@id='topic_set_path']/value/text()" />
-    <xsl:variable name="annotations_path" select="$config//item[@id='annotation_set_path']/value/text()" />
-    <xsl:variable name="snippets_path" select="$config//item[@id='snippet_set_path']/value/text()" />
-    
-    <xsl:variable name="site_root" select="$config//item[@id='base_path']/value/text()"/>
-               
-    <!-- Get Topics -->
-    <xsl:variable name="topics" select="document(concat($web_api_root, $topics_path))" />
-    <xsl:variable name="annotations" select="document(concat($web_api_root, $annotations_path))" />
-    <xsl:variable name="snippets" select="document(concat($web_api_root, $snippets_path))" />
-    
-    <!--
-    <xsl:param name="topicsFile" select="'{$site_root}/collections/topics/topics.xml'" />
-    <xsl:variable name="topics" select="document($topicsFile)" />
-    -->
-    <!--
-    <xsl:param name="annotationsFile" select="'multepal/annotations.xml'" />
-    <xsl:param name="annotations" select="document($annotationsFile)" />
-    -->
-    <!--
-    <xsl:variable name="langname"> 
+    <xsl:output method="html" 
+        omit-xml-declaration="yes" 
+        encoding="UTF-8" 
+        indent="yes"  
+        />
+
+    <!-- PARAMETERS and VARIABLES-->
+    <xsl:param name="configFile">/Users/rca2t1/Repos/aanalte/config.xml</xsl:param>
+    <xsl:variable name="config" select="document($configFile)"/>    
+    <xsl:variable name="site_title" select="$config/id('site_title')/value/text()"/>
+    <xsl:variable name="topics_ajax_root" select="$config/id('multepal_db_url')/value/text()"/>
+    <xsl:variable name="base_path" select="$config/id('base_path')/value/text()"/>
+    <xsl:variable name="topicsFileName" select="$config/id('local_topic_set_path')/value/text()"/>
+    <xsl:variable name="topics" select="document(concat($base_path, $topicsFileName))" />
+    <xsl:variable name="annotationsFileName" select="$config/id('local_annotation_set_path')/value/text()"/>
+    <xsl:variable name="annotations" select="document(concat($base_path, $annotationsFileName))" />
+    <xsl:variable name="css_file_path" select="$config/id('css_file_path')/value/text()"/>
+    <xsl:variable name="js_file_path" select="$config/id('js_file_path')/value/text()"/>
+
+    <xsl:variable name="langname">
         <xsl:map>
-            <xsl:map-entry key="'quc'" select="'K&quot;iche&quot;'" />
-            <xsl:map-entry key="'spa'" select="'Castellano'" /> 
+            <xsl:map-entry key="'quc'">K&quot;iche&quot;</xsl:map-entry>
+            <xsl:map-entry key="'spa'">Castellano</xsl:map-entry>  
         </xsl:map>
     </xsl:variable>
-    -->
+    
     
     <!-- Not sure if this is doing anything -->
-    <!--
-    <xsl:strip-space elements="p" /> 
-    -->
+    <xsl:preserve-space elements="p" /> 
     
     <!-- Root node: Insert containing page elements -->
     <xsl:template match="/">
+        <xsl:variable 
+            name="doc_title" 
+            select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title/text()"/>
+        <html>
+            <head>
+                <title>
+                    <xsl:value-of select="$site_title"/> 
+                    <xsl:text> | </xsl:text>
+                    <xsl:value-of select="$doc_title"/>
+                </title>
+                <meta charset="UTF-8"/>
+                <!--
+                <meta http-equiv="cache-control" content="no-store" />
+                -->
+                <xsl:for-each select="$config/id('css_files')/value">
+                    <xsl:element name="link">
+                        <xsl:attribute name="rel">stylesheet</xsl:attribute>
+                        <xsl:attribute name="type">text/css</xsl:attribute>
+                        <xsl:attribute name="href" select="concat($css_file_path, text())" />
+                        <xsl:text xml:space="preserve"> </xsl:text>                        
+                    </xsl:element>                    
+                </xsl:for-each>                                    
+            </head>
+            <body>
+                <!-- Header; may include a menu at some point -->
+                <nav class="navbar navbar-expand-sm bg-light">
+                    <h1>
+                        <i>
+                            <a href="index.html">
+                                <xsl:value-of select="$doc_title"/>
+                            </a>
+                        </i>
+                        <span> : </span>
+                        <span>Paragraphs and Topics Version</span>
+                    </h1>
+                </nav>
         
-        <xsl:text>{% extends "base.html" %}</xsl:text>
-        <xsl:text>{% block content %}</xsl:text>
-        
-        <!-- Header; may include a menu at some point -->
-        <nav class="navbar navbar-expand-sm bg-light">
-            <h1>
-                <i><a href="index.html">Popol Wuj</a></i>
-                <span> : </span>
-                <span>Paragraphs and Topics Version</span>
-            </h1>
-        </nav>
-        
-        <!-- Main text viewing area -->
-        <div class="wrapper">
-            <div id="sidebar">
-                <h3><small>idx</small></h3>
-                <ul class="list-unstyled">
-                    <xsl:for-each select="descendant::tei:div[@type='column'][@xml:lang='quc']//tei:pb">
-                        <xsl:variable name="folio" select="number(substring(@xml:id, 6, 2))" />
-                        <xsl:variable name="side" select="substring(@xml:id, 10, 1)" />
-                        <xsl:variable name="sidex" select="translate($side, '12', 'rv')" />
-                        <li>
-                            <a class="folio-index-item" href="#" data-target="{@xml:id}" title="Align both columns to Folio {$folio}, side {$side} ({$sidex})">
-                                <xsl:value-of select="concat($folio,$sidex)"/>
-                            </a>    
-                        </li>
-                    </xsl:for-each>
-                </ul>
-            </div>
-            <div class="container-fluid" id="content">
-                <div class="row">
-                    <xsl:apply-templates select="//tei:text//tei:body"/>                    
-                </div>
-                <div class="row">
-                    <xsl:text>*   *   *</xsl:text>
-                </div>
-                <div class="row text-center mt-3 footer">
-                    <div class="col" id="footer">
-                        <!-- <a class="btn btn-primary btn-sm" href="index.html">Return Home</a> -->
+                <xsl:comment> Main text viewing area </xsl:comment>
+                <div class="wrapper">
+                    <div id="sidebar">
+                        <h3><small>idx</small></h3>
+                        <ul class="list-unstyled">
+                            <xsl:for-each select="descendant::tei:div[@type='column'][@xml:lang='quc']//tei:pb">
+                                <xsl:variable name="folio" select="number(substring(@xml:id, 6, 2))" />
+                                <xsl:variable name="side" select="substring(@xml:id, 10, 1)" />
+                                <xsl:variable name="sidex" select="translate($side, '12', 'rv')" />
+                                <li>
+                                    <a class="folio-index-item" href="#" data-target="{@xml:id}" 
+                                        title="Align both columns to Folio {$folio}, side {$side} ({$sidex})">
+                                        <xsl:value-of select="concat($folio,$sidex)"/>
+                                    </a>    
+                                </li>
+                            </xsl:for-each>
+                        </ul>
+                    </div>
+                    <div class="container-fluid" id="content">
+                        <div class="row">
+                            <xsl:apply-templates select="//tei:text//tei:head"/>
+                            <xsl:apply-templates select="//tei:text//tei:body"/>                    
+                        </div>
+                        <div class="row">
+                            <xsl:text>*   *   *</xsl:text>
+                        </div>
+                        <div class="row text-center mt-3 footer">
+                            <div class="col" id="footer">
+                                <!-- <a class="btn btn-primary btn-sm" href="index.html">Return Home</a> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
         
-        <!-- Modal box for displaying topic or annotation info -->
-        <div class="container" id="data">
-            <div class="modal" tabindex="-1" role="dialog" id="topic-box" title="">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="modal-type">Type</div>
-                            <h3 class="modal-title">Entry</h3>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&#215;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Modal body text goes here.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <a class="multepal-link btn btn-primary" href="#" target="_blank">See full record</a>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- Modal box for displaying topic or annotation info -->
+                <xsl:comment> Modal Box </xsl:comment>
+                <div class="container" id="data">
+                    <div class="modal" tabindex="-1" role="dialog" id="topic-box" title=""
+                        style="display:none;"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-type">Type</div>
+                                    <h3 class="modal-title">Entry</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&#215;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="multepal-link btn btn-primary" href="#" target="_blank">See full record</a>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
         
-        <div class="container" id="topic-list">
-            <xsl:text>TOPICS</xsl:text>
-            <xsl:value-of select="concat($web_api_root, $topics_path)" />
-            <xsl:apply-templates select="$topics/topics/topic"/>
-        </div>
-        
-        <div class="container" id="annotation-list">
-            <xsl:apply-templates select="$annotations/annotations/annotation"/>
-        </div>
-        
-        <xsl:text>{% endblock %}</xsl:text>
-        
+                <xsl:comment> TOPICS </xsl:comment>
+                <div class="container" id="topic-list">
+                    <xsl:apply-templates select="$topics/topics/topic"/>
+                </div>
+                
+                <xsl:comment> ANNOTATIONS </xsl:comment>                
+                <div class="container" id="annotation-list">
+                    <xsl:apply-templates select="$annotations/annotations/annotation"/>
+                </div>
+            
+                <xsl:comment> SCRIPTS </xsl:comment>
+                <xsl:for-each select="$config/id('js_files')/value">
+                    <xsl:element name="script">
+                        <!--
+                        <xsl:attribute name="type">text/js</xsl:attribute>
+                        -->
+                        <xsl:attribute name="src" select="concat($js_file_path, text())" />
+                        <xsl:text xml:space="preserve"> </xsl:text>
+                    </xsl:element>                       
+                </xsl:for-each>                                
+                
+            </body>
+        </html>        
     </xsl:template>
     
     <!-- Handle columns -->
@@ -156,16 +186,17 @@
     
     <!-- Handle line breaks -->
     <xsl:template match="tei:lb">
-        <xsl:variable name="line_id" select="@id" />
-        <xsl:variable name="folio" select="number(substring(@id, 6, 2))" />
-        <xsl:variable name="side" select="substring(@id, 10, 1)" />
+        
+        <xsl:variable name="line_id" select="@xml:id" />
+        <xsl:variable name="folio" select="number(substring(@xml:id, 6, 2))" />
+        <xsl:variable name="side" select="substring(@xml:id, 10, 1)" />
         <xsl:variable name="sidex" select="translate($side, '12', 'rv')" />
-        <xsl:variable name="lang" select="substring(@id, 12, 3)" />
-        <xsl:variable name="lang_name" select="$lang" />
+        <xsl:variable name="lang" select="substring(@xml:id, 12, 3)" />
+        
         <!--
         <xsl:variable name="lang_name" select="$langname($lang)" />
         -->
-        <!--
+        
         <xsl:variable name="lang_name">
             <xsl:choose>
                 <xsl:when test="$lang = 'quc'">
@@ -176,7 +207,7 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        -->
+        
         <xsl:variable name="line" select="substring(@id, 16, 2)" />
         <xsl:for-each select="$annotations//annotation-map/item[@line_id = $line_id]">
             <a class="lb" href="#"  
@@ -189,9 +220,23 @@
             </a>
         </xsl:for-each>
         
+        <xsl:variable name="mycontent">
+            <xsl:choose>
+                <xsl:when test="preceding-sibling::*[1]/name() = 'pc'">
+                    <span class="pc_lb"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text> </xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <!--
         <xsl:text>__LB__</xsl:text>
+        -->
         <span class="lb-marker">/</span>
         
+        <xsl:value-of select="$mycontent"/>
         
         <!-- DOES NOT WORK AS EXPECTED
         <xsl:choose>
@@ -206,10 +251,43 @@
     </xsl:template>
     
     <xsl:template match="tei:pc">
-        <xsl:text>__PC__</xsl:text>
+
+        <xsl:element name="span">
+            <xsl:attribute name="class">pc</xsl:attribute>
+            <xsl:choose>
+                <xsl:when test="following-sibling::*[1]/name() = 'lb'">
+                    <xsl:text/>             
+                </xsl:when>
+                <xsl:otherwise>                
+                    <xsl:value-of select="text()"/>
+                </xsl:otherwise>                    
+            </xsl:choose>   
+        </xsl:element>
+        
+        <!-- 
+        <span>
+            <xsl:attribute name="class">
+                <xsl:choose>
+                    <xsl:when test="following-sibling::*[1]/name() = 'lb'">
+                        <xsl:text>tei-pc tei-pc-</xsl:text>
+                        <xsl:value-of select="following-sibling::*[1]/name()"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>tei-pc-</xsl:text>
+                    </xsl:otherwise>                    
+                </xsl:choose>                
+            </xsl:attribute>
+            <xsl:value-of select="text()"/>            
+        </span>
+        -->
+        
     </xsl:template>
     
     <xsl:template match="tei:pb">
+        <!--
+        bigline = re.sub(r'>xom-f(\d+)-s(\d+)<', r'>\1.\2<', bigline)
+        bigline = re.sub(r'title="xom-f(\d+)-s(\d)"', r'title="Folio \1, side \2"', bigline)
+        -->
         <xsl:variable name="col" select="ancestor::tei:div[@type='column']/@xml:lang"/>
         <xsl:variable name="pbid" select="concat(@xml:id, @corresp)"/> <!-- Could use a choose here -->
         <xsl:variable name="folio" select="number(substring($pbid, 6, 2))" />
@@ -231,8 +309,10 @@
         <span class="note {@resp} {@place}"><xsl:apply-templates /></span>
     </xsl:template>
     
-    <xsl:template match="tei:rs">
-        <a class="rs" data-ana="{@ana}" data-toggle="modal" data-target="#topic-box" href="#"><xsl:apply-templates /></a>
+    <xsl:template match="tei:rs"> 
+        <a class="rs" data-ana="{@ana}" data-toggle="modal" data-target="#topic-box" href="#">
+            <xsl:apply-templates />
+        </a>
     </xsl:template>
     
     <xsl:template match="tei:corr">
@@ -265,7 +345,8 @@
     <xsl:template match="topic">
         <div class="topic-entry" id="topic-{key}">
             <h2 class="topic-title"><xsl:value-of select="title" /></h2>
-            <a href="{$web_api_root}{nid}" class="topic-link btn btn-primary btn-sm" target="_blank">See full record</a>
+            <a href="{$topics_ajax_root}node/{nid}" 
+                class="topic-link btn btn-primary btn-sm" target="_blank">See full record</a>
             <div class="topic-type">
                 <xsl:value-of select="type"/>
             </div>
@@ -278,7 +359,9 @@
     <xsl:template match="annotation">
         <div class="annotation-entry" id="annotation-{@nid}">
             <h2 class="annotation-title"><xsl:value-of select="title" /></h2>
-            <a href="{$web_api_root}{@nid}" class="annotation-link btn btn-primary btn-sm" target="_blank">See full record</a>
+            <a href="{$topics_ajax_root}node/{nid}" 
+                class="annotation-link btn btn-primary btn-sm" target="_blank">
+                See full record</a>
             <div class="annotation-content">
                 <xsl:apply-templates select="content" />
                 <div class="annotation-author"><xsl:value-of select="author"/></div>
@@ -306,4 +389,19 @@
         </a>
     </xsl:template>
     
+    <!-- THIS SCREWS THINGS UP
+    <xsl:template match=
+        "text()[not(string-length(normalize-space()))]"/>
+    -->
+    
 </xsl:stylesheet>
+    
+    <!--
+    Sources:
+    get-content.py
+    xom-paragraphs.xsl
+    xom-paragraphs.py
+    build-site.py ?
+    
+     -->
+   

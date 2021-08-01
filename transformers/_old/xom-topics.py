@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""
+Extracts distinct referenced topics from text and returns a CSV.
+"""
+
 import re
 import pandas as pd
 

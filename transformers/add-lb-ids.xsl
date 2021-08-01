@@ -13,7 +13,8 @@
         encoding="utf-8"
         omit-xml-declaration="no"
         standalone="no"
-        indent="yes"
+        indent="no"        
+        doctype-system="http://multepal.github.io/aanalte/tei/tei_lite.dtd"
     />
     <!-- doctype-system="http://multepal.github.io/aanalte/tei/tei_lite.dtd"  -->        
     

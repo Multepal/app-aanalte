@@ -7,7 +7,9 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0" 
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="tei">
-    <xsl:output method="html" omit-xml-declaration="yes" encoding="UTF-8" indent="no" />
+    <xsl:output method="html" 
+        omit-xml-declaration="yes" 
+        encoding="UTF-8" indent="yes" />
 
     <xsl:variable name="themes_ajax_root">http://multepal.spanitalport.virginia.edu/node/</xsl:variable>
 

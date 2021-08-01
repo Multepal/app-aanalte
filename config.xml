@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE config SYSTEM ".site/config.dtd">
+<!DOCTYPE config SYSTEM ".site/config.dtd" [
+    <!-- PUT CONSTANTS HERE-->
+]>
+
 <config>
     
     <group id="DEFAULT">
         <item id="site_title">
-            <value type="str">Aanalte</value>
+            <value type="str">Áanalte'</value>
         </item>
         <item id="base_path">
-            <value type="path">/Users/rca2t1/Repos/aanalte</value>
+            <value type="path">/Users/rca2t1/Repos/aanalte/</value>
         </item>
+    </group>
+    
+    <group id="WEBPUB">
+        <item id="html_docs_dir">
+            <value>docs</value>
+        </item>
+        <item id="css_file_path">
+            <value>assets/css/</value>
+        </item>
+        <item id="css_files">
+            <value>bootstrap.min.css</value>
+            <!-- NEED A WAY TO REGISTER THESE WITH PAGE TYPES
+            <value>pw-default.css</value>
+            -->
+            <value>xom-paragraphs.css</value>
+        </item>        
+        <item id="js_file_path">
+            <value>assets/js/</value>
+        </item>
+        <item id="js_files">
+            <value>jquery-3.3.1.slim.min.js</value>
+            <value>popper.min.js</value>
+            <value>bootstrap.min.js</value>
+            <value>xom-paragraphs.js</value>
+        </item>
+        
     </group>
     
     <group id="MULTEPAL">
@@ -23,7 +52,16 @@
         </item>
         <item id="snippent_set_path">
             <value type="path">export/snippets/all</value>
+        </item>     
+        
+        <!-- Downloaded -->
+        <item id="local_topic_set_path">
+            <value>collections/topics/topics.xml</value>
         </item>
+        <item id="local_annotation_set_path">
+            <value>collections/topics/annotations.xml</value>
+        </item>
+        
     </group>
     
 </config>
@@ -44,5 +82,36 @@ snippets_src = multepal/snippets.xml
 topics_url = export/topics/all
 annotations_url = export/annotations/all
 snippets_url = export/snippets/all
+
+scripts['index'] = [
+    dict(src="assets/jquery-3.3.1.slim.min.js"),
+    dict(src="assets/popper.min.js"),
+    dict(src="assets/bootstrap.min.js")
+]
+styles['index'] = [
+    dict(href="assets/bootstrap.min.css"),
+    dict(href="pw-default.css")
+]
+scripts['paragraphs'] = [
+    dict(src="assets/jquery-3.3.1.slim.min.js"),
+    dict(src="assets/popper.min.js"),
+    dict(src="assets/bootstrap.min.js"),
+    dict(src="./xom-paragraphs.js")
+]
+styles['paragraphs'] = [
+    dict(href="assets/bootstrap.min.css"),
+    dict(href="./xom-paragraphs.css")
+]
+docmap = {
+    'index.html': {
+        'page_title': 'Home',
+        'assets':'index'
+    },
+    'xom-paragraphs.html': {
+        'page_title': 'Paragraphs Version',
+        'assets': 'paragraphs'
+    }
+}
+
 
 -->
