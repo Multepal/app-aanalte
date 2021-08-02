@@ -1,6 +1,8 @@
 # To Do
 
-* LB elements should be at ends of lines
+* Add @rend to cols for left and right positions
+* Define teiHeader
+* LB elements should be at ends of lines (?)
 * Remove empty LB elements
 
 # Done
