@@ -13,15 +13,11 @@
         encoding="utf-8"
         omit-xml-declaration="no"
         standalone="no"
-        indent="no"        
-        doctype-system="http://multepal.github.io/aanalte/tei/tei_lite.dtd"
+        indent="no"                
     />
-    <!-- doctype-system="http://multepal.github.io/aanalte/tei/tei_lite.dtd"  -->        
-    
+
     <xsl:template match="node()|@*">
-        <!-- Copy the current node -->
         <xsl:copy>
-            <!-- Including any child nodes it has and any attributes -->
             <xsl:apply-templates select="node()|@*"/>
         </xsl:copy>
     </xsl:template>

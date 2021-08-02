@@ -4,13 +4,13 @@
 -->
 
 <xsl:stylesheet version="2.0"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"    
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
     xmlns:tei="http://www.tei-c.org/ns/1.0" 
     exclude-result-prefixes="tei">
     
     <xsl:output method="html" 
+        version="5.0" 
         omit-xml-declaration="yes" 
         encoding="UTF-8" 
         indent="yes"  
@@ -67,20 +67,16 @@
             </head>
             <body>
                 <!-- Header; may include a menu at some point -->
+                <xsl:comment> HEADER </xsl:comment>
                 <nav class="navbar navbar-expand-sm bg-light">
-                    <h1>
-                        <i>
-                            <a href="index.html">
-                                <xsl:value-of select="$doc_title"/>
-                            </a>
-                        </i>
-                        <span> : </span>
-                        <span>Paragraphs and Topics Version</span>
+                    <h1 id="page-title">
+                        <a href="index.html"><xsl:value-of select="$doc_title"/></a>                        
                     </h1>
                 </nav>
         
-                <xsl:comment> Main text viewing area </xsl:comment>
                 <div class="wrapper">
+                    
+                    <xsl:comment> SIDEBAR </xsl:comment>
                     <div id="sidebar">
                         <h3><small>idx</small></h3>
                         <ul class="list-unstyled">
@@ -97,14 +93,24 @@
                             </xsl:for-each>
                         </ul>
                     </div>
+                    
+                    
                     <div class="container-fluid" id="content">
+                        
+                        <xsl:comment> CONTENT </xsl:comment>    
                         <div class="row">
+                            <!--
                             <xsl:apply-templates select="//tei:text//tei:head"/>
+                            -->
+                            <xsl:apply-templates select="//tei:text//tei:front"/>
                             <xsl:apply-templates select="//tei:text//tei:body"/>                    
                         </div>
+                        
                         <div class="row">
                             <xsl:text>*   *   *</xsl:text>
                         </div>
+                        
+                        <xsl:comment> FOOTER </xsl:comment>
                         <div class="row text-center mt-3 footer">
                             <div class="col" id="footer">
                                 <!-- <a class="btn btn-primary btn-sm" href="index.html">Return Home</a> -->
@@ -114,7 +120,7 @@
                 </div>
         
                 <!-- Modal box for displaying topic or annotation info -->
-                <xsl:comment> Modal Box </xsl:comment>
+                <xsl:comment> MODAL </xsl:comment>
                 <div class="container" id="data">
                     <div class="modal" tabindex="-1" role="dialog" id="topic-box" title=""
                         style="display:none;"
@@ -163,6 +169,24 @@
         </html>        
     </xsl:template>
     
+    <xsl:template match="tei:front">
+        <div class="tei-front {@rend}">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="tei:body">
+        <div class="tei-body {@rend}">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="tei:head">
+        <div class="tei-head {@rend}">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
     <!-- Handle columns -->
     <xsl:template match="tei:div[@type='column']">
         <xsl:variable name="column_label">
@@ -171,7 +195,7 @@
                 <xsl:otherwise>Castellano</xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <div class="col {@xml:lang}" xml:lang="{@xml:lang}" title="Lado {$column_label}">    
+        <div class="col {@xml:lang} {@rend}" xml:lang="{@xml:lang}" title="Lado {$column_label}">    
             <h2 class="text-center">Lado <xsl:value-of select="$column_label"/></h2>
             <xsl:apply-templates />
         </div>
@@ -282,15 +306,13 @@
     </xsl:template>
     
     <xsl:template match="tei:pb">
-        <!--
-        bigline = re.sub(r'>xom-f(\d+)-s(\d+)<', r'>\1.\2<', bigline)
-        bigline = re.sub(r'title="xom-f(\d+)-s(\d)"', r'title="Folio \1, side \2"', bigline)
-        -->
+
         <xsl:variable name="col" select="ancestor::tei:div[@type='column']/@xml:lang"/>
         <xsl:variable name="pbid" select="concat(@xml:id, @corresp)"/> <!-- Could use a choose here -->
         <xsl:variable name="folio" select="number(substring($pbid, 6, 2))" />
         <xsl:variable name="side" select="substring($pbid, 10, 1)" />
         <xsl:variable name="sidex" select="translate($side, '12', 'rv')" />
+        
         <a id="{$col}-{$pbid}" 
             class="pb folio-index-item" 
             href="#"
@@ -352,6 +374,10 @@
                 <xsl:apply-templates select="description"/>
             </div>
         </div>
+    </xsl:template>
+    
+    <xsl:template match="*[@rend = 'single-line']">
+        <xsl:apply-templates/><br/>
     </xsl:template>
     
     <xsl:template match="annotation">
