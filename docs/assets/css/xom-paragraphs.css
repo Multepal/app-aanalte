@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Peddana');
 
+#page-title {
+    font-style: italic;
+}
+
 .wrapper {
     display: flex;
     width: 100%;
@@ -48,7 +52,7 @@ div.col {
 }
 
 p {
-    font-family: sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     font-size: 14pt;
 }
 
@@ -64,21 +68,17 @@ p {
 .pb {
     font-family: sans-serif;
     font-size: 80%;
-    /*
-    padding: .25rem .5rem;
-    margin: .5rem;
-    background-color: #7386D5;
-    */
 }
 
 .pb-marker {
     color:lightgrey;
+    display: none;
 }
 
 .lb-marker {
     color:lightgreen;
+    display: none;
 }
-
 
 div.quc .pb {
     float: left;
@@ -98,6 +98,35 @@ div.spa p {
     margin-right: 2in;
 }
 
+.col.quc {
+    width: 50%;
+    float:left;
+}
+
+.col.spa {
+    width: 50%;
+    float:right;
+}
+
+.single-col {
+    margin-left: 3in;
+    margin-right: 3in;
+}
+
+.single-col .pb {
+    float: left;
+    margin-left: -1in;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hi.single-line {
+    display: block;
+}
+
 .note {
     clear: both;
     font-family: sans-serif;
@@ -108,6 +137,11 @@ div.spa p {
     background-color: beige;
     padding:.5rem;
     border-radius: 3px;
+}
+
+.note.margin-left {
+    float:left;
+    margin-left: -1in;
 }
 
 div.col.quc p .note {
@@ -158,9 +192,9 @@ div.col.spa p .note {
     text-decoration: line-through; 
 }
 
-.hi {
+.hi.bold {
     font-weight: bold;
-    display: inline;
+    /* display: inline; */
 }
 
 .hi.superscript {
