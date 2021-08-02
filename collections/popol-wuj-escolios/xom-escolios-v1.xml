@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI SYSTEM "https://multepal.github.io/aanalte/tei/tei_lite.dtd">
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 
+      https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_lite.xsd"
+ xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
 
       <!-- DESCRIBES THE SOURCE MS (AND THE TRANSCRIPTION IF USED) -->
@@ -160,29 +162,32 @@
 
       <pb xml:id="f01-s1"/>
 
-      <front>
+      <front rend="single-col center">
          <docTitle>
-            <titlePart type="main">
-               <lb n="1"/><hi rend="extra-large bold">E<add rend="superscript" instant="false" status="unremarkable">S</add>COLÍOS ALAS HÍS</hi>
-               <lb n="2"/><hi rend="large">TORÍAS DEEL ORÍGEN DE LOS ÍNDÍOS</hi>
-               <lb n="3"/><hi rend="large">ESCOLÍADAS POR</hi>
-               <lb n="4"/><hi rend="large">EL</hi>
-               <lb n="5"/><hi rend="extra-large bold">R.P.F.FRANZÍSCO XI <pc> =</pc></hi>
-               <lb n="6"/><hi rend="extra-large bold">MENEZ</hi>
-               <lb n="7"/><hi rend="large">CVRA DOCTRÍNERO POR EL REALPATRO<pc> =</pc></hi>
-               <lb n="8"/><hi rend="large">NATO DEL PVEBLO DE <abbr>S<hi rend="superscript">TO.</hi></abbr> THOMAS CHÍ<pc> =</pc></hi>
-               <lb n="9"/><hi rend="large">CHÍCASTENANGO DEL SAGRADO OR<pc> =</pc></hi>
-               <lb n="10"/><hi rend="large">DEN DE PRÆDÍCADORES PARA MA<pc> =</pc></hi>
-               <lb n="11"/><hi rend="large">YOR NOTÍCÍA ALOS MÍNÍSTROS</hi>
-               <lb n="12"/><hi rend="large">DE LAS COS. DE LOS ÍNDÍOS</hi>
+            <titlePart type="main" xml:space="preserve">
+               <lb n="1"/><hi rend="extra-large bold single-line">E<add rend="superscript" instant="false" status="unremarkable">S</add>COLÍOS ALAS HÍS</hi>
+               <lb n="2"/><hi rend="large single-line">TORÍAS DEEL ORÍGEN DE LOS ÍNDÍOS</hi>
+               <lb n="3"/><hi rend="large single-line">ESCOLÍADAS POR</hi>
+               <lb n="4"/><hi rend="large single-line">EL</hi>
+               <lb n="5"/><hi rend="extra-large bold single-line">R.P.F.FRANZÍSCO XI <pc> =</pc></hi>
+               <lb n="6"/><hi rend="extra-large bold single-line">MENEZ</hi>
+               <lb n="7"/><hi rend="large single-line">CVRA DOCTRÍNERO POR EL REALPATRO<pc> =</pc></hi>
+               <lb n="8"/><hi rend="large single-line">NATO DEL PVEBLO DE <abbr>S<hi rend="superscript">TO.</hi></abbr> THOMAS CHÍ<pc> =</pc></hi>
+               <lb n="9"/><hi rend="large single-line">CHÍCASTENANGO DEL SAGRADO OR<pc> =</pc></hi>
+               <lb n="10"/><hi rend="large single-line">DEN DE PRÆDÍCADORES PARA MA<pc> =</pc></hi>
+               <lb n="11"/><hi rend="large single-line">YOR NOTÍCÍA ALOS MÍNÍSTROS</hi>
+               <lb n="12"/><hi rend="large single-line">DE LAS COS. DE LOS ÍNDÍOS</hi>
             </titlePart>
          </docTitle>
          <lb n="13"/>
       </front>
-      <body>
+      
+      <body rend="single-col">
+         
          <head rend="center">
             <lb n="14"/><hi rend="large">PROLOGO.</hi>
          </head>
+         
          <p>
             <lb n="15"/><hi rend="strong">C</hi>osa es cíerta, y auerígua da entre to dos los <abbr>q'</abbr> conocen ín díos, <abbr>q'es</abbr> la<pc> –</pc>
             <lb n="16"/>gente más írre gular ensus cosas, <abbr>q'</abbr> se ha descubíerto en toda la redondez 
