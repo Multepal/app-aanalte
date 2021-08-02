@@ -153,9 +153,7 @@
                 <xsl:comment> SCRIPTS </xsl:comment>
                 <xsl:for-each select="$config/id('js_files')/value">
                     <xsl:element name="script">
-                        <!--
-                        <xsl:attribute name="type">text/js</xsl:attribute>
-                        -->
+                        <xsl:attribute name="type">text/javascript</xsl:attribute>
                         <xsl:attribute name="src" select="concat($js_file_path, text())" />
                         <xsl:text xml:space="preserve"> </xsl:text>
                     </xsl:element>                       
