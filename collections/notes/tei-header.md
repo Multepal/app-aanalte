@@ -6,9 +6,10 @@
 
 
 <div style="text-align:center;">
-<img src="graph.png"/>
+	<img src="graph.png"/>
 </div>
------
+
+<hr />
 
 # Header (`teiHeader`)
 
