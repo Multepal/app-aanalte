@@ -42,7 +42,7 @@ h6:before {
  
 # Guidelines on the TEI Header
 
-* This document provides clarity on the content of the various TEI Header elements, with specific reference to the Multepal Project and the paragraphs and topics editions of the *Popol Wuh*.
+* This document provides clarity on the content of the various TEI Header elements, with specific reference to the Multepal Project and the paragraphs and topics editions of the *Popol Wuj*.
 
 * NOTE: Many of these items should be created in separate TEI documents that are included using XINCLUDE elements with an XPOINTER attribute to the BODY element of the target text. 
 
@@ -64,7 +64,7 @@ h6:before {
 
 #### Title (`title`)
 
-* Should reflect the scope of the digital text, i.e. **Popol Wuh**
+* Should reflect the scope of the digital text, i.e. **Popol Wuj**
 
 #### Author (`author`)
 
