@@ -68,7 +68,7 @@ h6:before {
 
 #### Author (`author`)
 
-* Not Ximenez, etc. &mdash; this is the authors of the digital text, e.g. the Multepal team.
+* Not Ximénez, etc. &mdash; this is the authors of the digital text, e.g. the Multepal team.
 
 #### Responsibility Statement (`respStmt`) +
 
@@ -122,7 +122,7 @@ h6:before {
 
 * A history of changes made during the development of the electronic text. 
 * Important for version control and for resolving questions about the history of a file.
-* Use one or more `change` elements with dates and descriptions of things done. Should go back to acquisition of OSU PDF and it's initial conversion and shaping, up to the current modifications.
+* Use one or more `change` elements with dates and descriptions of things done. Should go back to acquisition of OSU PDF and its initial conversion and shaping, up to the current modifications.
 
 <!--
 2. Outline:
