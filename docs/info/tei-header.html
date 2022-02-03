@@ -43,13 +43,13 @@ h6:before {
 }
 
 </style>
-<h1 id="guidelines-on-the-tei-header">Guidelines on the TEI Header</h1>
+<h1 id="guidelines-on-the-tei-header">Guidelines for the TEI Header in Multepal</h1>
 <ul>
 <li><p>This document provides clarity on the content of the various TEI Header elements, with specific reference to the Multepal Project and the paragraphs and topics editions of the <em>Popol Wuj</em>.</p></li>
 <li><p>NOTE: Many of these items should be created in separate TEI documents that are included using XINCLUDE elements with an XPOINTER attribute to the BODY element of the target text.</p></li>
 </ul>
 <div style="text-align:center;">
-<pre><code>&lt;img src=&quot;graph.png&quot;/&gt;</code></pre>
+    <img src="graph.png">
 </div>
 <hr />
 <h1 id="header-teiheader">Header (<code>teiHeader</code>)</h1>
@@ -113,14 +113,15 @@ h6:before {
 <li>Contains <strong>classificatory and contextual information</strong> about the digital text, such as its subject matter, the situation in which it was produced, the individuals described by or participating in producing it, and so forth.
 <ul>
 <li>Describe the form and content of the text, including the languages (<code>language</code>) and scripts it usess.</li>
-</ul></li>
-<li>The text profile is useful for any form of automatic text processing.</li>
+</ul>
+</li>
+    <li>The text profile is useful for any form of automatic text processing.</li>
 </ul>
 <h2 id="revision-description-revisiondesc">Revision Description (<code>revisionDesc</code>)</h2>
 <ul>
-<li>A history of changes made during the development of the electronic text.</li>
-<li>Important for version control and for resolving questions about the history of a file.</li>
-<li>Use one or more <code>change</code> elements with dates and descriptions of things done. Should go back to acquisition of OSU PDF and its initial conversion and shaping, up to the current modifications.</li>
+    <li>A history of changes made during the development of the electronic text.</li>
+    <li>Important for version control and for resolving questions about the history of a file.</li>
+    <li>Use one or more <code>change</code> elements with dates and descriptions of things done. Should go back to acquisition of OSU PDF and its initial conversion and shaping, up to the current modifications.</li>
 </ul>
 <!--
 2. Outline:
