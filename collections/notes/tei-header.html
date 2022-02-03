@@ -1,0 +1,137 @@
+<style>
+
+body {
+    font-family: Arial;
+}
+
+h1 { counter-reset: h2counter; }
+h2 { counter-reset: h3counter; }
+h3 { counter-reset: h4counter; }
+h4 { counter-reset: h5counter; }
+h5 { counter-reset: h6counter; }
+h6 {}
+
+
+h2:before {
+    counter-increment: h2counter;
+    content: counter(h2counter) ".\0000a0\0000a0";
+}
+
+h3:before {
+    counter-increment: h3counter;
+    content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+}
+
+h4:before {
+    counter-increment: h4counter;
+    content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) ".\0000a0\0000a0";
+}
+
+h5:before {
+    counter-increment: h5counter;
+    content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) ".\0000a0\0000a0";
+}
+
+h6:before {
+    counter-increment: h6counter;
+    content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) "." counter(h6counter) ".\0000a0\0000a0";
+}   
+
+#page-title {
+    font-size: 200%;
+    font-weight: heavy;
+}
+
+</style>
+<h1 id="guidelines-on-the-tei-header">Guidelines on the TEI Header</h1>
+<ul>
+<li><p>This document provides clarity on the content of the various TEI Header elements, with specific reference to the Multepal Project and the paragraphs and topics editions of the <em>Popol Wuj</em>.</p></li>
+<li><p>NOTE: Many of these items should be created in separate TEI documents that are included using XINCLUDE elements with an XPOINTER attribute to the BODY element of the target text.</p></li>
+</ul>
+<div style="text-align:center;">
+<pre><code>&lt;img src=&quot;graph.png&quot;/&gt;</code></pre>
+</div>
+<hr />
+<h1 id="header-teiheader">Header (<code>teiHeader</code>)</h1>
+<h2 id="file-description-filedesc">File Description (<code>fileDesc</code>)</h2>
+<ul>
+<li>Contains a full bibliographical description of <strong>the computer file itself</strong>, from which a user of the text could derive a proper bibliographic citation, or which a librarian or archivist could use in creating a catalogue entry recording its presence within a library or archive.</li>
+<li>The term computer file here is to be understood as referring to <strong>the whole entity or document described by the header</strong>, even when this is stored in several distinct operating system files. The file description also includes information about the source or sources from which the electronic document was derived.</li>
+</ul>
+<h3 id="title-statement-titlestmnt">Title Statement (<code>titleStmnt</code>)</h3>
+<h4 id="title-title">Title (<code>title</code>)</h4>
+<ul>
+<li>Should reflect the scope of the digital text, i.e. <strong>Popol Wuj</strong></li>
+</ul>
+<h4 id="author-author">Author (<code>author</code>)</h4>
+<ul>
+<li>Not Ximénez, etc. — this is the authors of the digital text, e.g. the Multepal team.</li>
+</ul>
+<h4 id="responsibility-statement-respstmt">Responsibility Statement (<code>respStmt</code>) +</h4>
+<ul>
+<li>Each contains <code>resp</code>, <code>name</code>, and <code>note</code>, one for each person. <code>resp</code> is a coded name for the work performed, e.g. <em>transcription</em>, <em>modeling</em>, <em>annotation</em>, <em>cleaning</em>, etc.</li>
+</ul>
+<h3 id="source-description-sourcdesc">Source Description (<code>sourcDesc</code>)</h3>
+<ul>
+<li>Describe the original manuscript</li>
+<li>Describe the manuscript as held at the Newberry, i.e. as divided up into three parts.</li>
+</ul>
+<h3 id="edition-edition">Edition (<code>edition</code>)</h3>
+<ul>
+<li>Describe Paragaraphs and Topics, the editorial thought process behind the content model.</li>
+</ul>
+<h3 id="publication-publication">Publication (<code>publication</code>)</h3>
+<ul>
+<li>Describe the hosting on GitHub</li>
+<li>Should NOT be the Newberry. That should go in the Source Description.</li>
+</ul>
+<h2 id="encoding-description-encodingdesc">Encoding Description (<code>encodingDesc</code>)</h2>
+<ul>
+<li><p>Describe <strong>the relationship between an electronic text and its source or sources.</strong> This is the actual methods chosen to represent the text digital, i.e. to encode it in TEI.</p></li>
+<li><p>Also how the text was normalized during transcription, how the encoders resolved ambiguities in the source, what levels of encoding or analysis were applied, and similar matters, etc. These go in <code>editorialDecl</code>.</p></li>
+</ul>
+<h3 id="project-description-projectdesc">Project Description (<code>projectDesc</code>)</h3>
+<ul>
+<li>Describe the Multepal Project here.</li>
+</ul>
+<h3 id="editorial-declaration-editorialdecl">Editorial Declaration (<code>editorialDecl</code>)</h3>
+<ul>
+<li>Details of editorial principles and practices applied during the encoding of a tex</li>
+</ul>
+<h3 id="references-declaration-refsdecl">References Declaration (<code>refsDecl</code>)</h3>
+<ul>
+<li>Describe schema for how <strong>canonical references</strong> are constructed for this text.</li>
+<li>Crucial for annotations as well as CTS.</li>
+</ul>
+<h3 id="class-declaration-classdecl">Class Declaration (<code>classDecl</code>)</h3>
+<ul>
+<li>Describe the taxonomies defining any classificatory codes used elsewhere in the text</li>
+<li>This includes the TOPICS uses in <code>rs@ana</code> values.</li>
+</ul>
+<h2 id="profile-description-profiledesc">Profile Description (<code>profileDesc</code>)</h2>
+<ul>
+<li>Contains <strong>classificatory and contextual information</strong> about the digital text, such as its subject matter, the situation in which it was produced, the individuals described by or participating in producing it, and so forth.
+<ul>
+<li>Describe the form and content of the text, including the languages (<code>language</code>) and scripts it usess.</li>
+</ul></li>
+<li>The text profile is useful for any form of automatic text processing.</li>
+</ul>
+<h2 id="revision-description-revisiondesc">Revision Description (<code>revisionDesc</code>)</h2>
+<ul>
+<li>A history of changes made during the development of the electronic text.</li>
+<li>Important for version control and for resolving questions about the history of a file.</li>
+<li>Use one or more <code>change</code> elements with dates and descriptions of things done. Should go back to acquisition of OSU PDF and its initial conversion and shaping, up to the current modifications.</li>
+</ul>
+<!--
+2. Outline:
+    1. teiHeader
+        1. fileDesc
+            1. title
+            2. sourceDesc
+            3. edition
+            4. publication
+        2. encodingDesc
+            1. Information how the text was encoded from the source
+        3. profileDesc
+        4. revisionDesc
+-->

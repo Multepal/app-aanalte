@@ -1,5 +1,9 @@
 <style>
 
+body {
+	font-family: Arial;
+}
+
 h1 { counter-reset: h2counter; }
 h2 { counter-reset: h3counter; }
 h3 { counter-reset: h4counter; }
