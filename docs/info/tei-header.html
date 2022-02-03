@@ -43,14 +43,20 @@ h6:before {
 }
 
 </style>
-<h1 id="guidelines-on-the-tei-header">Guidelines for the TEI Header in Multepal</h1>
+<div id="title" id="guidelines-on-the-tei-header">Guidelines for the TEI Header in Multepal</div>
+
 <ul>
 <li><p>This document provides clarity on the content of the various TEI Header elements, with specific reference to the Multepal Project and the paragraphs and topics editions of the <em>Popol Wuj</em>.</p></li>
 <li><p>NOTE: Many of these items should be created in separate TEI documents that are included using XINCLUDE elements with an XPOINTER attribute to the BODY element of the target text.</p></li>
 </ul>
+
+<p>The header assumes the following ontology, regarding the relationship between the encoded digital file (of which the header is an element)
+    and the source document from which is is derived, and to which it refers.</p>
+
 <div style="text-align:center;">
     <img src="graph.png">
 </div>
+
 <hr />
 <h1 id="header-teiheader">Header (<code>teiHeader</code>)</h1>
 <h2 id="file-description-filedesc">File Description (<code>fileDesc</code>)</h2>
