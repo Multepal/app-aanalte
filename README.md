@@ -12,7 +12,7 @@ Website: https://multepal.github.io/aanalte/
 
 * **collections/**: Stores the latest versions of encoded source files. 
 * **docs/**: Contains all html templates of the texts that can be accessed through the website shared above.
-* **pipelines/**: Contains scripts that apply stylesheets to collection files and outputs several 
+* **pipelines/**: Contains scripts that apply stylesheets to collection files and outputs html files, etc.
 * **transformers/**: All stylesheets applied to the text files under collections/. 
 
 **(currently not in use)**
