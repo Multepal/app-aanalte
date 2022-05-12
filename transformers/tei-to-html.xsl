@@ -39,6 +39,7 @@
     <xsl:variable name="quote">
     <xsl:text>'</xsl:text>
     </xsl:variable>
+    
     <xsl:variable name="quote_replacement">
         <xsl:text>__QUOTE__</xsl:text>
     </xsl:variable>
