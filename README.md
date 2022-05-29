@@ -4,7 +4,7 @@
 A platform for generating and displaying TEI encoded versions from textual sources (aka editions).
 <!-- define edition vs version here, or refer to definitions somewhere else -->
 
-Website: https://multepal.github.io/aanalte/
+Website: https://multepal.github.io/app-aanalte/
 
 ***
 
