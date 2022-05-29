@@ -1,6 +1,8 @@
 _site/*
+dev/*
 **/_old/*
 **/_hide/*
 **/_HIDE/*
 **/.DS_Store
 *.xpr
+**/*.ipynb_checkpoints
