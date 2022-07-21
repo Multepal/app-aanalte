@@ -3,6 +3,8 @@ dev/*
 **/_old/*
 **/_hide/*
 **/_HIDE/*
+
+**/.vscode
 **/.DS_Store
 *.xpr
 **/*.ipynb_checkpoints
