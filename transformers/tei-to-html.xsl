@@ -393,7 +393,7 @@
     </xsl:template>
     
     <xsl:template match="annotation">
-        <div class="annotation-entry" id="annotation-{@nid}">
+        <div class="annotation-entry" id="annotation-{nid}">
             <h2 class="annotation-title"><xsl:value-of select="title" /></h2>
             <a href="{$topics_ajax_root}node/{nid}" 
                 class="annotation-link btn btn-primary btn-sm" target="_blank">

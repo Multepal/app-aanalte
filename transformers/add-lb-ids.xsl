@@ -24,6 +24,7 @@
     
     <!-- Add IDs to lines with numbers showing location in physical OHCO -->
     <!-- e.g. xom-f01-s1-quc-37 -->
+    <!-- NEED TO HANDLE THE ESCOLIOS -->
     <xsl:template match="lb[@n]">
         
         <xsl:variable name="col">           

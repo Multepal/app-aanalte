@@ -3,7 +3,6 @@
 import configparser
 import requests
 import os
-import re
 from lxml import etree as ET
 
 class Importer():
@@ -44,7 +43,7 @@ class Importer():
                 out.write(r.text)
 
     def annotation_mapper(self):
-        """This method maps lines to IDs"""
+        """Maps line IDs to annotation IDs and adds an annotation map element to the annotations file."""
 
         # Get annotation XML file path
         file = self.exports['annotations']['file']
@@ -84,7 +83,8 @@ class Importer():
                     if el == 'MS 1515: Popol Wuj':
                         line_id.append('xom')
                     if el == 'MS 1515: Escolios':
-                        line_id.append('xom-esc')
+                        # line_id.append('xom-esc')
+                        pass
                     elif parts[0] == 'Folio' or parts[0] == 'Escolio':
                         line_id.append(f'{trans[parts[0]]}{parts[1]}')
                         line_id.append(f'{trans[parts[2]]}')
@@ -110,5 +110,3 @@ if __name__ == '__main__':
     imp = Importer(config_file)
     imp.download()
     imp.annotation_mapper()
-
-
