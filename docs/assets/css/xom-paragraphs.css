@@ -175,7 +175,7 @@ div.col.spa p .note {
 }
 
 /* For Escolios, etc. */
-a.lb .annotation-icon {
+.annotation-icon {
     float:left;
     margin-left: -1in;
 } 
