@@ -244,7 +244,7 @@
             <a class="lb" href="#"  
                 title="Annotation for Folio {$folio}{$sidex}, column {$lang_name}, line {$line}" 
                 data-source-line-id="{$line_id}" 
-                data-nid="{@nid}" 
+                data-nid="{nid}" 
                 data-toggle="modal" 
                 data-target="#topic-box">
                 <sup class="annotation-icon">&#9998;</sup> <!-- Target 8853 -->
