@@ -219,6 +219,8 @@
     <xsl:template match="tei:lb">
         
         <xsl:variable name="line_id" select="@xml:id" />
+        <!-- This is all based on PV! -->
+        <!-- This all needs to be changed to work with structured data. -->
         <xsl:variable name="folio" select="number(substring(@xml:id, 6, 2))" />
         <xsl:variable name="side" select="substring(@xml:id, 10, 1)" />
         <xsl:variable name="sidex" select="translate($side, '12', 'rv')" />
@@ -239,14 +241,15 @@
             </xsl:choose>
         </xsl:variable>
         
+        <!-- title="Annotation for Folio {$folio}{$sidex}, column {$lang_name}, line {$line}, TEST: {$line_id}"  -->
         <xsl:variable name="line" select="substring(@id, 16, 2)" />
         <xsl:for-each select="$annotations//annotation-map/item[@line_id = $line_id]">
             <a class="lb" href="#"  
-                title="Annotation for Folio {$folio}{$sidex}, column {$lang_name}, line {$line}" 
-                data-source-line-id="{$line_id}" 
-                data-nid="{nid}" 
-                data-toggle="modal" 
-                data-target="#topic-box">
+                title = "Annotation for {$line_id}"
+                data-source-line-id = "{$line_id}" 
+                data-nid = "{@nid}" 
+                data-toggle = "modal" 
+                data-target = "#topic-box">
                 <sup class="annotation-icon">&#9998;</sup> <!-- Target 8853 -->
             </a>
         </xsl:for-each>
