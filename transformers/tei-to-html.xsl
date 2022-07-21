@@ -17,7 +17,8 @@
         />
 
     <!-- PARAMETERS and VARIABLES-->
-    <xsl:param name="configFile">/Users/rca2t1/Repos/aanalte/config.xml</xsl:param>
+    <!-- <xsl:param name="configFile">/Users/rca2t1/Repos/aanalte/config.xml</xsl:param> -->
+    <xsl:param name="configFile">../config.xml</xsl:param>
     <xsl:variable name="config" select="document($configFile)"/>    
     <xsl:variable name="site_title" select="$config/id('site_title')/value/text()"/>
     <xsl:variable name="topics_ajax_root" select="$config/id('multepal_db_url')/value/text()"/>
