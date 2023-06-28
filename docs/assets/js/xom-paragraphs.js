@@ -44,7 +44,7 @@ $(document).ready(function()
 
     // This reproduces logic that needs to be centralized
     function parse_line_id(line_id = '') {
-        line_id = line_id.replace(/-/g, ' ')
+        line_id = line_id.replace(/-/g, ', ')
             .replace(/xom/, '')
             .replace(/f/, 'Folio ')
             .replace(/s/, ', side ')
