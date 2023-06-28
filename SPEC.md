@@ -8,13 +8,14 @@ Replace current Drupal system with a pure XML system.
 
 - Create schema for defining Topics.
 - Create schema for capturing Annotations.
+- Create schema for Relations (among topics).
 - Create XSLT for merging topics, annotations, and target texts.
 - Adapt current Aanalte to work with the output
 
 ## Assumptions
 
-- Topics and annotations will live in a repo separate from the documents they annotate.
-- Individual topics and annotations will be stored in separate files.
+- Topics, relations, and annotations will live in a repo separate from the documents they annotate.
+- Individual topics and annotations will be stored in separate files. Relations may grouped by source.
 - Topics will be linked to texts from the text.
 - Annotations will be linked to texts from the annotation file.
 - Annotations will use XPath to specify target elements in a text. (This may be challenged by using CTE.)
@@ -23,4 +24,4 @@ Replace current Drupal system with a pure XML system.
 
 ## Resources
 
-- Current examples of [annotations](../aanalte/collections/topics/annotations.xml) and [topics](../aanalte/collections/topics/topics.xml) output from Drupal.
+- Current examples of annotations topics in `collections/topics`. These are automatically output from Drupal using its REST exporter.
