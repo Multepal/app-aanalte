@@ -106,6 +106,7 @@ if __name__ == '__main__':
 
     import os
     cwd = os.getcwd()
+    print('CWD=', cwd)
     config_file = f"{cwd}/config.ini"
     imp = Importer(config_file)
     imp.download()
