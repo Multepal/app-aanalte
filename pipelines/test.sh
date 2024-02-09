@@ -10,4 +10,4 @@ saxon tmp/xom-escolios-v1-lbids.xml transformers/tei-to-html.xsl > docs/xom-esco
 
 echo "Publishing Aj Tzibab K'iche"
 saxon collections/popolwuj-ajtzibab-kiche/source.v1.tei.xml transformers/add-lb-ids.xsl > tmp/popolwuj-ajtzibab-kiche-source.v1.tei-lbids.xml
-saxon tmp/popolwuj-ajtzibab-kiche-source.v1.tei-lbids.xml transformers/tei-to-html.xsl > docs/popolwuj-ajtzibab-kiche-source.v1.tei-lbids.xml
+saxon tmp/popolwuj-ajtzibab-kiche-source.v1.tei-lbids.xml transformers/tei-to-html.xsl > docs/popolwuj-ajtzibab-kiche-source.v1.tei-lbids.html
