@@ -220,7 +220,7 @@ div.col.spa p .note {
     /* display: inline; */
 }
 
-.hi.superscript {
+.hi.superscript, .hi.sup {
     font-weight: normal;
     display: inline;
     vertical-align: super;
