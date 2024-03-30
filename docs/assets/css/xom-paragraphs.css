@@ -54,6 +54,7 @@ div.col {
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     font-size: 14pt;
+    .note.margin-left: 1rem;
 }
 
 .modal-content p {
@@ -113,6 +114,12 @@ div.spa p {
     margin-right: 3in;
 }
 
+/* For texts without columns */
+.tei-body p {
+    margin-left: 3in;
+    margin-right: 3in;
+}
+
 .single-col .pb {
     float: left;
     margin-left: -1in;
@@ -143,6 +150,16 @@ div.spa p {
     float:left;
     margin-left: -1in;
 }
+
+/* For texts without columns */
+.tei-body p >  .note {
+    float:right;
+    margin-left: -1in;
+    padding-right: .5rem;
+    margin-right: .5rem;
+    margin-left: -1in;
+}
+
 
 div.col.quc p .note {
     float: left;

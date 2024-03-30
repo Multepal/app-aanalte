@@ -2206,6 +2206,31 @@ Unas líneas después, los autores k’iche’ añaden otros cuatro atributos a 
     <author_id>8</author_id>
     <author>Allison Margaret Bigelow</author>
   </annotation>
+  <annotation>
+    <nid>3598</nid>
+    <title>K'ool y q'o'l</title>
+    <lineas>
+      <ul class="shs-hierarchy">
+        <li class="shs-parent">MS 1515: Popol Wuj</li>
+        <li class="shs-parent">Folio 04 recto</li>
+        <li class="shs-parent">Column A</li>
+        <li class="shs-term-selected">Line 27</li>
+      </ul>
+    </lineas>
+    <content>
+      <p>Debido a la fonética y la ortografía colonial del padre Ximénez, no es fácil interpretar la palabra "cool", tal como se escribe en el manuscrito original. En algunos casos es claro que se refiere al contexto agrícola de la milpa, un término que se escribe hoy en día como "k'ool." Tales pasajes incluyen las referencias a la siembra en los folios 2r (línea 8) y 4r (línea 27). En otros casos, la interpretación es más ambigua, ya que la palabra que Ximénez escribe como "cool" puede ser "k'ool" (milpa) o "q'o'l" (sustentador) en la ortografía contemporánea del idioma k'iche'. Tales pasajes textuales incluyen los folios 3r (línea 44), 3v (líneas 4 y 42), 32v (línea 31) y 54v (líneas 5, 17 y 46), momentos en los cuales la palabra "cool" (sustentador) aparece junto con "ꜩucul" (provedor). Este pareto también ocurre en el folio 2r, línea 8, pero por el contexto hemos interpretado la voz "cool" como "k'ool" (milpa). Por su parte, el lingüista k'iche' Sam Colop (2008: 27, 33, 36, 127, 209) interpreta la palabra "cool" como "cuidadores" (2r), "quien nos guarde" (3r), "que nos cuiden" (3v), "los que guarden" (4r), "los que nutren" (32v) y "los que te guarden" (54v).</p>
+      <p>Cabe notar que las palabras "k'ool" y "q'o'l" comparten una raíz conceptual, pues la milpa es el corazón del sustento y la alimentación en el mundo maya. Pero no son sinónimos. Por lo tanto en el Proyecto Multepal hemos seguido la interpretación del equipo Ajtz'ib'ab' (Ajpub' Pablo García Ixmatá, Beatriz Par Sapón, Saqijix López Ixcoy, Aj Xol Hector Rolando e Ixch'umiil García Méndez) en los casos señalados. </p>
+      <p>Due to the instability of colonial-era phonetics and orthography, such as those used by Father Francisco de Ximénez when he transcribed the <em>Popol Wuj</em>, it is extremely difficult to interpret words like "cool," which today could be read as "k'ool" (milpa/maizefield) or "q'o'l" (sustainer). We have followed the suggestions of researchers on the Ajtz'ib'ab' team (Ajpub' Pablo García Ixmatá, Beatriz Par Sapón, Saqijix López Ixcoy, Aj Xol Hector Rolando e Ixch'umiil García Méndez) in coding the texts in the Multepal Project collection with "cool" as "k'ool" on folios 2r and 4r (lines 8 and 27, respectively), and in reading "cool" as "q'o'l" on the remaining passages: 3r (line 44), 3v (lines 4 and 42), 32v (line 31) and 54v (lines 5, 17, and 46). Linguists translate each term in slightly different ways. We provide the Spanish-language translations of K'iche' scholar Sam Colop in our description above. English-language translator Alan J. Christenson (2008: 19, 26, 28, 31, 153, 251) translates the term exclusively as "sustainer" (q'o'l).</p>
+    </content>
+    <copia_local/>
+    <elemento_de_destino/>
+    <image/>
+    <sources>Popol Wuj, Popol Vuh: Literal Poetic Version, Translation and Transcription</sources>
+    <texto_de_destino/>
+    <source/>
+    <author_id>8</author_id>
+    <author>Allison Margaret Bigelow</author>
+  </annotation>
   <annotation-map>
     <item nid="995" line_id="xom-f56-s1-quc-27"/>
     <item nid="995" line_id="xom-f56-s1-spa-28"/>
@@ -2426,5 +2451,6 @@ Unas líneas después, los autores k’iche’ añaden otros cuatro atributos a 
     <item nid="3560" line_id="xom-f54-s1-quc-23"/>
     <item nid="3560" line_id="xom-f54-s1-spa-34"/>
     <item nid="3560" line_id="xom-f54-s1-quc-35"/>
+    <item nid="3598" line_id="xom-f04-s1-quc-27"/>
   </annotation-map>
 </annotations>

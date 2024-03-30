@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+<?xml version="1.0" encoding="utf-8" standalone="no"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0    https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_lite.xsd">
+<teiHeader>
     <fileDesc>
       <titleStmt>
         <title><rs ana="POPOL_WUJ">POPOL WUJ</rs>: Versión crítica y actualizada del <rs ana="POPOL_WUJ">Popol Wuj</rs>sr</title>
@@ -22,6 +22,7 @@
 </teiHeader>
   <text>
     <body>
+      <div xml:lang="quc" class="column" rend="single-col center">
       <p><hi rendition="simple:bold"><rs ana="POPOL_WUJ">POPOL WUJ</rs></hi></p>
       <p><hi rendition="simple:bold">OJER TAQ TZIJ</hi></p>
       <p><hi rendition="simple:bold">XB'AN PA <rs ana="TINAMIT_K'ICHE'">TINAMIT K'ICHE'</rs>,</hi></p>
@@ -1350,6 +1351,7 @@
 <lb n="16"/>chacatahic <rs ana="WUQUB'_KAQIX">vvcub caquix</rs>, ruc
 <lb n="17"/><rs ana="SIPAKNA">zipacna</rs>, ruq <rs ana="KAB'RAQAN">cabracan</rs>, varal
 <lb n="18"/>chuvach vleuh.-->
+      </div>
     </body>
   </text>
 </TEI>
