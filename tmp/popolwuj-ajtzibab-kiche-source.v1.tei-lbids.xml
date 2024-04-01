@@ -2,7 +2,7 @@
 <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title><rs ana="POPOL_WUJ">POPOL WUJ</rs>: Versión crítica y actualizada del <rs ana="POPOL_WUJ">Popol Wuj</rs>sr</title>
+        <title>POPOL WUJ: Versión crítica y actualizada del <rs ana="POPOL_WUJ">Popol Wuj</rs>sr</title>
         <author>Ajtz'ib'ab'</author>
         <author>Ajpub' García</author>
         <author>Aj Xol ch'ok, HR</author>
@@ -22,7 +22,6 @@
 </teiHeader>
   <text>
     <body>
-      <div xml:lang="quc" class="column" rend="single-col center">
       <p><hi rendition="simple:bold"><rs ana="POPOL_WUJ">POPOL WUJ</rs></hi></p>
       <p><hi rendition="simple:bold">OJER TAQ TZIJ</hi></p>
       <p><hi rendition="simple:bold">XB'AN PA <rs ana="TINAMIT_K'ICHE'">TINAMIT K'ICHE'</rs>,</hi></p>
@@ -1351,7 +1350,6 @@
 <lb n="16"/>chacatahic <rs ana="WUQUB'_KAQIX">vvcub caquix</rs>, ruc
 <lb n="17"/><rs ana="SIPAKNA">zipacna</rs>, ruq <rs ana="KAB'RAQAN">cabracan</rs>, varal
 <lb n="18"/>chuvach vleuh.-->
-      </div>
     </body>
   </text>
 </TEI>
