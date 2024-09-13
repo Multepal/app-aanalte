@@ -10,7 +10,11 @@
             <value type="str">Áanalte'</value>
         </item>
         <item id="base_path">
+            <!--
             <value type="path">/Users/rca2t1/Repos/MULTEPAL/aanalte/</value>
+            -->
+            <!-- /sfs/qumulo/q -->
+            <value type="path">/home/rca2t/Documents/Projects/Multepal/app-aanalte/</value>
         </item>
     </group>
     
