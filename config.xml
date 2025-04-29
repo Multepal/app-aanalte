@@ -14,7 +14,10 @@
             <value type="path">/Users/rca2t1/Repos/MULTEPAL/aanalte/</value>
             -->
             <!-- /sfs/qumulo/q -->
+             <!--
             <value type="path">/home/rca2t/Documents/Projects/Multepal/app-aanalte/</value>
+            -->
+            <value type="path">/Users/rca2t/Repos/Multepal/app-aanalte/</value>
         </item>
     </group>
     
