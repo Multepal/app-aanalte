@@ -12,6 +12,7 @@ class Importer():
 
         self.config = configparser.ConfigParser()
         self.config.read(ini_file)
+        print('ini_file:', ini_file)
         self.base_path = self.config['DEFAULT']['base_path']
         self.multepal = self.config['multepal']['multepal_url']
         
