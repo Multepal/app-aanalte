@@ -30,12 +30,14 @@
     <xsl:variable name="css_file_path" select="$config/id('css_file_path')/value/text()"/>
     <xsl:variable name="js_file_path" select="$config/id('js_file_path')/value/text()"/>
 
+    <!--
     <xsl:variable name="langname">
         <xsl:map>
             <xsl:map-entry key="'quc'">K&quot;iche&quot;</xsl:map-entry>
             <xsl:map-entry key="'spa'">Castellano</xsl:map-entry>  
         </xsl:map>
     </xsl:variable>
+    -->
 
     <xsl:variable name="quote">
     <xsl:text>'</xsl:text>
