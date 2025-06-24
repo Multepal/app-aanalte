@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -8,7 +9,6 @@
         <author>Saqijix López</author>
         <author>Ajpub' García Ixmatá</author>
         <author>Aj Xol Ch'ok, HR</author>
-        <author>Bugs Bunny</author>
       </titleStmt>
       <publicationStmt>
       </publicationStmt>
@@ -28,7 +28,7 @@
       <p><hi rendition="simple:bold">XB'AN PA <rs ana="TINAMIT_K'ICHE'">TINAMIT K'ICHE'</rs>,</hi></p>
       <p><hi rendition="simple:bold">RAMAQ' <rs ana="TINAMIT_K'ICHE'">K'ICHE' WINAQ</rs></hi></p>
       <p><figure>
-        <graphic url="media/image001.png" width="6.10903in" height="2.21528in"/>
+        <graphic url="media/image001.png" width="6.10903in" height="2.21528in" />
       </figure></p>
       <p><hi rendition="simple:bold">Versión crítica y actualizada</hi></p>
       <p><hi rendition="simple:bold">Ajtz'ib'ab'</hi></p>
