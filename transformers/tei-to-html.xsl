@@ -40,16 +40,15 @@
     -->
 
     <xsl:variable name="quote">
-    <xsl:text>'</xsl:text>
+        <xsl:text>'</xsl:text>
     </xsl:variable>
     
     <xsl:variable name="quote_replacement">
         <xsl:text>__QUOTE__</xsl:text>
     </xsl:variable>
     
-    
     <!-- Not sure if this is doing anything -->
-    <xsl:preserve-space elements="p" /> 
+    <!-- <xsl:preserve-space elements="p" />  -->
     
     <!-- Root node: Insert containing page elements -->
     <xsl:template match="/">
@@ -61,7 +60,8 @@
                 <title>
                     <xsl:value-of select="$site_title"/> 
                     <xsl:text> | </xsl:text>
-                    <xsl:value-of select="$doc_title"/>
+                    <!-- <xsl:value-of select="$doc_title"/> -->
+                     <xsl:apply-templates select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                 </title>
                 <meta charset="UTF-8"/>
                 <!--
@@ -81,7 +81,10 @@
                 <xsl:comment> HEADER </xsl:comment>
                 <nav class="navbar navbar-expand-sm bg-light">
                     <h1 id="page-title">
-                        <a href="index.html"><xsl:value-of select="$doc_title"/></a>                        
+                        <a href="index.html">
+                            <!-- <xsl:value-of select="$doc_title"/> -->
+                            <xsl:apply-templates select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>                         
+                        </a>                        
                     </h1>
                 </nav>
         
@@ -285,6 +288,8 @@
         </xsl:choose> 
         -->
     </xsl:template>
+
+    <xsl:template match="tei:author"></xsl:template>
     
     <xsl:template match="tei:pc">
 
