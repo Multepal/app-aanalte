@@ -23,10 +23,10 @@
     <xsl:variable name="site_title" select="$config/id('site_title')/value/text()"/>
     <xsl:variable name="topics_ajax_root" select="$config/id('multepal_db_url')/value/text()"/>
     <xsl:variable name="base_path" select="$config/id('base_path')/value/text()"/>
-    <xsl:variable name="topicsFileName" select="$config/id('local_topic_set_path')/value/text()"/>
-    <xsl:variable name="topics" select="document(concat($base_path, $topicsFileName))" />
-    <xsl:variable name="annotationsFileName" select="$config/id('local_annotation_set_path')/value/text()"/>
-    <xsl:variable name="annotations" select="document(concat($base_path, $annotationsFileName))" />
+    <xsl:variable name="topics_file_name" select="$config/id('local_topic_set_path')/value/text()"/>
+    <xsl:variable name="topics" select="document(concat($base_path, $topics_file_name))" />
+    <xsl:variable name="annotations_file_name" select="$config/id('local_annotation_set_path')/value/text()"/>
+    <xsl:variable name="annotations" select="document(concat($base_path, $annotations_file_name))" />
     <xsl:variable name="css_file_path" select="$config/id('css_file_path')/value/text()"/>
     <xsl:variable name="js_file_path" select="$config/id('js_file_path')/value/text()"/>
 
@@ -360,7 +360,9 @@
     </xsl:template>
     
     <xsl:template match="tei:hi">
-        <span class="hi {@rend}"><xsl:apply-templates /></span>
+        <a href="">
+            <span class="hi {@rend}"><xsl:apply-templates /></span>
+        </a>
     </xsl:template>
     
     <xsl:template match="tei:num">
@@ -442,13 +444,3 @@
     -->
     
 </xsl:stylesheet>
-    
-    <!--
-    Sources:
-    get-content.py
-    xom-paragraphs.xsl
-    xom-paragraphs.py
-    build-site.py ?
-    
-     -->
-   

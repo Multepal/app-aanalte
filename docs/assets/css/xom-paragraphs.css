@@ -152,7 +152,13 @@ div.spa p {
 }
 
 /* For texts without columns */
-.tei-body p >  .note {
+
+.tei-body p > .foot {
+    
+}
+
+
+.tei-body p > .note {
     float:right;
     margin-left: -1in;
     padding-right: .5rem;
