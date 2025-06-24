@@ -8,7 +8,6 @@
         <author>Saqijix López</author>
         <author>Ajpub' García Ixmatá</author>
         <author>Aj Xol Ch'ok, HR</author>
-        <author>Bugs Bunny</author>
       </titleStmt>
       <publicationStmt>
       </publicationStmt>
@@ -1404,14 +1403,17 @@
       <p xml:id="p28">
       <!-- editor's note: Ajtz'ib'ab' adds a paragraph not in XOM. Corresponds to XOM folio 9r, line 1-->
       Xcha' uloq <rs ana="SIPAKNA">Sipakna</rs> chi ri' pa jul</p>
-      <p>ma k'u are kuk'ot uxe' jul ri umoqikil<ref target="quc.n127"><hi rend="sup">127</hi></ref>
-        <note place="foot" xml:id="quc.n127"><seg type="note-symbol">127</seg>
+      <p>ma k'u are kuk'ot uxe' jul</p>
+      <p>ri umoqikil<ref target="quc.n129"><hi rend="sup">129</hi></ref>
+        <note place="foot" xml:id="quc.n129"><seg type="note-symbol">129</seg>
         Se refiere a "sepultura" conforme a COTO (2005: 518) y <rs ana="XIMENEZ">Ximénez</rs> (1985: 389). Actualmente la raíz es <hi rendition="simple:italic">muq-</hi>.
-        </note></p>
-      <p>xa ujul kuk'oto kolb'al rib'.</p>
+        </note>
+      </p>
+      <p>xa ujul kuk'oto</p>
+      <p>kolb'al rib'.</p>
       <p>K'a te' k'ut ta xsik'in uloq ri <rs ana="SIPAKNA">Sipakna</rs></p>
-      <p>kolon chuqa<ref target="quc.n128"><hi rend="sup">128</hi></ref>
-        <note place="foot" xml:id="quc.n128"><seg type="note-symbol">128</seg>
+      <p>kolon chuqa<ref target="quc.n130"><hi rend="sup">130</hi></ref>
+        <note place="foot" xml:id="quc.n130"><seg type="note-symbol">130</seg>
         En Tz'utujil <hi rendition="simple:italic">chuqa</hi> refiere "resguardarse" o "cuidarse de pasar bajo o sobre algo como un peñasco".
         </note>
       chi ri' pa jul</p>
@@ -1421,102 +1423,125 @@
       <p>Mixk'ototajik</p>
       <p>qitzij naj mixqaj wumal.</p>
       <p>Ma pa kita' nusik'ib'al lo</p>
-      <p>are' k'u ri' isik'ib'al xa ub'i kaxojanik<ref target="quc.n129"><hi rend="sup">129</hi></ref>
-        <note place="foot" xml:id="quc.n129"><seg type="note-symbol">129</seg>
+      <p>are' k'u ri isik'ib'al</p>
+      <p>xa ub'i kaxojanik<ref target="quc.n131"><hi rend="sup">131</hi></ref>
+        <note place="foot" xml:id="quc.n131"><seg type="note-symbol">131</seg>
         <hi rendition="simple:italic">Xojaj</hi> significa "eco".
         </note>
       </p>
       <p>keje ri jun eleb'al</p>
-      <p>ka'ib' eleb'al ix k'o wi kanuta'o</p>
+      <p>ka'ib' eleb'al</p>
+      <p>ix k'o wi</p>
+      <p>kanuta'o</p>
       <p>xcha' ula ri <rs ana="SIPAKNA">Sipakna</rs> pa ujul</p>
       <p>chi ri' k'ut matzal chi wi uloq</p>
       <p>kasik'iyaj chi ula pa jul.</p>
-      <p>Are k'ut kajurux uloq ri kinimache' rumal <rs ana="MOTZ">k'ajolab'</rs></p>
+      <p>Are k'ut kajurux uloq ri kinimache'</p>
+      <p>rumal <rs ana="MOTZ">k'ajolab'</rs></p>
       <p>k'a te puch xkitarij qajoq ri che' pa jul</p>
       <p>ma k'o mach'awik</p>
-      <p>chiqata' na ta churaquj uchi' ta kamoq</p>
+      <p>chiqata' na</p>
+      <p>ta churaquj uchi'</p>
+      <p>ta kamoq</p>
       <p>xecha' chi kib'il kib'.</p>
-      <p>Xa kejaslajik xa pu chimatzalaj kiwach chi kijujunal</p>
+      <p>Xa kejaslajik</p>
+      <p>xa pu chimatzalaj kiwach chi kijujunal</p>
       <p>ta xkitarij qajoq ri che'</p>
       <p>are k'u ri xcha' k'ut</p> 
       <p>ta xuraquj uchi'</p>
       <p>xa jupaj chik xsik'inik</p>
       <p>ta xqaj apanoq ri che'</p>
-      <p>oka<ref target="quc.n130"><hi rend="sup">130</hi></ref>
-        <note place="foot" xml:id="quc.n130"><seg type="note-symbol">130</seg>
+      <p>oka<ref target="quc.n132"><hi rend="sup">132</hi></ref>
+        <note place="foot" xml:id="quc.n132"><seg type="note-symbol">132</seg>
         Según <rs ana="XIMENEZ">Ximénez</rs> (1985: 429) significa "hacer burla, como del que ha caído".
         </note>
       mixutzinik</p>
       <p>qi utz mixqab'ano chi re</p>
       <p>mixkamik</p>
-      <p>ata<ref target="quc.n131"><hi rend="sup">131</hi></ref>
-        <note place="foot" xml:id="quc.n131"><seg type="note-symbol">131</seg>
+      <p>ata<ref target="quc.n133"><hi rend="sup">133</hi></ref>
+        <note place="foot" xml:id="quc.n133"><seg type="note-symbol">133</seg>
         Partícula interrogativa.
         </note>
-      la b'e chitaqen chub'ano</p>
-      <p>chuchakuj ta chuxoq</p>
-      <p>unab'e la xukoj ula rib' quk' chi qaxo'l puch</p>
+      la b'e chitaqen</p>
+      <p>chub'ano</p>
+      <p>chuchakuj</p>
+      <p>ta chuxoq</p>
+      <p>unab'e la xukoj ula rib' quk'</p>
+      <p>chi qaxo'l puch</p>
       <p>la oj <rs ana="MOTZ">omuch' k'ajolab'</rs>.</p>
       <p>Xecha' k'ut</p>
       <p>kekikot chik</p>
       <p>k'o ri ub'anik kaki'oxij</p>
       <p>kelekowik oxij puch</p>
       <p>chiquk'a'j la qab'eb'al qakab'al</p>
-      <p>la oj <rs ana="MOTZ">omuch' chi k'ajolab'</rs> xecha'</p>
+      <p>la oj <rs ana="MOTZ">omuch' chi k'ajolab'</rs></p>
+      <p>xecha'</p>
       <p>chwe'q k'ut chiqilo</p>
       <p>kab'ij puch chiqilo</p>
-      <p>ma pa chipe <rs ana="SANIK">sanik</rs> pu<ref target="quc.n132"><hi rend="sup">132</hi></ref>
-        <note place="foot" xml:id="quc.n132"><seg type="note-symbol">132</seg>
+      <p>ma pa chipe <rs ana="SANIK">sanik</rs> pu<ref target="quc.n134"><hi rend="sup">134</hi></ref>
+        <note place="foot" xml:id="quc.n134"><seg type="note-symbol">134</seg>
         Es probable que refiera a la preposición <hi rendition="simple:italic">pa</hi>.
         </note>
       ulew</p>
       <p>ta chuwinoq ta q'eyoq</p>
       <p>k'a te k'ut kul chi qak'u'x</p>
-      <p>ta quk'a'j ri qaki<ref target="quc.n133"><hi rend="sup">133</hi></ref>
-        <note place="foot" xml:id="quc.n133"><seg type="note-symbol">133</seg>
-        Probablemente refiera más a <hi rendition="simple:italic">ki</hi> de "maguey" y no de <hi rendition="simple:italic">ki'</hi> que significa "dulce".
+      <p>ta quk'a'j ri qaki<ref target="quc.n135"><hi rend="sup">135</hi></ref>
+        <note place="foot" xml:id="quc.n135"><seg type="note-symbol">135</seg>
+          <hi rendition="simple:italic">Jumaj</hi> indica "cada parte" o "cada una". Palabra caída en desuso. Conforme a Coto (1985: 159) <hi rendition="simple:italic">jumaj</hi> significa "todas partes".
         </note>
       xecha' k'ut</p>
       <p>kuta' k'u uloq ri <rs ana="SIPAKNA">Sipakna</rs> chi ri' pa jul</p>
       <p>ta xkib'ij <rs ana="MOTZ">k'ajolab'</rs> ri'</p>
-      <p>k'a chukab'ij puch ta xtub'ukij <rs ana="SANIK">sanik</rs></p>
-      <p>keb'inowik keb'uchuwik ta xek'ulun xe' che'</p>
-      <p>jumaj kikayelo'n is kikayelo'n puch rixk'aq <rs ana="SIPAKNA">Sipakna</rs></p>
+      <p>k'a chukab'ij puch</p>
+      <p>ta xtub'ukij <rs ana="SANIK">sanik</rs></p>
+      <p>keb'inowik keb'uchuwik</p>
+      <p>ta xek'ulun xe' che'</p>
+      <p>jumaj<ref target="quc.n136"><hi rend="sup">136</hi></ref>
+        <note place="foot" xml:id="quc.n136"><seg type="note-symbol">136</seg>
+        Probablemente refiera más a <hi rendition="simple:italic">ki</hi> de "maguey" y no de <hi rendition="simple:italic">ki'</hi> que significa "dulce".
+        </note>
+        kikayelo'n is</p>
+      <p>kikayelo'n puch rixk'aq <rs ana="SIPAKNA">Sipakna</rs></p>
       <p>ta xkil k'u ri <rs ana="MOTZ">k'ajolab'</rs></p>
       <p>mi pa xutzin ri k'axtok'</p>
       <p>chiwila' na <rs ana="SANIK">sanik</rs></p>
-      <p>mixek'ulun uloq mixetub'ukij uloq</p>
-      <p>jumaj is kikayen</p>
-      <p>k'o rixk'aq richilana<ref target="quc.n134"><hi rend="sup">134</hi></ref>
-        <note place="foot" xml:id="quc.n134"><seg type="note-symbol">134</seg>
-        En el manuscrito aparece como <hi rendition="simple:italic">richilana</hi> y se debe leer como <hi rendition="simple:italic">richilan na</hi>.
+      <p>mixek'ulun uloq</p>
+      <p>mixetub'ukij uloq</p>
+      <p>jumaj is kika'yen</p>
+      <p>k'o rixk'aq richilana<ref target="quc.n137"><hi rend="sup">137</hi></ref>
+        <note place="foot" xml:id="quc.n137"><seg type="note-symbol">137</seg>
+        En el manuscrito de <rs ana="XIMENEZ">Ximénez</rs> aparece como <hi rendition="simple:italic">richilana</hi> y se debe leer como <hi rendition="simple:italic">richilan na</hi>.
         </note></p>
       <p>mixqab'ano k'a</p>
       <p>xecha' chi kib'il kib'</p>
-      <p>are k'u ri <rs ana="SIPAKNA">Sipakna</rs> xa wi k'aslik</p>
+      <p>are k'u ri <rs ana="SIPAKNA">Sipakna</rs></p>
+      <p>xa wi k'aslik</p>
       <p>xuq'at uloq rismal uwi'</p>
       <p>xa pu kuk'ux uloq rixk'aq chi re</p>
       <p>kuya' ula chi kech ri <rs ana="SANIK">sanik</rs></p>
-      <p>keje k'u ri xkamik xkina'o <rs ana="MOTZ">omuch' k'ajolab'</rs></p>
+      <p>keje k'u ri xkamik</p>
+      <p>xkina'o <rs ana="MOTZ">omuch' k'ajolab'</rs></p>
       <p>k'a te k'ut xtikar kiki chi roxij</p>
       <p>ta xeq'ab'ar puch konojel <rs ana="MOTZ">k'ajolab'</rs></p>
       <p>e k'u q'ab'arinaq chik konojel <rs ana="MOTZ">omuch' k'ajolab'</rs></p>
       <p>maja b'i kakina' chik</p> 
-      <p>k'a te puch xulix<ref target="quc.n135"><hi rend="sup">135</hi></ref>
-        <note place="foot" xml:id="quc.n135"><seg type="note-symbol">135</seg>
+      <p>k'a te puch xulix<ref target="quc.n138"><hi rend="sup">138</hi></ref>
+        <note place="foot" xml:id="quc.n138"><seg type="note-symbol">138</seg>
         Hoy día en algunas variantes del K'iche' se dice <hi rendition="simple:italic">wulix</hi> para "derrumbar".
         </note>
-      ri kab'al pa kiwi' rumal ri <rs ana="SIPAKNA">Sipakna</rs></p>
+      ri kab'al pa kiwi'</p>
+      <p>rumal ri <rs ana="SIPAKNA">Sipakna</rs></p>
       <p>xek'isch'ayatajik konojel</p>
       <p>maja' b'i chik jun ka'ib' xkolotaj chi kech</p>
-      <p>xekamisaxik rumal <rs ana="SIPAKNA">Sipakna</rs> uk'ajol ri <rs ana="WUQUB'_KAQIX">Wuqub' Kaqix</rs>.</p>
+      <p>xekamisaxik rumal <rs ana="SIPAKNA">Sipakna</rs></p>
+      <p>uk'ajol ri <rs ana="WUQUB'_KAQIX">Wuqub' Kaqix</rs>.</p>
       <p>Keje k'ut kikamik <rs ana="MOTZ">omuch' k'ajolab'</rs> ri'</p>
       <p>xcha' chi k'ut</p>
       <p>are ri xe'ok chi ch'umilal</p>
       <p>ri <rs ana="MOTZ">motz</rs> ub'i' kumal</p>
       <p>we k'ut xa saqb'al tzij lo.</p>
 
-      <p xml:id="p27">
+      <p xml:id="p29">
       <!-- editor's note: corresponds to XOM paragraph 14 -->
       Are chi k'ut chiqab'ij uch'akatajik chik <rs ana="SIPAKNA">Sipakna</rs></p>
       <p>rumal ri <rs ana="KA'IB'_K'AJOLAB'">e ka'ib' k'ajolab'</rs> <rs ana="JUNAJPU">Jun Ajpu</rs>, <rs ana="XB'ALAMQ'E">Xb'alanq'e</rs>.</p>
