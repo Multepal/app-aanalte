@@ -68,13 +68,13 @@ p {
 
 /* For texts without columns */
 
-.tei-body  {}   
+/* .tei-body  {}    */
 
-.tei-body p {
-    /* margin-left: 20vw;
+/* .tei-body p {
+    margin-left: 20vw;
     margin-right: 20vw;
-    width: 60vw; */
-}
+    width: 60vw;
+} */
 
 /* For one column */
 
@@ -117,7 +117,7 @@ div.spa p {
 .pb {
     float: left;
     margin-left: -1in;
-    display: none;
+    /* display: none; */
 }
 
 div.quc .pb {
