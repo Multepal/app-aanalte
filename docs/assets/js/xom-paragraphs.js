@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
 
+    // Launch the modal when a topic is clicked
     $('.rs[data-ana]').click(function() {
         
         // Extract data from the clicked element
@@ -25,6 +26,7 @@ $(document).ready(function() {
     
     });
 
+    // Launch the modal when a footnote is clicked
     $('.footnote-ref').click(function() {
 
         // Extract data from the clicked element
@@ -40,6 +42,7 @@ $(document).ready(function() {
 
     });
     
+    // Launch the modal when an annotation is clicked
     $('.lb').click(function() {
         nid = $(this).data('nid')
         note = '#annotation-' + nid
@@ -57,6 +60,7 @@ $(document).ready(function() {
         $('a.lb[data-nid="' + nid + '"] .annotation-icon').css('color', 'gray')
     });
 
+    // Synchronize the folio index with the current view
     $('a.folio-index-item').click(function() {
         target = $(this).data('target')
         window.location.href = '#quc-' + target
