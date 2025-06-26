@@ -45,26 +45,11 @@ h2 {
     font-size: 16pt;
 }
 
-div.col {
-    /* height: 10in; *//* Won't scroll unless given an actual length, i.e. % does nto nwork */
-    height: 7.5in;
-    overflow: scroll;
-}
-
 p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    font-size: 14pt;
-    .note.margin-left: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    /* margin-left: 1rem; */
 }
-
-.modal-content p {
-    font-family: serif;
-}
-
-.modal-type {
-    padding: 10px;
-}
-
 
 .pb {
     font-family: sans-serif;
@@ -81,6 +66,60 @@ p {
     display: none;
 }
 
+/* For texts without columns */
+
+.tei-body  {}   
+
+.tei-body p {
+    /* margin-left: 20vw;
+    margin-right: 20vw;
+    width: 60vw; */
+}
+
+/* For one column */
+
+.single-col {
+    margin-left: 20vw; /* 2in; */
+    margin-right: 20vw; /* 2in; */
+    width: 60vw;
+}
+
+/* For two columns  */
+
+div.col {
+    display: block;
+    overflow: scroll;
+    width: 50%;
+    padding: 1rem;
+    height: 100vh;
+}
+
+.col.quc {
+    float:left;
+}
+
+.col.spa {
+    float:right;
+}
+
+/* P */ 
+
+div.quc p {
+    margin-left: 2in;
+}
+
+div.spa p {
+    margin-right: 2in;
+}
+
+/* PB */
+
+.pb {
+    float: left;
+    margin-left: -1in;
+    display: none;
+}
+
 div.quc .pb {
     float: left;
     margin-left: -1in;
@@ -91,72 +130,33 @@ div.spa .pb {
     margin-right: -1in;
 }
 
-div.quc p {
-    margin-left: 2in;
-}
+/* LB */    
 
-div.spa p {
-    margin-right: 2in;
-}
-
-.col.quc {
-    width: 50%;
+.col.quc a.lb sup {
     float:left;
+    margin-left: -1in;
 }
 
-.col.spa {
-    width: 50%;
+.col.spa a.lb sup {
     float:right;
+    margin-right: -1in;
 }
 
-.single-col {
-    margin-left: 3in;
-    margin-right: 3in;
-}
+/* NOTE */  
 
-/* For texts without columns */
-.tei-body p {
-    margin-left: 3in;
-    margin-right: 3in;
-}
-
-.single-col .pb {
+.col.quc p .note {
     float: left;
+    padding-right: .5rem;
+    margin-right: .5rem;
     margin-left: -1in;
 }
 
-.center {
-    text-align: center;
-    margin: 0 auto;
+.col.spa p .note {
+    float: right;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    margin-right: -1in;
 }
-
-.hi.single-line {
-    display: block;
-}
-
-.note {
-    clear: both;
-    font-family: sans-serif;
-    font-size: 90%;
-    max-width: 1.5in;
-    padding: .5rem 0;
-    color: charcoal;
-    background-color: beige;
-    padding:.5rem;
-    border-radius: 3px;
-}
-
-.note.margin-left {
-    float:left;
-    margin-left: -1in;
-}
-
-/* For texts without columns */
-
-.tei-body p > .foot {
-    
-}
-
 
 .tei-body p > .note {
     float:right;
@@ -167,22 +167,15 @@ div.spa p {
 }
 
 
-div.col.quc p .note {
-    float: left;
-    padding-right: .5rem;
-    margin-right: .5rem;
-    margin-left: -1in;
+/* VARIOUS */    
+
+.center {
+    text-align: center;
+    margin: 0 auto;
 }
 
-div.col.spa p .note {
-    float: right;
-    padding-left: .5rem;
-    margin-left: .5rem;
-    margin-right: -1in;
-}
-
-.note.editor {
-    display: none;
+.hi.single-line {
+    display: block;
 }
 
 .pnum {
@@ -195,22 +188,6 @@ div.col.spa p .note {
     color: red;
     font-weight: bold;
     text-decoration: none;
-}
-
-/* For Escolios, etc. */
-.annotation-icon {
-    float:left;
-    margin-left: -1in;
-} 
-
-.col.quc a.lb sup {
-    float:left;
-    margin-left: -1in;
-}
-
-.col.spa a.lb sup {
-    float:right;
-    margin-right: -1in;
 }
 
 .pc {
@@ -238,6 +215,84 @@ div.col.spa p .note {
     text-decoration: underline;
 }
 
+/* FOOTNOTES */
+
+.footnote-ref {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.footnote, .footnote-symbol {
+    display: none;
+} 
+
+/* NOTES */ 
+
+.note {
+    clear: both;
+    font-family: sans-serif;
+    font-size: 90%;
+    max-width: 1.5in;
+    padding: .5rem 0;
+    color: charcoal;
+    background-color: beige;
+    padding:.5rem;
+    border-radius: 3px;
+}
+
+.note.margin-left {
+    float:left;
+    margin-left: -1in;
+}
+
+.note.editor {
+    display: none;
+}
+
+.tei-body p > .note {
+    float:right;
+    margin-left: -1in;
+    padding-right: .5rem;
+    margin-right: .5rem;
+    margin-left: -1in;
+}
+
+/* div.col.quc p .note {
+    float: left;
+    padding-right: .5rem;
+    margin-right: .5rem;
+    margin-left: -1in;
+}
+
+div.col.spa p .note {
+    float: right;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    margin-right: -1in;
+} */
+
+/* ENDNOTES */
+
+.endnotes {
+    /* This is a hack to make the endnotes appear at the bottom of the page */
+    width: 50%;
+    margin-left: 1in;
+}
+
+/* MODALS */
+
+.modal-content p {
+    font-family: serif;
+}
+
+.modal-type {
+    padding: 10px;
+}
+
+/* For Escolios, etc. */
+
+/* TOPICS AND ANNOTATIONS */
+
 #topic-list, #annotation-list {
     display:  none;
 }
@@ -249,15 +304,21 @@ div.col.spa p .note {
 .annotation-icon {
     color: green;
     font-size: 18pt;
-}
+    float:left;
+    margin-left: -1in;
+} 
 
 .annotation-author {
     float: right;
 }
 
+/* NAVIGATION BAR */
+
 .navbar {
     padding-left: 2in;
 }
+
+/* FOOTER */
 
 #footer {
     display: block;

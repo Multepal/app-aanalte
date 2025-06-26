@@ -1,24 +1,45 @@
 
-$(document).ready(function()
-{
+$(document).ready(function() {
 
     $('.rs[data-ana]').click(function() {
-        ana = $(this).data('ana')
-        topic = '#topic-' + ana
+        
+        // Extract data from the clicked element
+        ana     = $(this).data('ana')
+        topic   = '#topic-' + ana
         src_str = $(this).html()
-        title = $(topic + ' .topic-title').html()
-        type = $(topic + ' .topic-type').html()
-        desc = $(topic + ' .topic-description').html()
-        link = $(topic + ' .topic-link').attr('href')
+        title   = $(topic + ' .topic-title').html()
+        type    = $(topic + ' .topic-type').html()
+        desc    = $(topic + ' .topic-description').html()
+        link    = $(topic + ' .topic-link').attr('href')
+
+        // Apply the extracted data to the modal
         $('#topic-box .modal-type').html('Téma')
         $('#topic-box .modal-title').html(title + " (" + type + ")")
         $('#topic-box .modal-body').html(desc)
         $('#topic-box .modal-body').prepend('<div class="source-string alert alert-success">As given: <b>'+src_str+'</b></div>')
         $('#topic-box .multepal-link').attr('href', link) 
         $('#topic-box').trigger('focus')
+
+        // Change the color of the clicked element to gray
         $('.rs[data-ana="' + ana + '"]').css('color', 'gray')
+    
     });
 
+    $('.footnote-ref').click(function() {
+
+        // Extract data from the clicked element
+        note_id = $(this).data('ana')
+        note_id_esc = '#' + note_id.replace(/\./g, '\\.')
+        note_content = $(note_id_esc).html()
+        note_symbol = $(note_id_esc + ' .footnote-symbol').html() 
+
+        // Apply the extracted data to the modal
+        $('#note-box .modal-type').html('Nota editorial' + ' <b>' + note_symbol + '</b>')
+        $('#note-box .modal-body').html(note_content)
+        $('#note-box').trigger('focus')
+
+    });
+    
     $('.lb').click(function() {
         nid = $(this).data('nid')
         note = '#annotation-' + nid

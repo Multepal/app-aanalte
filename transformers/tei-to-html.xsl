@@ -30,15 +30,6 @@
     <xsl:variable name="css_file_path" select="$config/id('css_file_path')/value/text()"/>
     <xsl:variable name="js_file_path" select="$config/id('js_file_path')/value/text()"/>
 
-    <!--
-    <xsl:variable name="langname">
-        <xsl:map>
-            <xsl:map-entry key="'quc'">K&quot;iche&quot;</xsl:map-entry>
-            <xsl:map-entry key="'spa'">Castellano</xsl:map-entry>  
-        </xsl:map>
-    </xsl:variable>
-    -->
-
     <xsl:variable name="quote">
         <xsl:text>'</xsl:text>
     </xsl:variable>
@@ -47,21 +38,18 @@
         <xsl:text>__QUOTE__</xsl:text>
     </xsl:variable>
     
-    <!-- Not sure if this is doing anything -->
-    <!-- <xsl:preserve-space elements="p" />  -->
-    
     <!-- Root node: Insert containing page elements -->
     <xsl:template match="/">
         <xsl:variable 
             name="doc_title" 
-            select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title/text()"/>
+            select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title//text()"/>
         <html>
             <head>
                 <title>
                     <xsl:value-of select="$site_title"/> 
                     <xsl:text> | </xsl:text>
-                    <!-- <xsl:value-of select="$doc_title"/> -->
-                     <xsl:apply-templates select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                    <xsl:value-of select="$doc_title"/>
+                     <!-- <xsl:apply-templates select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/> -->
                 </title>
                 <meta charset="UTF-8"/>
                 <!--
@@ -82,8 +70,8 @@
                 <nav class="navbar navbar-expand-sm bg-light">
                     <h1 id="page-title">
                         <a href="index.html">
-                            <!-- <xsl:value-of select="$doc_title"/> -->
-                            <xsl:apply-templates select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>                         
+                            <xsl:value-of select="$doc_title"/>
+                            <!-- <xsl:apply-templates select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>                          -->
                         </a>                        
                     </h1>
                 </nav>
@@ -108,7 +96,6 @@
                         </ul>
                     </div>
                     
-                    
                     <div class="container-fluid" id="content">
                         
                         <xsl:comment> CONTENT </xsl:comment>    
@@ -123,7 +110,16 @@
                         <div class="row">
                             <xsl:text>*   *   *</xsl:text>
                         </div>
-                        
+
+                        <!-- <xsl:comment>ENDNOTES </xsl:comment>
+                        <div class="endnotes">
+                            <xsl:for-each select="//tei:note[@place='foot']">
+                                <div id="endnote">
+                                    <xsl:apply-templates />
+                                </div>
+                            </xsl:for-each>
+                        </div> -->
+
                         <xsl:comment> FOOTER </xsl:comment>
                         <div class="row text-center mt-3 footer">
                             <div class="col" id="footer">
@@ -134,7 +130,7 @@
                 </div>
         
                 <!-- Modal box for displaying topic or annotation info -->
-                <xsl:comment> MODAL </xsl:comment>
+                <xsl:comment> MODAL for external notes </xsl:comment>
                 <div class="container" id="data">
                     <div class="modal" tabindex="-1" role="dialog" id="topic-box" title=""
                         style="display:none;"
@@ -160,6 +156,28 @@
                     </div>
                 </div>
         
+                <!-- Modal box for displaying internal notes (provided by the editor) -->
+                <xsl:comment> MODAL for internal notes </xsl:comment>
+                <div class="container" id="data-note">
+                    <div class="modal" tabindex="-1" role="dialog" id="note-box" title=""
+                        style="display:none;"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-type">Type</div>                                    
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&#215;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <xsl:comment> TOPICS </xsl:comment>
                 <div class="container" id="topic-list">
                     <xsl:apply-templates select="$topics/topics/topic"/>
@@ -246,7 +264,6 @@
             </xsl:choose>
         </xsl:variable>
         
-        <!-- title="Annotation for Folio {$folio}{$sidex}, column {$lang_name}, line {$line}, TEST: {$line_id}"  -->
         <xsl:variable name="line" select="substring(@id, 16, 2)" />
         <xsl:for-each select="$annotations//annotation-map/item[@line_id = $line_id]">
             <a class="lb" href="#"  
@@ -270,23 +287,10 @@
             </xsl:choose>
         </xsl:variable>
         
-        <!--
-        <xsl:text>__LB__</xsl:text>
-        -->
         <span class="lb-marker">/</span>
         
         <xsl:value-of select="$mycontent"/>
         
-        <!-- DOES NOT WORK AS EXPECTED
-        <xsl:choose>
-            <xsl:when test="preceding-sibling::tei:pc[1]">
-                <xsl:text></xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:text> </xsl:text>
-            </xsl:otherwise>
-        </xsl:choose> 
-        -->
     </xsl:template>
 
     <xsl:template match="tei:author"></xsl:template>
@@ -303,25 +307,7 @@
                     <xsl:value-of select="text()"/>
                 </xsl:otherwise>                    
             </xsl:choose>   
-        </xsl:element>
-        
-        <!-- 
-        <span>
-            <xsl:attribute name="class">
-                <xsl:choose>
-                    <xsl:when test="following-sibling::*[1]/name() = 'lb'">
-                        <xsl:text>tei-pc tei-pc-</xsl:text>
-                        <xsl:value-of select="following-sibling::*[1]/name()"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>tei-pc-</xsl:text>
-                    </xsl:otherwise>                    
-                </xsl:choose>                
-            </xsl:attribute>
-            <xsl:value-of select="text()"/>            
-        </span>
-        -->
-        
+        </xsl:element>        
     </xsl:template>
     
     <xsl:template match="tei:pb">
@@ -341,11 +327,9 @@
             <xsl:value-of select="concat($folio,$sidex)"/>
             <xsl:text> &#8212;</xsl:text>
         </a>
+        
         <span class="pb-marker">|</span>
-    </xsl:template>
-    
-    <xsl:template match="tei:note">
-        <span class="note {@resp} {@place}"><xsl:apply-templates /></span>
+
     </xsl:template>
     
     <xsl:template match="tei:rs"> 
@@ -354,17 +338,44 @@
             <xsl:apply-templates />
         </a>
     </xsl:template>
+
+    <!-- Shut down RS links in notes because these will be launched in a modal -->
+    <xsl:template match="tei:note/tei:rs"> 
+        <xsl:apply-templates />
+    </xsl:template>
     
     <xsl:template match="tei:corr">
         <xsl:apply-templates />
     </xsl:template>
     
-    <xsl:template match="tei:hi">
-        <a href="">
-            <span class="hi {@rend}"><xsl:apply-templates /></span>
+    <!-- START: Handle inline notes -->
+    <!-- Combine the following two -->
+    <xsl:template match="tei:ref">
+        <a class="footnote-ref" href="#" data-ana="{@target}" data-target="#note-box" data-toggle="modal">
+            <xsl:apply-templates />
         </a>
     </xsl:template>
-    
+
+    <xsl:template match="tei:hi[@rend='sup']">
+        <xsl:apply-templates />
+        <xsl:text> </xsl:text>
+    </xsl:template>
+
+    <xsl:template match="tei:note[@place='foot']">
+        <span class="footnote" id="{@xml:id}">
+            <span class="footnote-symbol">
+                <xsl:value-of select="tei:seg[@type='note-symbol']"/>
+            </span> 
+            <span class="footnote-content">
+                <xsl:apply-templates />
+            </span>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="tei:seg[@type='note-symbol']"></xsl:template>
+
+    <!-- END: Handle inline notes -->
+
     <xsl:template match="tei:num">
         <span class="num {@rend}"><xsl:apply-templates /></span>
     </xsl:template>
@@ -376,12 +387,6 @@
     <xsl:template match="tei:choice">
         <span class="expan"><xsl:value-of select="tei:expan/text()"/></span>
     </xsl:template>
-    
-    <!--
-    <xsl:template match="text()">
-        <xsl:value-of select="normalize-space()" />
-    </xsl:template>
-    -->
     
     <!-- Change this into a data record for use by JQuery, etc. -->
     <xsl:template match="topic">
@@ -437,10 +442,5 @@
             </img>
         </a>
     </xsl:template>
-    
-    <!-- THIS SCREWS THINGS UP
-    <xsl:template match=
-        "text()[not(string-length(normalize-space()))]"/>
-    -->
-    
+        
 </xsl:stylesheet>
