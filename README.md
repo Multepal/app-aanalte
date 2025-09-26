@@ -1,7 +1,9 @@
 
 # aanalte
 
-A platform for generating and displaying TEI encoded versions from textual sources (aka editions).
+¡Bienvenides a Áanalte, nuestra plataforma para generar y mostrar diversas versiones de textos codificados con los estándares internacionales de la iniciativa TEI. Aquí presentamos nuestra colección de ediciones enmarcadas.
+
+Welcome to Áanalte, a platform for generating and displaying TEI encoded versions from textual sources, more commonly referred to as "editions".
 <!-- define edition vs version here, or refer to definitions somewhere else -->
 
 Website: https://multepal.github.io/app-aanalte/
