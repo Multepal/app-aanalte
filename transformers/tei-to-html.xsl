@@ -349,6 +349,7 @@
     </xsl:template>
     
     <!-- START: Handle inline notes -->
+
     <!-- Combine the following two -->
     <xsl:template match="tei:ref">
         <a class="footnote-ref" href="#" data-ana="{@target}" data-target="#note-box" data-toggle="modal">
@@ -359,6 +360,10 @@
     <xsl:template match="tei:hi[@rend='sup']">
         <xsl:apply-templates />
         <xsl:text> </xsl:text>
+    </xsl:template>
+
+    <xsl:template match="tei:note[@place='margin-left']">
+        <!-- NOTHING -->
     </xsl:template>
 
     <xsl:template match="tei:note[@place='foot']">
