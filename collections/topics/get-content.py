@@ -30,11 +30,14 @@ class Importer():
 
     def download(self):
         """Download content from Drupal site"""
-
         for export in self.exports.keys():
             print(f"Getting {export} from Multepal site")
             url = self.exports[export]['url']
-            r = requests.get(url)
+            try:
+                r = requests.get(url)
+            except requests.exceptions.ConnectionError as e:
+                print(e)
+                exit(0)
             out_file = self.exports[export]['file']
             print('out_file', out_file)
             if os.path.exists(out_file):
@@ -109,6 +112,7 @@ if __name__ == '__main__':
     cwd = os.getcwd()
     print('CWD=', cwd)
     config_file = f"{cwd}/config.ini"
+    print(config_file)
     imp = Importer(config_file)
     imp.download()
     imp.annotation_mapper()
